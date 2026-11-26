@@ -43,3 +43,26 @@ for (const button of filters) {
 
 search.addEventListener("input", updateResults);
 controls.hidden = false;
+
+updateResults();
+
+const viewer = document.querySelector("#photo-viewer");
+const viewerImage = viewer.querySelector("img");
+const viewerTitle = viewer.querySelector("#photo-title");
+
+for (const link of document.querySelectorAll("[data-photo]")) {
+  link.addEventListener("click", (event) => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || typeof viewer.showModal !== "function") return;
+
+    event.preventDefault();
+    const caption = link.querySelector("img").alt;
+    viewerTitle.textContent = caption;
+    viewerImage.alt = caption;
+    viewerImage.src = link.href;
+    viewer.showModal();
+  });
+}
+
+viewer.addEventListener("click", (event) => {
+  if (event.target === viewer) viewer.close();
+});

@@ -1,13 +1,9 @@
-# Water Knowledge Hub
+# Suv Ufqi
 
-O‘zbekistonning suv xo‘jaligi, irrigatsiya islohotlari, TIQXMMI Milliy tadqiqot universiteti va Prezidentning sohaga oid tashabbuslari haqidagi o‘zbekcha o‘quv portali.
+O‘zbekiston suv xo‘jaligi, Prezident ilgari surgan islohotlar, suv inshootlari va TIQXMMI Milliy tadqiqot universiteti haqida o‘zbekcha bilim portali.
 
-## Ishga tushirish
+[Suv Ufqi sayti](https://abdumajid6769.github.io/mening-universetitim/)
 
-`index.html` faylini brauzerda oching. Sayt uchun paket o‘rnatish yoki server shart emas. Qidiruv va holat filtrlari brauzerda ishlaydi.
+Mahalliy ko‘rish uchun `index.html` faylini brauzerda oching. Qidiruv, filtrlar va fotogalereya brauzerda ishlaydi. GitHub Pages saytni `main` branchidan yuklaydi.
 
-Mazmun va hujjatlar `index.html` faylida, sahifa ko‘rinishi `style.css` faylida, qidiruv va filtrlar `app.js` faylida.
-
-## Rasm
-
-Chorvoq suv ombori surati: [WWELNUR / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Charvak_Reservoir_and_Mountains.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Surat sahifaga moslab qirqiladi.
+Har bir loyiha va islohot yonida rasmiy manba ko‘rsatilgan. Surat manbalari va litsenziyalari saytning quyi qismida berilgan.

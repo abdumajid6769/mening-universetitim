@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TIQXMMI MTU, O‘zbekiston suv islohotlari va irrigatsiya bo‘yicha ochiq bilim portali.">
-  <title>Water Knowledge Hub | TIQXMMI va suv islohotlari</title>
+  <meta name="theme-color" content="#092f35">
+  <meta name="description" content="Suv Ufqi — O‘zbekiston suv islohotlari, qurilgan inshootlar va TIQXMMI tadqiqotlari haqida o‘zbekcha bilim portali.">
+  <title>Suv Ufqi — O‘zbekiston suv islohotlari va inshootlari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
@@ -12,50 +16,100 @@
   <a href="#main" class="skip">Asosiy mazmunga o‘tish</a>
   <header class="masthead">
     <div class="wrap top">
-      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≈</span><span>Water Knowledge Hub<small>TIQXMMI · O‘zbekiston</small></span></a>
+      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
       <nav aria-label="Asosiy menyu">
-        <a href="#organish">O‘rganish</a><a href="#islohotlar">Islohotlar</a><a href="#universitet">Universitet</a><a href="#prezident">Prezident</a>
+        <a href="#inshootlar">Inshootlar</a><a href="#islohotlar">Islohotlar</a><a href="#prezident">Prezident</a><a href="#organish">Bilim kutubxonasi</a>
       </nav>
+      <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="TIQXMMI Milliy tadqiqot universiteti" width="170" height="49"></a>
     </div>
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero.jpg" alt="Tog‘lar orasidagi Chorvoq suv ombori panoramasi" width="1920" height="859" fetchpriority="high">
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <p class="eyebrow">O‘zbekiston suv bilim portali</p>
-          <h1 id="hero-title">Suvni anglash.<br>Suvni asrash.</h1>
-          <p>TIQXMMI Milliy tadqiqot universiteti, O‘zbekistondagi suv islohotlari va irrigatsiya kelajagi haqida rasmiy manbalarga tayangan bilimlar.</p>
-          <div class="actions"><a class="button primary" href="#organish">O‘rganishni boshlash</a><a class="button outline" href="#islohotlar">Islohotlarni ko‘rish</a></div>
+          <h1 id="hero-title">O‘zbekistonning<br><em>suv ufqi</em></h1>
+          <p>Prezident ilgari surgan suv islohotlari, qurilgan va yangilangan inshootlar hamda TIQXMMI tadqiqotlari.</p>
+          <div class="actions"><a class="button primary" href="#inshootlar">Inshootlarni ko‘rish</a><a class="button outline" href="#islohotlar">Islohotlarni o‘rganish</a></div>
         </div>
-        <div class="hero-photo" role="img" aria-label="Chorvoq suv ombori va uni o‘rab turgan tog‘lar"></div>
-        <a class="photo-caption" href="https://commons.wikimedia.org/wiki/File:Charvak_Reservoir_and_Mountains.jpg">Chorvoq suv ombori · Toshkent viloyati</a>
+        <a class="photo-caption" href="#surat-manbalari">Chorvoq suv ombori · Toshkent viloyati</a>
       </div>
     </section>
-    <section class="wrap section" id="organish">
-      <div class="section-heading"><p class="eyebrow">Bilim kutubxonasi</p><h2>Suv xo‘jaligini o‘rganish</h2><p>Asosiy tushunchalar, amaliy qo‘llanmalar va o‘quv imkoniyatlari.</p></div>
-      <div class="card-grid">
-        <article class="card"><span class="icon" aria-hidden="true">≈</span><h3>Suvni kompleks boshqarish</h3><p>Suv, yer va ekotizimlarni birgalikda boshqarish tamoyillari va amaliy vositalari.</p><a href="https://waterknowledgehub.org/learn">IWRM vositalari va kurslari</a></article>
-        <article class="card"><span class="icon" aria-hidden="true">≡</span><h3>Sohaga oid resurslar</h3><p>O‘zbekistondagi suv boshqaruviga oid tadqiqotlar, hujjatlar va amaliy misollar.</p><a href="https://waterknowledgehub.org/country-info/UZ">O‘zbekiston bo‘yicha resurslar</a></article>
-        <article class="card"><span class="icon" aria-hidden="true">◇</span><h3>Ta’lim va tadqiqot</h3><p>Irrigatsiya, melioratsiya va suvni tejash bo‘yicha muhandislik ta’limi.</p><a href="https://tiiame.uz/university/other/about">TIQXMMI ta’lim yo‘nalishlari</a></article>
+
+    <section class="numbers" aria-labelledby="numbers-title">
+      <div class="wrap">
+        <div class="numbers-header"><h2 id="numbers-title">Raqamlarda</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">Suv xo‘jaligi vazirligi · 2026-yil noyabr</a></div>
+        <dl class="number-grid">
+          <div><dt>10,69 <small>mlrd m³</small></dt><dd>2026-yil yanvar–oktabrda tejalgan suv</dd></div>
+          <div><dt>2,8 <small>mln ga</small></dt><dd>Suv tejovchi texnologiyalar joriy qilingan maydon</dd></div>
+          <div><dt>1 000 <small>km</small></dt><dd>2026-yilda davlat budjeti hisobidan betonlangan kanal</dd></div>
+          <div><dt>106 <small>ta</small></dt><dd>Boshqaruvi avtomatlashtirilgan yirik suv xo‘jaligi obyekti</dd></div>
+        </dl>
       </div>
     </section>
+
+    <section class="wrap section" id="inshootlar">
+      <div class="section-heading split-heading"><div><p class="eyebrow">Amalga oshirilgan ishlar</p><h2>Suv inshootlari</h2></div><p>Har bir loyiha uchun qayerda va qanday ish bajarilgani, natijasi hamda rasmiy fotoreportaj.</p></div>
+      <div class="project-grid">
+        <article class="project project-featured">
+          <a class="photo-link" href="assets/termiz.jpg" data-photo aria-label="Termizdagi suv inshooti suratini kattalashtirish"><img src="assets/termiz.jpg" alt="Termizdagi To‘palang ichimlik suvi loyihasining inshooti" width="1200" height="800" loading="lazy"></a>
+          <div class="project-copy"><p class="location">Surxondaryo · Termiz</p><h3>To‘palangdan ichimlik suvi</h3><p>2021-yilda Prezidentga taqdim etilgan loyiha doirasida 246 km magistral va ichki tarmoq qurildi. 2026-yil fevraldagi hisobotga ko‘ra, suv Termiz shahri va o‘nta tumanga yetkazilmoqda.</p><dl class="project-stat"><dt>246 km</dt><dd>qurilgan suv tarmog‘i</dd></dl><a class="text-link" href="https://president.uz/oz/lists/view/8974">Natijalar va fotoreportaj</a></div>
+        </article>
+        <article class="project">
+          <a class="photo-link" href="assets/ayqiron.jpg" data-photo aria-label="Ayqiron-1 nasos stansiyasi suratini kattalashtirish"><img src="assets/ayqiron.jpg" alt="Namangan viloyatidagi Ayqiron-1 nasos stansiyasi" width="900" height="600" loading="lazy"></a>
+          <div class="project-copy"><p class="location">Namangan · Chortoq</p><h3>Ayqiron-1 nasos stansiyasi</h3><p>Davlat-xususiy sheriklik asosida tejamkor nasos agregatlari o‘rnatildi. Prezident 2025-yil sentabrda stansiyani ko‘zdan kechirdi va tajribani kengaytirish bo‘yicha topshiriq berdi.</p><dl class="project-stat"><dt>815 ga</dt><dd>stansiya orqali sug‘oriladigan yer</dd></dl><a class="text-link" href="https://president.uz/oz/lists/view/8489">Loyiha va fotoreportaj</a></div>
+        </article>
+        <article class="project">
+          <a class="photo-link" href="assets/ges.jpg" data-photo aria-label="To‘palang GES suratini kattalashtirish"><img src="assets/ges.jpg" alt="Surxondaryodagi To‘palang gidroelektr stansiyasi" width="900" height="600" loading="lazy"></a>
+          <div class="project-copy"><p class="location">Surxondaryo · Sariosiyo</p><h3>To‘palang GES modernizatsiyasi</h3><p>2019-yilgi Prezident topshirig‘idan keyin to‘g‘on 20 metrga ko‘tarildi va ikkita yangi gidroagregat o‘rnatildi. Modernizatsiya 2023-yilda foydalanishga topshirildi.</p><dl class="project-stat"><dt>175 MW</dt><dd>modernizatsiyadan keyingi umumiy quvvat</dd></dl><a class="text-link" href="https://president.uz/oz/lists/view/6862">Modernizatsiya va fotoreportaj</a></div>
+        </article>
+      </div>
+      <div class="photo-strip" aria-label="Inshootlar fotogalereyasi">
+        <figure><a class="photo-link" href="assets/termiz-detail.jpg" data-photo aria-label="Termiz loyihasidan ikkinchi suratni kattalashtirish"><img src="assets/termiz-detail.jpg" alt="Termiz ichimlik suvi loyihasidan lavha" width="850" height="570" loading="lazy"></a><figcaption><a href="https://president.uz/oz/lists/view/8974">Termiz suv ta’minoti loyihasi</a></figcaption></figure>
+        <figure><a class="photo-link" href="assets/ayqiron-detail.jpg" data-photo aria-label="Ayqiron-1 stansiyasidan ikkinchi suratni kattalashtirish"><img src="assets/ayqiron-detail.jpg" alt="Ayqiron-1 nasos stansiyasi yonidagi magistral kanal" width="850" height="570" loading="lazy"></a><figcaption><a href="https://president.uz/oz/lists/view/8489">Ayqiron-1 yonidagi magistral kanal</a></figcaption></figure>
+        <figure><a class="photo-link" href="assets/ges-detail.jpg" data-photo aria-label="To‘palang GESdan ikkinchi suratni kattalashtirish"><img src="assets/ges-detail.jpg" alt="To‘palang gidroelektr stansiyasidan lavha" width="850" height="570" loading="lazy"></a><figcaption><a href="https://president.uz/oz/lists/view/6862">To‘palang GESga tashrif</a></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="president-section" id="prezident">
+      <div class="wrap president-grid">
+        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo aria-label="Prezident portretini kattalashtirish"><img src="assets/portrait.jpg" alt="O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyevning rasmiy portreti" width="1028" height="1200" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">O‘zbekiston Respublikasi Prezidenti matbuot xizmati</a></figcaption></figure>
+        <div class="president-copy">
+          <p class="eyebrow">Prezident va suv siyosati</p><h2>Shavkat Mirziyoyev</h2>
+          <p>1981-yilda bugungi TIQXMMIni muhandis-mexanik mutaxassisligi bo‘yicha tamomlagan. Institutda ilmiy xodim, o‘qituvchi va o‘quv ishlari bo‘yicha prorektor bo‘lib ishlagan. 2016-yilda Prezident etib saylangan, 2023-yilgi saylovdan so‘ng 14-iyulda lavozimiga kirishgan.</p>
+          <h3>Suv sohasidagi tashabbuslari</h3>
+          <ul class="initiatives">
+            <li><a href="https://lex.uz/uz/docs/-7686130">Irrigatsiyani yangilash</a><span>2025–2028-yillar dasturi orqali kanallar, nasos stansiyalari va raqamli boshqaruvni modernizatsiya qilish.</span></li>
+            <li><a href="https://president.uz/oz/lists/view/8901">Suv tejovchi sug‘orish</a><span>2028-yilgacha texnologiyalar qamrovini 3,5 mln gektarga yetkazish maqsadi.</span></li>
+            <li><a href="https://lex.uz/uz/docs/-8358785">Ichimlik va oqova suv xizmatlari</a><span>2026–2027-yillarda tarmoqlarni rivojlantirish va suv hisobini takomillashtirish.</span></li>
+          </ul>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Rasmiy tarjimayi hol</a><a href="https://president.uz/oz/lists/view/6485">2023-yilgi lavozimga kirish</a></div>
+        </div>
+      </div>
+    </section>
+
     <section class="reform-section" id="islohotlar">
       <div class="wrap section">
-        <div class="section-heading"><p class="eyebrow">O‘zbekiston suv siyosati</p><h2>Islohotlar va strategiyalar</h2><p>Qabul qilingan hujjatlar, e’lon qilingan natijalar va kelgusi maqsadlar.</p></div>
+        <div class="section-heading split-heading"><div><p class="eyebrow">O‘zbekiston suv siyosati</p><h2>Suv islohotlari va strategiyalar</h2></div><p>Prezident farmonlari va qarorlari, vazirlik e’lon qilgan natijalar hamda keyingi yillarga belgilangan maqsadlar.</p></div>
         <div class="controls" hidden>
           <fieldset class="filters">
-            <legend class="sr-only">Holat bo‘yicha saralash</legend>
+            <legend class="sr-only">Holat bo‘yicha filtrlash</legend>
             <button type="button" data-filter="all" aria-pressed="true">Hammasi</button>
-            <button type="button" data-filter="past" aria-pressed="false">O‘tgan davr</button>
             <button type="button" data-filter="result" aria-pressed="false">Natijalar</button>
             <button type="button" data-filter="current" aria-pressed="false">Amaldagi</button>
+            <button type="button" data-filter="past" aria-pressed="false">O‘tgan davr</button>
           </fieldset>
           <label class="search"><span class="sr-only">Islohotlardan qidirish</span><input type="search" placeholder="Islohotlardan qidirish"></label>
         </div>
         <p class="sr-only" id="result-count" role="status"></p>
         <div class="reforms">
+          <article class="reform" data-state="result"><div class="meta"><time datetime="2026-11-19">19 noyabr 2026</time><span class="pill result">E’lon qilingan natija</span></div><h3>Suv hisobini raqamlashtirish</h3><p>Vazirlik hisobotida 13 310 ta obyektga “Aqlli suv” qurilmalari o‘rnatilgani va 106 ta yirik obyekt boshqaruvi avtomatlashtirilgani aytilgan. “Suv hisobi” tizimida 817 mingta dalolatnoma elektron shaklda tuzilgan.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Suv xo‘jaligi vazirligi hisoboti</a></article>
           <article class="reform" data-state="current"><div class="meta"><time datetime="2026-07-24">24 iyul 2026</time><span class="pill current">2026–2027 choralari</span></div><h3>Ichimlik suvi ta’minoti va oqova suv tizimi</h3><p>PF–140 farmoni ichimlik suvi ta’minotini barqarorlashtirish, oqova suv xizmatlarini rivojlantirish va energiya samaradorligini oshirish bo‘yicha hududiy maqsadlarni belgiladi.</p><a href="https://lex.uz/uz/docs/-8358785">PF–140 · Lex.uz</a></article>
+          <article class="reform" data-state="result"><div class="meta"><time datetime="2026-07-20">20 iyul 2026</time><span class="pill result">E’lon qilingan natija</span></div><h3>Markazlashgan ichimlik suvi qamrovi</h3><p>Prezident matbuot xizmati ma’lumotiga ko‘ra, 2017-yildagi 63 foizlik qamrov 2026-yil iyulida qariyb 83 foizga yetgan. Shu davrda 39 ming km ichimlik suvi tarmog‘i qurilgan yoki rekonstruksiya qilingan.</p><a href="https://president.uz/oz/lists/view/9424">Taqdimot · President.uz</a></article>
           <article class="reform" data-state="current"><div class="meta"><time datetime="2026-05-26">26 may 2026</time><span class="pill current">Amaldagi farmon</span></div><h3>Suv xo‘jaligida bozor mexanizmlari</h3><p>PF–99 farmoni suv xo‘jaligi va suv fondi yerlarini boshqarishdagi ayrim loyihalarga tadbirkorlik subyektlari hamda loyiha tashkilotlarini jalb etish choralarini belgiladi.</p><a href="https://lex.uz/uz/acts/-8238206">PF–99 · Lex.uz</a></article>
+          <article class="reform" data-state="result"><div class="meta"><time datetime="2026-05-25">25 may 2026</time><span class="pill result">E’lon qilingan natija</span></div><h3>Magistral kanallar va sug‘orish tarmoqlari</h3><p>2026-yil maydagi Prezident yig‘ilishida shu vaqtgacha 2 ming km magistral kanal betonlangani, 721 km kanal va 525 km lotok yoki yopiq tarmoq qurilgani ma’lum qilindi.</p><a href="https://president.uz/oz/lists/view/9250">Yig‘ilish · President.uz</a></article>
+          <article class="reform" data-state="current"><div class="meta"><time datetime="2026-04-02">2 aprel 2026</time><span class="pill current">Amaldagi qaror</span></div><h3>TIQXMMI ilmiy jamoalarini hududlarga biriktirish</h3><p>PQ–122 qarori hududlardagi suv xo‘jaligi muammolarini o‘rganish va amaliy tavsiyalar ishlab chiqish uchun universitet kafedralarini hududlarga biriktirdi. Ilmiy maslahatchilar suv xo‘jaligi bo‘yicha hududiy yo‘l xaritalariga jalb qilinadi.</p><a href="https://lex.uz/uz/docs/-8115447">PQ–122 · Lex.uz</a></article>
           <article class="reform" data-state="current"><div class="meta"><time datetime="2026-02-16">16 fevral 2026</time><span class="pill current">Amaldagi strategiya</span></div><h3>“O‘zbekiston — 2030” strategiyasining yangi tahriri</h3><p>PF–21 farmoni bilan yangilangan strategiyada suvni tejash, irrigatsiya samaradorligi va atrof-muhit muhofazasi bo‘yicha maqsadli ko‘rsatkichlar belgilangan.</p><a href="https://lex.uz/uz/docs/-8050769">PF–21 · Lex.uz</a></article>
           <article class="reform" data-state="result"><div class="meta"><time datetime="2026-02-03">3 fevral 2026</time><span class="pill result">E’lon qilingan natija</span></div><h3>Suv tejovchi texnologiyalar 2,6 mln gektarga yetdi</h3><p>Prezident matbuot xizmati ma’lumotiga ko‘ra, texnologiyalar sug‘oriladigan yerlarning 60 foiziga joriy qilingan. Taqdimotda 2028-yilga borib qamrovni 3,5 mln gektarga yetkazish maqsadi ham e’lon qilindi.</p><a href="https://president.uz/oz/lists/view/8901">Taqdimot · President.uz</a></article>
           <article class="reform" data-state="current"><div class="meta"><time datetime="2025-08-15">15 avgust 2025</time><span class="pill current">2025–2028 dasturi</span></div><h3>Irrigatsiya sektorini rivojlantirish dasturi</h3><p>PQ–250 qarori kanallar va suv xo‘jaligi obyektlarini modernizatsiya qilish, boshqaruvni raqamlashtirish hamda suv tejovchi texnologiyalarni kengaytirishni nazarda tutadi.</p><a href="https://lex.uz/uz/docs/-7686130">PQ–250 · Lex.uz</a></article>
@@ -68,21 +122,37 @@
         <p class="empty" hidden>Qidiruvga mos islohot topilmadi.</p>
       </div>
     </section>
-    <div class="wrap section profiles">
-      <section id="universitet" aria-labelledby="university-title">
-        <p class="eyebrow">Universitet</p><h2 id="university-title">TIQXMMI Milliy tadqiqot universiteti</h2>
-        <p>Toshkent irrigatsiya va qishloq xo‘jaligini mexanizatsiyalash muhandislari instituti irrigatsiya, melioratsiya, gidroenergetika va suv tejovchi texnologiyalar bo‘yicha mutaxassislar tayyorlaydi.</p>
-        <p>2021-yilgi PQ–42 qarori bilan universitetning suv xo‘jaligi texnologiyalari sohasida ta’lim, tadqiqot va ishlab chiqarish hamkorligini rivojlantirish vazifalari belgilandi.</p>
-        <a href="https://tiiame.uz/university/other/about">Universitet haqida · tiiame.uz</a>
-      </section>
-      <section id="prezident" aria-labelledby="president-title">
-        <p class="eyebrow">O‘zbekiston Respublikasi Prezidenti</p><h2 id="president-title">Shavkat Mirziyoyev</h2>
-        <p>1981-yilda Toshkent irrigatsiya va qishloq xo‘jaligini mexanizatsiyalash muhandislari institutini muhandis-mexanik mutaxassisligi bo‘yicha tamomlagan. Institutda ilmiy xodim, o‘qituvchi va o‘quv ishlari bo‘yicha prorektor sifatida ishlagan.</p>
-        <p>2016-yilda Prezident etib saylangan. 2023-yilgi saylovdan keyin 14 iyul kuni lavozimiga kirishgan. Suv xo‘jaligi va irrigatsiyaga oid farmon hamda qarorlar yuqoridagi islohotlar bo‘limida keltirilgan.</p>
-        <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Rasmiy tarjimayi hol</a><a href="https://president.uz/oz/lists/view/6485">2023-yilgi lavozimga kirish</a></div>
-      </section>
-    </div>
+
+    <section class="wrap section" id="universitet">
+      <div class="university-feature">
+        <div class="university-copy">
+          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="TIQXMMI Milliy tadqiqot universitetining rasmiy logotipi" width="170" height="49" loading="lazy"></a>
+          <h2>TIQXMMI: ilm va amaliyot</h2>
+          <p>Milliy tadqiqot universiteti irrigatsiya, melioratsiya va gidrotexnika bo‘yicha mutaxassislar tayyorlaydi. 2026-yilda Toshkent viloyatida universitet mutaxassislari suv tejovchi sug‘orish uskunalari va quvurlarni o‘rnatish ishlarini o‘rganib, tavsiyalar berdi.</p>
+          <div class="profile-links"><a href="https://tiiame.uz/news?id=9714">Toshkent viloyatidagi amaliy ishlar</a><a href="https://tiiame.uz/university/other/about">Universitet haqida</a></div>
+        </div>
+        <figure><a class="photo-link" href="assets/field.jpg" data-photo aria-label="TIQXMMI ilmiy-amaliy ishlari suratini kattalashtirish"><img src="assets/field.jpg" alt="TIQXMMI mutaxassislarining Toshkent viloyatidagi ishlaridan lavha" width="900" height="600" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">Toshkent viloyatidagi amaliy ishlar · TIQXMMI</a></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="library" id="organish">
+      <div class="wrap section">
+        <div class="section-heading"><h2>Bilim kutubxonasi</h2></div>
+        <div class="card-grid">
+          <article class="card"><h3>Suvni kompleks boshqarish</h3><p>Suv, yer va ekotizimlarni birgalikda boshqarish bo‘yicha vositalar va kurslar.</p><a href="https://waterknowledgehub.org/learn">IWRM o‘quv materiallari</a></article>
+          <article class="card"><h3>O‘zbekiston tajribasi</h3><p>Suv boshqaruviga oid tadqiqotlar, hujjatlar va amaliy misollar.</p><a href="https://waterknowledgehub.org/country-info/UZ">Mamlakat bo‘yicha resurslar</a></article>
+          <article class="card"><h3>Irrigatsiya va melioratsiya</h3><p>Suv xo‘jaligi va gidrotexnika bo‘yicha TIQXMMI ilmiy maqolalari.</p><a href="https://journals.tiiame.uz/IL/uz/article/view/50">SmartChannel tadqiqoti</a></article>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><div class="wrap footer-inner"><div><strong>Water Knowledge Hub</strong><p>TIQXMMI mavzusidagi o‘quv loyihasi</p></div><div class="credit"><a href="https://commons.wikimedia.org/wiki/File:Charvak_Reservoir_and_Mountains.jpg">Chorvoq surati · WWELNUR</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>Surat sahifaga moslab qirqilgan.</div></div></footer>
+  <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="photo-title">
+    <div class="viewer-bar"><p id="photo-title">Inshoot surati</p><form method="dialog"><button type="submit">Yopish</button></form></div>
+    <img src="assets/termiz.jpg" alt="">
+  </dialog>
+  <footer id="surat-manbalari"><div class="wrap footer-inner">
+    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>TIQXMMI mavzusidagi o‘quv loyihasi.</p></div>
+    <div class="credit"><strong>Surat manbalari</strong><p>Inshootlar: <a href="https://president.uz/oz">O‘zbekiston Respublikasi Prezidenti matbuot xizmati</a>. Amaliy ishlar va logotip: <a href="https://tiiame.uz/tiiame_national_research_university_logo">TIQXMMI</a>.</p><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">Chorvoq panoramasi · Arina Pan</a> va <a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Prezident portreti · President.uz</a> — <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Panorama hajmi kichraytirilgan. Suratlar sahifaga moslab qirqib ko‘rsatiladi.</p></div>
+  </div></footer>
 </body>
 </html>
