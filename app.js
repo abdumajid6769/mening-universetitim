@@ -1,50 +1,54 @@
 "use strict";
 
-const controls = document.querySelector(".controls");
-const filters = [...controls.querySelectorAll("[data-filter]")];
-const search = controls.querySelector("input");
-const empty = document.querySelector(".empty");
-const count = document.querySelector("#result-count");
-
 function normalizeSearch(value) {
-  return value.toLowerCase().replace(/['’‘ʻʼ]/g, "").replace(/[–—]/g, "-").trim();
+  return value.toLocaleLowerCase(document.documentElement.lang)
+    .replace(/['’‘ʻʼ]/g, "")
+    .replace(/[–—]/g, "-")
+    .trim();
 }
 
-const reforms = [...document.querySelectorAll(".reform")].map((element) => ({
-  element,
-  state: element.dataset.state,
-  text: normalizeSearch(element.textContent),
-}));
+for (const list of document.querySelectorAll("[data-list]")) {
+  const controls = list.querySelector(".controls");
+  const filters = [...controls.querySelectorAll("[data-filter]")];
+  const search = controls.querySelector("input");
+  const empty = list.querySelector(".empty");
+  const count = list.querySelector("[data-result-count]");
+  const items = [...list.querySelectorAll("[data-item]")].map((element) => ({
+    element,
+    category: element.dataset.item,
+    text: normalizeSearch(element.innerText),
+  }));
+  let activeCategory = "all";
 
-function updateResults() {
-  const activeFilter = filters.find((button) => button.getAttribute("aria-pressed") === "true").dataset.filter;
-  const terms = normalizeSearch(search.value).split(/\s+/).filter(Boolean);
-  let visible = 0;
+  function updateResults() {
+    const terms = normalizeSearch(search.value).split(/\s+/).filter(Boolean);
+    let visible = 0;
 
-  for (const reform of reforms) {
-    const matchesState = activeFilter === "all" || activeFilter === reform.state;
-    const matchesSearch = terms.every((term) => reform.text.includes(term));
-    reform.element.hidden = !(matchesState && matchesSearch);
-    visible += Number(!reform.element.hidden);
+    for (const item of items) {
+      const matchesCategory = activeCategory === "all" || activeCategory === item.category;
+      const matchesSearch = terms.every((term) => item.text.includes(term));
+      item.element.hidden = !(matchesCategory && matchesSearch);
+      visible += Number(!item.element.hidden);
+    }
+
+    empty.hidden = visible > 0;
+    count.textContent = list.dataset.count.replace("{n}", String(visible));
   }
 
-  empty.hidden = visible > 0;
-  count.textContent = visible + " ta natija";
+  for (const button of filters) {
+    button.addEventListener("click", () => {
+      activeCategory = button.dataset.filter;
+      for (const filter of filters) {
+        filter.setAttribute("aria-pressed", String(filter === button));
+      }
+      updateResults();
+    });
+  }
+
+  search.addEventListener("input", updateResults);
+  controls.hidden = false;
+  updateResults();
 }
-
-for (const button of filters) {
-  button.addEventListener("click", () => {
-    for (const filter of filters) {
-      filter.setAttribute("aria-pressed", String(filter === button));
-    }
-    updateResults();
-  });
-}
-
-search.addEventListener("input", updateResults);
-controls.hidden = false;
-
-updateResults();
 
 const viewer = document.querySelector("#photo-viewer");
 const viewerImage = viewer.querySelector("img");

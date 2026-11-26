@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#092f35">
+  <meta name="description" content="{{desc}}">
+  <title>{{title}}</title>
+  {{{alternateLinks}}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip">{{skip}}</a>
+  <header class="masthead">
+    <div class="wrap top">
+      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
+      <nav class="main-nav" aria-label="{{nav}}">
+        <a href="#yangiliklar">{{news}}</a><a href="#inshootlar">{{projects}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a>
+      </nav>
+      <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
+    </div>
+    <nav class="language-strip" aria-label="{{language}}">
+      <div class="wrap language-inner"><span>{{language}}</span>{{{languageLinks}}}</div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero.jpg" alt="{{heroPhoto}}" width="1920" height="859" fetchpriority="high">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">{{eyebrow}}</p>
+          <h1 id="hero-title">{{heroA}}<br><em>{{heroB}}</em></h1>
+          <p>{{heroDesc}}</p>
+          <div class="actions"><a class="button primary" href="#yangiliklar">{{news}}</a><a class="button outline" href="#inshootlar">{{projects}}</a></div>
+        </div>
+        <a class="photo-caption" href="#surat-manbalari">{{heroCaption}}</a>
+      </div>
+    </section>
+
+    <section class="wrap section" id="yangiliklar" data-list data-count="{{results}}">
+      <div class="section-heading split-heading"><h2>{{news}}</h2><p>{{newsIntro}}</p></div>
+      {{{newsControls}}}
+      <div class="news-grid">{{{newsCards}}}</div>
+      <p class="empty" hidden>{{noResults}}</p>
+    </section>
+
+    <section class="projects-section" id="inshootlar">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{projects}}</h2><p>{{projectIntro}}</p></div>
+        <div class="project-grid">{{{projectCards}}}</div>
+        <div class="photo-strip">{{{gallery}}}</div>
+      </div>
+    </section>
+
+    <section class="president-section" id="prezident">
+      <div class="wrap president-grid">
+        <figure class="president-photo">{{{portrait}}}<figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">{{press}}</a></figcaption></figure>
+        <div class="president-copy">
+          <p class="eyebrow">{{president}}</p><h2>{{pName}}</h2>
+          <p>{{pIntro}}</p>
+          <ul class="initiatives">
+            <li><a href="https://lex.uz/uz/docs/-7686130">{{t9}}</a><span>{{s9}}</span></li>
+            <li><a href="https://www.president.uz/oz/lists/view/9707">{{n9}}</a><span>{{d9}}</span></li>
+            <li><a href="https://www.tiiame.uz/news?id=10111">{{n6}}</a><span>{{d6}}</span></li>
+          </ul>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">{{bio}}</a><a href="https://president.uz/oz/lists/view/6485">{{inauguration}}</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers" aria-labelledby="numbers-title">
+      <div class="wrap">
+        <div class="numbers-header"><h2 id="numbers-title">{{metrics}}</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">{{mSource}}</a></div>
+        <dl class="number-grid">
+          <div><dt>{{mVal1}}</dt><dd>{{mText1}}</dd></div>
+          <div><dt>{{mVal2}}</dt><dd>{{mText2}}</dd></div>
+          <div><dt>{{mVal3}}</dt><dd>{{mText3}}</dd></div>
+          <div><dt>{{mVal4}}</dt><dd>{{mText4}}</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="reform-section" id="islohotlar" data-list data-count="{{results}}">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{reforms}}</h2><p>{{reformIntro}}</p></div>
+        {{{reformControls}}}
+        <div class="reforms">{{{reformCards}}}</div>
+        <p class="empty" hidden>{{noResults}}</p>
+      </div>
+    </section>
+
+    <section class="wrap section" id="universitet">
+      <div class="university-feature">
+        <div class="university-copy">
+          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49" loading="lazy"></a>
+          <h2>{{university}}</h2>
+          <p>{{uIntro}}</p>
+          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">{{uAbout}}</a><a href="https://www.tiiame.uz/news">{{news}} · TIQXMMI</a></div>
+        </div>
+        <figure>{{{fieldPhoto}}}<figcaption><a href="https://tiiame.uz/news?id=9714">{{uPhoto}}</a></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="library" id="organish">
+      <div class="wrap section">
+        <div class="section-heading"><h2>{{library}}</h2></div>
+        <div class="card-grid">
+          <article class="card"><h3><a href="https://waterknowledgehub.org/learn">{{r1}}</a></h3></article>
+          <article class="card"><h3><a href="https://waterknowledgehub.org/country-info/UZ">{{r2}}</a></h3></article>
+          <article class="card"><h3><a href="https://journals.tiiame.uz/IL/uz/article/view/50">{{r3}}</a></h3></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="photo-title">
+    <div class="viewer-bar"><p id="photo-title">{{photo}}</p><form method="dialog"><button type="submit">{{close}}</button></form></div>
+    <img src="assets/termiz.jpg" alt="">
+  </dialog>
+  <footer id="surat-manbalari"><div class="wrap footer-inner">
+    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>{{eduProject}}</p></div>
+    <div class="credit"><strong>{{credits}}</strong><p><a href="https://president.uz/oz">{{press}}</a> · <a href="https://tiiame.uz/tiiame_national_research_university_logo">TIQXMMI</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">{{panorama}}</a> · <a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">{{pName}}</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. {{creditsEdit}}</p></div>
+  </div></footer>
+</body>
+</html>
