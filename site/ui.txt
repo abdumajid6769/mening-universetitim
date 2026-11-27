@@ -1,4 +1,4 @@
-title|Suv Ufqi — Özbekiston va TIQXMMI MTU yangiliklari|Suv Ufqi — новости Узбекистана и ТИИИМСХ|Suv Ufqi — 乌兹别克斯坦与塔什干灌溉农业机械化工程师学院新闻|Suv Ufqi — Özbegistanyň we TIIAME-niň habarlary|Suv Ufqi — Uzbekistan and TIIAME news|Suv Ufqi — Өзбекстан мен TIIAME жаңалықтары
+title|TIQXMMI kutubxonasi — Özbekiston va TIQXMMI MTU yangiliklari|TIQXMMI kutubxonasi — новости Узбекистана и ТИИИМСХ|TIQXMMI kutubxonasi — 乌兹别克斯坦与塔什干灌溉农业机械化工程师学院新闻|TIQXMMI kutubxonasi — Özbegistanyň we TIIAME-niň habarlary|TIQXMMI kutubxonasi — Uzbekistan and TIIAME news|TIQXMMI kutubxonasi — Өзбекстан мен TIIAME жаңалықтары
 desc|«TIQXMMI» MTU yangiliklari, Prezident taşabbuslari va Özbekistondagi bunyodkorlik loyihalari.|Новости ТИИИМСХ и Узбекистана, инициативы президента и инфраструктурные проекты.|塔什干灌溉农业机械化工程师学院动态、乌兹别克斯坦新闻、总统倡议与已建项目。|TIIAME, Özbegistanyň habarlary, Prezidentiň başlangyçlary we gurlan desgalar.|TIIAME and Uzbekistan news, presidential initiatives and completed infrastructure projects.|TIIAME мен Өзбекстан жаңалықтары, Президент бастамалары және салынған нысандар.
 skip|Asosiy mazmunga ötiş|Перейти к основному содержимому|跳转到主要内容|Esasy mazmuna geç|Skip to main content|Негізгі мазмұнға өту
 nav|Asosiy menyu|Основное меню|主导航|Esasy menýu|Main navigation|Негізгі мәзір
@@ -12,7 +12,7 @@ news|Yangiliklar|Новости|新闻|Habarlar|News|Жаңалықтар
 projects|Inşootlar|Объекты|建设项目|Desgalar|Projects|Нысандар
 reforms|Islohotlar|Реформы|改革|Özgertmeler|Reforms|Реформалар
 president|Prezident|Президент|总统|Prezident|President|Президент
-library|Bilim kutubxonasi|Библиотека|知识库|Bilim kitaphanasy|Knowledge library|Білім кітапханасы
+library|TIQXMMI kutubxonasi|Библиотека ТИИИМСХ|TIIAME图书馆|TIIAME kitaphanasy|TIIAME Library|TIIAME кітапханасы
 eyebrow|Özbekiston va «TIQXMMI» MTU|Узбекистан и ТИИИМСХ|乌兹别克斯坦与 TIIAME|Özbegistan we TIIAME|Uzbekistan and TIIAME|Өзбекстан және TIIAME
 heroA|Özbekiston|Узбекистан:|走近乌兹别克斯坦|Özbegistan:|Uzbekistan:|Өзбекстан:
 heroB|yangilaniş yölida|время перемен|见证建设与变革|özgerişler ýoly|change in focus|жаңару жолында
