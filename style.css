@@ -328,6 +328,23 @@ a:hover { color: #0d5560; }
 @media (prefers-reduced-motion: reduce) {
   :root { scroll-behavior: auto; }
 }
+.section-index { background: #eaf0ef; border-block: 1px solid var(--line); }
+.section-index-inner { display: grid; grid-template-columns: minmax(190px, .7fr) 1.8fr; gap: 1.5rem 3rem; align-items: center; padding-block: clamp(1.5rem, 3vw, 2.4rem); }
+.section-index-heading h2 { font: 700 clamp(1.55rem, 2.3vw, 2.1rem)/1.15 var(--body); letter-spacing: -.035em; }
+.section-index-heading p { margin-top: .45rem; color: var(--muted); font-size: .94rem; line-height: 1.5; }
+.section-index-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+.section-index-grid a { min-height: 58px; display: flex; align-items: center; padding: .65rem .85rem; border: 1px solid #d5e1e2; border-radius: .75rem; background: #fff; color: var(--ink); font-size: .9rem; line-height: 1.35; text-decoration: none; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
+.section-index-grid a:hover { background: #f8fcfb; border-color: #80aeb0; color: var(--teal); transform: translateY(-2px); }
+.section-index-grid a:focus-visible { outline-offset: 2px; }
+#yangiliklar, #universitet, #prezident-va-tiqxmmi, #it-markazi, #prezident, #inshootlar, #raqamlar, #islohotlar, #organish { scroll-margin-top: 7rem; }
+@media (max-width: 900px) {
+  .section-index-inner { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 540px) {
+  .section-index-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .section-index-grid a { min-height: 56px; padding-inline: .7rem; font-size: .86rem; }
+  #yangiliklar, #universitet, #prezident-va-tiqxmmi, #it-markazi, #prezident, #inshootlar, #raqamlar, #islohotlar, #organish { scroll-margin-top: 1rem; }
+}
 
 /* Editorial polish */
 :root {

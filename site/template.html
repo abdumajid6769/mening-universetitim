@@ -25,7 +25,7 @@
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
       <nav class="main-nav" aria-label="{{nav}}">
-        <a href="#yangiliklar">{{news}}</a><a href="#inshootlar">{{projects}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a>
+        <a href="#yangiliklar">{{news}}</a><a href="#universitet">{{universityNav}}</a><a href="#inshootlar">{{projects}}</a><a href="#raqamlar">{{metrics}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a>
       </nav>
       <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
     </div>
@@ -47,6 +47,17 @@
       </div>
     </section>
 
+    <section class="section-index" aria-labelledby="sections-title">
+      <div class="wrap section-index-inner">
+        <div class="section-index-heading"><h2 id="sections-title">{{sectionsTitle}}</h2><p>{{sectionsIntro}}</p></div>
+        <nav class="section-index-grid" aria-label="{{sectionsTitle}}">
+          <a href="#yangiliklar">{{news}}</a><a href="#universitet">{{universityNav}}</a><a href="#prezident-va-tiqxmmi">{{universityActionsTitle}}</a>
+          <a href="#it-markazi">{{itCenterTitle}}</a><a href="#prezident">{{president}}</a><a href="#inshootlar">{{projects}}</a>
+          <a href="#raqamlar">{{metrics}}</a><a href="#islohotlar">{{reforms}}</a><a href="#organish">{{library}}</a>
+        </nav>
+      </div>
+    </section>
+
     <section class="wrap section" id="yangiliklar" data-list data-count="{{results}}">
       <div class="section-heading split-heading"><h2>{{news}}</h2><p>{{newsIntro}}</p></div>
       {{{newsControls}}}
@@ -65,11 +76,15 @@
         </div>
         <figure>{{{fieldPhoto}}}<figcaption><a href="https://tiiame.uz/news?id=9714">{{uPhoto}}</a></figcaption></figure>
       </div>
-      <div class="university-actions" id="prezident-va-tiqxmmi">
+    </section>
+    <section class="wrap section" id="prezident-va-tiqxmmi">
+      <div class="university-actions">
         <h3>{{universityActionsTitle}}</h3>
         <div class="reforms">{{{universityCards}}}</div>
       </div>
-      <div class="university-actions" id="it-markazi">
+    </section>
+    <section class="wrap section" id="it-markazi">
+      <div class="university-actions">
         <h3>{{itCenterTitle}}</h3>
         <p>{{itCenterIntro}} <a href="https://gov.uz/oz/edu/news/view/53069">{{source}}</a></p>
         <p>{{itCenterPresident}} <a href="https://uza.uz/uz/posts/key-tasks-in-the-water-management-sector-discussed_795532">O‘zA</a></p>
@@ -103,7 +118,7 @@
       </div>
     </section>
 
-    <section class="numbers" aria-labelledby="numbers-title">
+    <section class="numbers" id="raqamlar" aria-labelledby="numbers-title">
       <div class="wrap">
         <div class="numbers-header"><h2 id="numbers-title">{{metrics}}</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">{{mSource}}</a></div>
         <dl class="number-grid">
