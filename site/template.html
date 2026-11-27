@@ -67,7 +67,8 @@
             <li><a href="https://www.president.uz/oz/lists/view/9707">{{n9}}</a><span>{{d9}}</span></li>
             <li><a href="https://www.tiiame.uz/news?id=10111">{{n6}}</a><span>{{d6}}</span></li>
           </ul>
-          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">{{bio}}</a><a href="https://president.uz/oz/lists/view/6485">{{inauguration}}</a></div>
+          <p>{{career}}</p>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">{{bio}}</a><a href="https://uza.uz/oz/posts/davlatimiz-rahbari-barcha-yurtdoshlarimga-yana-bir-bor-minnatdorchilik-bildirdi_501877">{{inauguration}} · O‘zA</a><a href="#prezident-va-tiqxmmi">{{universityActionsTitle}}</a></div>
         </div>
       </div>
     </section>
@@ -99,9 +100,21 @@
           <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49" loading="lazy"></a>
           <h2>{{university}}</h2>
           <p>{{uIntro}}</p>
-          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">{{uAbout}}</a><a href="https://www.tiiame.uz/news">{{news}} · TIQXMMI</a></div>
+          <p class="university-facts">{{universityFacts}} <a href="{{{engineeringSource}}}">O‘zA</a></p>
+          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">{{uAbout}}</a><a href="https://www.tiiame.uz/news">{{news}} · TIQXMMI</a><a href="#it-markazi">{{itCenterTitle}}</a></div>
         </div>
         <figure>{{{fieldPhoto}}}<figcaption><a href="https://tiiame.uz/news?id=9714">{{uPhoto}}</a></figcaption></figure>
+      </div>
+      <div class="university-actions" id="prezident-va-tiqxmmi">
+        <h3>{{universityActionsTitle}}</h3>
+        <div class="reforms">{{{universityCards}}}</div>
+      </div>
+      <div class="university-actions" id="it-markazi">
+        <h3>{{itCenterTitle}}</h3>
+        <p>{{itCenterIntro}} <a href="https://gov.uz/oz/edu/news/view/53069">{{source}}</a></p>
+        <p>{{itCenterPresident}} <a href="https://uza.uz/uz/posts/key-tasks-in-the-water-management-sector-discussed_795532">O‘zA</a></p>
+        <div class="it-center-photos">{{{itCenterPhotos}}}</div>
+        <a href="{{{itCenterSource}}}">{{photoSource}} · TIQXMMI</a>
       </div>
     </section>
 

@@ -13,7 +13,7 @@ const read = (name) => readFileSync(new URL(name, import.meta.url), "utf8");
 const template = read("template.html");
 const copy = new Map();
 
-for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt"]) {
+for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "university.txt"]) {
   for (const line of read(file).trim().split(/\r?\n/)) {
     const [key, ...translations] = line.split("|").map((value) => value.trim());
     if (copy.has(key) || translations.length !== locales.length || translations.some((value) => !value)) {
@@ -73,6 +73,16 @@ const reforms = [
   [14, "2020-07-10", "current", law(4892953)],
 ];
 const stateLabel = { result: "resultsTag", current: "currentTag", past: "pastTag" };
+const engineeringSource = "https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888";
+const universityActions = [
+  ["status", "2021-12-10", "https://uza.uz/oz/posts/iqtisodiyot-tarmoqlari-uchun-muhandis-kadrlarni-tayyorlash-tizimini-innovatsiya-va-raqamlashtirish-asosida-tubdan-takomillashtirish-chora-tadbirlari-togrisida_328345"],
+  ["school", "2023-05-29", "https://uza.uz/sp/posts/suvchilar-maktabi-bilim-tajriba-va-kelajak-kafolati_749285"],
+  ["almaty", "2024-08-08", "https://uza.uz/uz/posts/ozbekiston-va-qozogiston-strategik-sheriklik-va-ittifoqchilik-munosabatlari-rivojida-tarixiy-voqea_623388"],
+  ["waterCenter", "2025-11-16", "https://uza.uz/uz/posts/markaziy-osiyo-davlatlari-rahbarlarining-vii-maslahat-uchrashuvida-ozbekiston-respublikasi-prezidenti-ilgari-surgan-asosiy-fikr-va-tashabbuslar_783507"],
+  ["engineering", "2026-03-10", engineeringSource],
+  ["educationDecision", "2026-04-02", law(8115447), "Lex.uz"],
+];
+const itCenterSource = "https://tiiame.uz/news?id=8777";
 
 for (const [index, [lang, , file]] of locales.entries()) {
   const t = (key) => {
@@ -103,6 +113,12 @@ for (const [index, [lang, , file]] of locales.entries()) {
       '<figure>' + photo(image, t("detail" + id)) + '<figcaption><a href="' + escape(url) + '">' + t("detail" + id) + '</a></figcaption></figure>').join("\n          "),
     portrait: photo("portrait.jpg", t("pName")),
     fieldPhoto: photo("field.jpg", t("uPhoto")),
+    engineeringSource,
+    universityCards: universityActions.map(([key, day, url, source = "O‘zA"]) =>
+      '<article class="reform"><div class="meta">' + time(day) + '</div><h4>' + t(key + "Title") + '</h4><p>' + t(key + "Body") + '</p><a href="' + escape(url) + '">' + escape(source) + '</a></article>').join("\n          "),
+    itCenterSource,
+    itCenterPhotos: [3, 1, 4, 2].map((number) =>
+      '<figure>' + photo("it-center-" + number + ".jpg", t("itPhoto" + number)) + '<figcaption>' + t("itPhoto" + number) + '</figcaption></figure>').join("\n          "),
     reformCards: reforms.map(([id, day, state, url]) =>
       '<article class="reform" data-item="' + state + '"><div class="meta">' + time(day) + '<span class="pill ' + state + '">' + t(stateLabel[state]) + '</span></div><h3>' + t("t" + id) + '</h3><p>' + t("s" + id) + '</p><a href="' + escape(url) + '">' + t("source") + '</a></article>').join("\n          "),
   };
