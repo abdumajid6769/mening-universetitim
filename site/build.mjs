@@ -30,7 +30,7 @@ const university = (id) => "https://www.tiiame.uz/news?id=" + id;
 const law = (id) => "https://lex.uz/uz/docs/-" + id;
 const ministry = "https://gov.uz/oz/suvchi/news/view/249915";
 const news = [
-  [14, "2026-11-27", "education", "https://tiiame.uz"],
+  [14, "2026-11-27", "education", "https://www.tiiame.uz/news?id=10135", "meeting-rector-1.jpg"],
   [1, "2026-11-23", "education", university(10128), "physics.jpg"],
   [2, "2026-11-19", "water", ministry],
   [3, "2026-11-18", "city", president(9871)],
@@ -106,7 +106,7 @@ for (const [index, [lang, , file]] of locales.entries()) {
     reformControls: controls([["all", "all"], ...Object.entries(stateLabel)], "searchReforms"),
     newsCards: news.map(([id, day, category, url, image]) =>
       '<article class="news-card" data-item="' + category + '">' +
-      (image ? photo(image, t("n" + id)) : "") + '<div class="news-copy"><div class="meta"><span class="pill">' + t(category) + '</span>' + time(day) + '</div><h3>' + t("n" + id) + '</h3>' + copy.get("d" + id)[index].split("~~").map((paragraph) => '<p>' + escape(paragraph) + '</p>').join("") + '<a href="' + escape(url) + '">' + t("source") + '</a></div></article>').join("\n          "),
+      (image ? photo(image, t("n" + id)) : "") + '<div class="news-copy"><div class="meta"><span class="pill">' + t(category) + '</span>' + time(day) + '</div><h3>' + t("n" + id) + '</h3>' + copy.get("d" + id)[index].split("~~").map((paragraph) => '<p>' + escape(paragraph) + '</p>').join("") + (id === 14 ? '<div class="news-photo-grid">' + [2, 3, 4].map((number) => '<figure>' + photo("meeting-rector-" + number + ".jpg", t("i14photo" + number)) + '<figcaption>' + t("i14photo" + number) + '</figcaption></figure>').join("") + '</div>' : "") + '<a href="' + escape(url) + '">' + t("source") + '</a></div></article>').join("\n          "),
     projectCards: projects.map(([id, place, image, url], position) =>
       '<article class="project' + (position === 0 ? ' project-featured' : '') + '">' + photo(image, t("p" + id)) +
       '<div class="project-copy"><p class="location">' + t(place) + '</p><h3>' + t("p" + id) + '</h3><p>' + t("q" + id) + '</p><a class="text-link" href="' + escape(url) + '">' + t("photoSource") + '</a></div></article>').join("\n          "),
