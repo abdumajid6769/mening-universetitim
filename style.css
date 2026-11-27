@@ -498,3 +498,7 @@ footer { background: #102f32; }
 .future-gallery figcaption { padding: .65rem .25rem .3rem; color: var(--muted); font-size: .9rem; line-height: 1.45; }
 @media (max-width: 820px) { .future-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .future-gallery { grid-template-columns: 1fr; } }
+.chapter-subnav { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1.1rem 0 1.6rem; }
+.chapter-subnav a { display: inline-flex; align-items: center; min-height: 2.5rem; padding: .45rem .85rem; border: 1px solid #cbd9d4; border-radius: 999px; background: #fff; color: #19494a; font-size: .88rem; font-weight: 700; text-decoration: none; }
+.chapter-subnav a:hover, .chapter-subnav a:focus-visible { background: #19494a; color: #fff; }
+#history-overview, #history-timeline, #history-gallery, #yangiliklar, #universitet, #prezident-va-tiqxmmi, #it-markazi, #inshootlar, #islohotlar, #prezident, #organish { scroll-margin-top: 7rem; }
