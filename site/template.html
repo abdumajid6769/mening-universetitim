@@ -24,8 +24,9 @@
   <header class="masthead">
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
-      <nav class="main-nav" aria-label="{{nav}}">
-        <a href="#tarix">{{historyTitle}}</a><a href="#kelajak">{{futureTitle}}</a>
+      <nav class="main-nav" role="tablist" aria-label="{{nav}}">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">{{historyTitle}}</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">{{futureTitle}}</button>
       </nav>
       <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
     </div>
@@ -51,13 +52,13 @@
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">{{sectionsTitle}}</h2><p>{{sectionsIntro}}</p></div>
         <div class="primary-path-grid">
-          <a class="primary-path" href="#tarix"><h3>{{historyTitle}}</h3><p>{{historyIntro}}</p></a>
-          <a class="primary-path" href="#kelajak"><h3>{{futureTitle}}</h3><p>{{futureIntro}}</p></a>
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>{{historyTitle}}</h3><p>{{historyIntro}}</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>{{futureTitle}}</h3><p>{{futureIntro}}</p></button>
         </div>
       </div>
     </section>
 
-    <section class="chapter chapter-history" id="tarix">
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>{{historyTitle}}</h2><p>{{historyIntro}}</p></div>
         <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="{{historyBuildingAlt}}" fetchpriority="high"><figcaption>{{historyBuildingCaption}} <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">{{source}}</a></figcaption></figure>
@@ -83,7 +84,7 @@
       </div>
     </section>
 
-    <section class="future-division" id="kelajak" aria-label="{{futureTitle}}">
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
     <section class="chapter chapter-future">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>{{futureTitle}}</h2><p>{{futureIntro}}</p></div>

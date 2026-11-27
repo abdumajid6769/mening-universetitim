@@ -30,8 +30,9 @@
   <header class="masthead">
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
-      <nav class="main-nav" aria-label="Основное меню">
-        <a href="#tarix">История ТИИИМСХ</a><a href="#kelajak">Будущее ТИИИМСХ</a>
+      <nav class="main-nav" role="tablist" aria-label="Основное меню">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">История ТИИИМСХ</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">Будущее ТИИИМСХ</button>
       </nav>
       <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="Официальный логотип НИУ «ТИИИМСХ»" width="170" height="49"></a>
     </div>
@@ -57,13 +58,13 @@
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">Основные разделы</h2><p>Выберите тему: университет, инициативы президента, водное хозяйство, реформы или справочные материалы.</p></div>
         <div class="primary-path-grid">
-          <a class="primary-path" href="#tarix"><h3>История ТИИИМСХ</h3><p>Исторический путь от инженерного образования в 1923 году до статуса национального исследовательского университета.</p></a>
-          <a class="primary-path" href="#kelajak"><h3>Будущее ТИИИМСХ</h3><p>Новый этап с акцентом на науку, цифровое образование, международное сотрудничество и водную безопасность.</p></a>
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>История ТИИИМСХ</h3><p>Исторический путь от инженерного образования в 1923 году до статуса национального исследовательского университета.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>Будущее ТИИИМСХ</h3><p>Новый этап с акцентом на науку, цифровое образование, международное сотрудничество и водную безопасность.</p></button>
         </div>
       </div>
     </section>
 
-    <section class="chapter chapter-history" id="tarix">
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>История ТИИИМСХ</h2><p>Исторический путь от инженерного образования в 1923 году до статуса национального исследовательского университета.</p></div>
         <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Исторический учебный корпус 1934 года на улице Ниязбек" fetchpriority="high"><figcaption>Современный вид исторического здания, введённого в эксплуатацию в 1934 году. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Официальный источник</a></figcaption></figure>
@@ -89,7 +90,7 @@
       </div>
     </section>
 
-    <section class="future-division" id="kelajak" aria-label="Будущее ТИИИМСХ">
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
     <section class="chapter chapter-future">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>Будущее ТИИИМСХ</h2><p>Новый этап с акцентом на науку, цифровое образование, международное сотрудничество и водную безопасность.</p></div>

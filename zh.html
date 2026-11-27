@@ -30,8 +30,9 @@
   <header class="masthead">
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
-      <nav class="main-nav" aria-label="主导航">
-        <a href="#tarix">TIIAME历史</a><a href="#kelajak">TIIAME的未来</a>
+      <nav class="main-nav" role="tablist" aria-label="主导航">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">TIIAME历史</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">TIIAME的未来</button>
       </nav>
       <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="塔什干灌溉农业机械化工程师学院国立研究型大学官方标识" width="170" height="49"></a>
     </div>
@@ -57,13 +58,13 @@
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">主要栏目</h2><p>选择主题：大学、总统倡议、水资源、改革或知识资源。</p></div>
         <div class="primary-path-grid">
-          <a class="primary-path" href="#tarix"><h3>TIIAME历史</h3><p>从1923年的工程教育起步，到成为国家研究型大学。</p></a>
-          <a class="primary-path" href="#kelajak"><h3>TIIAME的未来</h3><p>聚焦科研、数字教育、国际合作与水安全的新阶段。</p></a>
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>TIIAME历史</h3><p>从1923年的工程教育起步，到成为国家研究型大学。</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>TIIAME的未来</h3><p>聚焦科研、数字教育、国际合作与水安全的新阶段。</p></button>
         </div>
       </div>
     </section>
 
-    <section class="chapter chapter-history" id="tarix">
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIIAME历史</h2><p>从1923年的工程教育起步，到成为国家研究型大学。</p></div>
         <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="尼亚兹别克街1934年历史教学楼" fetchpriority="high"><figcaption>1934年投入使用的历史建筑现貌。 <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">官方来源</a></figcaption></figure>
@@ -89,7 +90,7 @@
       </div>
     </section>
 
-    <section class="future-division" id="kelajak" aria-label="TIIAME的未来">
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
     <section class="chapter chapter-future">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIIAME的未来</h2><p>聚焦科研、数字教育、国际合作与水安全的新阶段。</p></div>

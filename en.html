@@ -30,8 +30,9 @@
   <header class="masthead">
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#tarix">TIIAME history</a><a href="#kelajak">The future of TIIAME</a>
+      <nav class="main-nav" role="tablist" aria-label="Main navigation">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">TIIAME history</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">The future of TIIAME</button>
       </nav>
       <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="Official logo of TIIAME National Research University" width="170" height="49"></a>
     </div>
@@ -57,13 +58,13 @@
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">Explore by topic</h2><p>Choose a topic: the university, presidential initiatives, water management, reforms or learning resources.</p></div>
         <div class="primary-path-grid">
-          <a class="primary-path" href="#tarix"><h3>TIIAME history</h3><p>From engineering education in 1923 to national research university status.</p></a>
-          <a class="primary-path" href="#kelajak"><h3>The future of TIIAME</h3><p>A new chapter focused on research, digital learning, international partnerships and water security.</p></a>
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>TIIAME history</h3><p>From engineering education in 1923 to national research university status.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>The future of TIIAME</h3><p>A new chapter focused on research, digital learning, international partnerships and water security.</p></button>
         </div>
       </div>
     </section>
 
-    <section class="chapter chapter-history" id="tarix">
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIIAME history</h2><p>From engineering education in 1923 to national research university status.</p></div>
         <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Historic 1934 academic building on Niyozbek Street" fetchpriority="high"><figcaption>Present-day view of the historic building opened in 1934. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Official source</a></figcaption></figure>
@@ -89,7 +90,7 @@
       </div>
     </section>
 
-    <section class="future-division" id="kelajak" aria-label="The future of TIIAME">
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
     <section class="chapter chapter-future">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>The future of TIIAME</h2><p>A new chapter focused on research, digital learning, international partnerships and water security.</p></div>

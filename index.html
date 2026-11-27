@@ -30,8 +30,9 @@
   <header class="masthead">
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
-      <nav class="main-nav" aria-label="Asosiy menyu">
-        <a href="#tarix">TIQXMMI tarixi</a><a href="#kelajak">TIQXMMI kelajagi</a>
+      <nav class="main-nav" role="tablist" aria-label="Asosiy menyu">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">TIQXMMI tarixi</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">TIQXMMI kelajagi</button>
       </nav>
       <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="«TIQXMMI» Milliy tadqiqot universitetining rasmiy logotipi" width="170" height="49"></a>
     </div>
@@ -57,13 +58,13 @@
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">Asosiy bölimlar</h2><p>Mavzuni tanlang: universitet, Prezident taşabbuslari, suv sohasi, islohotlar va ma’rifiy manbalar.</p></div>
         <div class="primary-path-grid">
-          <a class="primary-path" href="#tarix"><h3>TIQXMMI tarixi</h3><p>1923-yildagi ilk muhandislik ta’limidan milliy tadqiqot universiteti maqomigaça bölgan tarixiy yöl.</p></a>
-          <a class="primary-path" href="#kelajak"><h3>TIQXMMI kelajagi</h3><p>Ilm-fan, raqamli ta’lim, xalqaro şeriklik va suv xavfsizligiga qaratilgan yangi bosqiç.</p></a>
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>TIQXMMI tarixi</h3><p>1923-yildagi ilk muhandislik ta’limidan milliy tadqiqot universiteti maqomigaça bölgan tarixiy yöl.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>TIQXMMI kelajagi</h3><p>Ilm-fan, raqamli ta’lim, xalqaro şeriklik va suv xavfsizligiga qaratilgan yangi bosqiç.</p></button>
         </div>
       </div>
     </section>
 
-    <section class="chapter chapter-history" id="tarix">
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIQXMMI tarixi</h2><p>1923-yildagi ilk muhandislik ta’limidan milliy tadqiqot universiteti maqomigaça bölgan tarixiy yöl.</p></div>
         <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Niyozbek ko‘chasidagi 1934-yilgi tarixiy o‘quv binosi" fetchpriority="high"><figcaption>1934-yilda foydalanishga topshirilgan tarixiy binoning bugungi ko‘rinishi. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Rasmiy manba</a></figcaption></figure>
@@ -89,7 +90,7 @@
       </div>
     </section>
 
-    <section class="future-division" id="kelajak" aria-label="TIQXMMI kelajagi">
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
     <section class="chapter chapter-future">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIQXMMI kelajagi</h2><p>Ilm-fan, raqamli ta’lim, xalqaro şeriklik va suv xavfsizligiga qaratilgan yangi bosqiç.</p></div>

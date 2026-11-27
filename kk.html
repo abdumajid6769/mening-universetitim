@@ -30,8 +30,9 @@
   <header class="masthead">
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
-      <nav class="main-nav" aria-label="Негізгі мәзір">
-        <a href="#tarix">TIIAME тарихы</a><a href="#kelajak">TIIAME болашағы</a>
+      <nav class="main-nav" role="tablist" aria-label="Негізгі мәзір">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">TIIAME тарихы</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">TIIAME болашағы</button>
       </nav>
       <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="TIIAME Ұлттық зерттеу университетінің ресми логотипі" width="170" height="49"></a>
     </div>
@@ -57,13 +58,13 @@
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">Негізгі бөлімдер</h2><p>Тақырыпты таңдаңыз: университет, Президент бастамалары, су шаруашылығы, реформалар немесе білім ресурстары.</p></div>
         <div class="primary-path-grid">
-          <a class="primary-path" href="#tarix"><h3>TIIAME тарихы</h3><p>1923 жылғы инженерлік білімнен ұлттық зерттеу университеті мәртебесіне дейінгі жол.</p></a>
-          <a class="primary-path" href="#kelajak"><h3>TIIAME болашағы</h3><p>Ғылымға, цифрлық білімге, халықаралық әріптестікке және су қауіпсіздігіне бағытталған жаңа кезең.</p></a>
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>TIIAME тарихы</h3><p>1923 жылғы инженерлік білімнен ұлттық зерттеу университеті мәртебесіне дейінгі жол.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>TIIAME болашағы</h3><p>Ғылымға, цифрлық білімге, халықаралық әріптестікке және су қауіпсіздігіне бағытталған жаңа кезең.</p></button>
         </div>
       </div>
     </section>
 
-    <section class="chapter chapter-history" id="tarix">
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIIAME тарихы</h2><p>1923 жылғы инженерлік білімнен ұлттық зерттеу университеті мәртебесіне дейінгі жол.</p></div>
         <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Ниязбек көшесіндегі 1934 жылғы тарихи оқу ғимараты" fetchpriority="high"><figcaption>1934 жылы пайдалануға берілген тарихи ғимараттың бүгінгі көрінісі. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Ресми дереккөз</a></figcaption></figure>
@@ -89,7 +90,7 @@
       </div>
     </section>
 
-    <section class="future-division" id="kelajak" aria-label="TIIAME болашағы">
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
     <section class="chapter chapter-future">
       <div class="wrap section">
         <div class="section-heading split-heading"><h2>TIIAME болашағы</h2><p>Ғылымға, цифрлық білімге, халықаралық әріптестікке және су қауіпсіздігіне бағытталған жаңа кезең.</p></div>
