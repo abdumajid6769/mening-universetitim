@@ -16,6 +16,7 @@ const copy = new Map();
 
 for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "about.txt"]) {
   for (const line of read(file).trim().split(/\r?\n/)) {
+    if (line.startsWith("#")) continue;
     const [key, ...translations] = line.split("|").map((value) => value.trim());
     if (copy.has(key) || translations.length !== locales.length || translations.some((value) => !value)) {
       throw new Error("Invalid or duplicate translation: " + key);
