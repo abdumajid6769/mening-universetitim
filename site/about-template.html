@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#092f35">
+  <meta name="description" content="{{aboutDesc}}">
+  <title>{{aboutNav}} · Suv Ufqi</title>
+  <link rel="canonical" href="{{{canonical}}}">
+  {{{alternateLinks}}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body class="about-page">
+  <a href="#main" class="skip">{{skip}}</a>
+  <header class="masthead">
+    <div class="wrap top">
+      <a class="brand" href="{{{homeFile}}}"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
+      <nav class="main-nav" aria-label="{{nav}}">
+        <a href="{{{homeFile}}}">{{homeNav}}</a>
+        <a href="{{{homeFile}}}#yangiliklar">{{news}}</a>
+        <a href="{{{homeFile}}}#inshootlar">{{projects}}</a>
+        <a href="{{{homeFile}}}#islohotlar">{{reforms}}</a>
+        <a href="{{{homeFile}}}#prezident">{{president}}</a>
+        <a href="{{{homeFile}}}#organish">{{library}}</a>
+        <a href="{{{aboutFile}}}" aria-current="page">{{aboutNav}}</a>
+      </nav>
+      <a class="university-mark" href="{{{homeFile}}}#universitet"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
+    </div>
+    <nav class="language-strip" aria-label="{{language}}">
+      <div class="wrap language-inner"><span>{{language}}</span>{{{languageLinks}}}</div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="wrap about-hero-grid">
+        <div class="about-hero-copy">
+          <p class="eyebrow">Water Knowledge Hub</p>
+          <h1 id="about-title">{{aboutHeadline}}</h1>
+          <p>{{aboutDesc}}</p>
+          <a class="button primary" href="#explore">{{aboutExplore}}</a>
+        </div>
+        <figure class="about-atlas">
+          <img src="assets/hero.jpg" alt="{{heroPhoto}}" width="1920" height="859" fetchpriority="high">
+          <figcaption>{{heroCaption}}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap section about-mission" aria-labelledby="mission-title">
+      <h2 id="mission-title">{{aboutMission}}</h2>
+      <div>
+        <p>{{aboutPurpose}}</p>
+        <p>{{aboutAudience}}</p>
+      </div>
+    </section>
+
+    <section class="about-explore" id="explore" aria-labelledby="explore-title">
+      <div class="wrap section">
+        <div class="section-heading"><h2 id="explore-title">{{aboutExplore}}</h2></div>
+        <ul class="about-routes">
+          <li>
+            <a href="{{{homeFile}}}#inshootlar">
+              <h3>{{projects}}</h3>
+              <p>{{aboutProjects}}</p>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{{homeFile}}}#islohotlar">
+              <h3>{{reforms}}</h3>
+              <p>{{aboutReforms}}</p>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{{homeFile}}}#organish">
+              <h3>{{library}}</h3>
+              <p>{{aboutLibrary}}</p>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner">
+    <div><a class="brand" href="{{{homeFile}}}"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>{{eduProject}}</p></div>
+    <div class="credit"><strong>{{credits}}</strong><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">{{panorama}}</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. {{creditsEdit}}</p></div>
+  </div></footer>
+</body>
+</html>

@@ -8,8 +8,9 @@ Sayt o‘zbek, rus, soddalashtirilgan xitoy, turkman, ingliz va qozoq tillarida 
 
 ## Mazmunni yangilash
 
-- `site/ui.txt`, `site/stories.txt`, `site/projects.txt` va `site/reforms.txt` fayllaridagi ustunlar tartibi: kalit, o‘zbek, rus, xitoy, turkman, ingliz, qozoq.
+- `site/ui.txt`, `site/stories.txt`, `site/projects.txt`, `site/reforms.txt` va `site/about.txt` fayllaridagi ustunlar tartibi: kalit, o‘zbek, rus, xitoy, turkman, ingliz, qozoq.
+- «Loyiha haqida» sahifasining shabloni `site/about-template.html` faylida, uslublari `about.css` faylida saqlanadi.
 - Sana, toifa, manba va rasm fayli `site/build.mjs` faylida beriladi.
-- `node site/build.mjs` yordamida oltita statik HTML sahifani qayta yarating. GitHub Pages tayyor sahifalarni `main` branchidan yuklaydi.
+- `node site/build.mjs` yordamida bosh sahifa va «Loyiha haqida» sahifasining olti tildagi versiyalarini qayta yarating. GitHub Pages tayyor sahifalarni `main` branchidan yuklaydi.
 
 Yozuvlar va suratlar rasmiy manbalariga bog‘langan. Foto kreditlari saytning quyi qismida keltirilgan.
