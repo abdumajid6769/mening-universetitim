@@ -112,6 +112,15 @@ for (const [index, [lang, , file]] of locales.entries()) {
       '<div class="project-copy"><p class="location">' + t(place) + '</p><h3>' + t("p" + id) + '</h3><p>' + t("q" + id) + '</p><a class="text-link" href="' + escape(url) + '">' + t("photoSource") + '</a></div></article>').join("\n          "),
     gallery: gallery.map(([id, image, url]) =>
       '<figure>' + photo(image, t("detail" + id)) + '<figcaption><a href="' + escape(url) + '">' + t("detail" + id) + '</a></figcaption></figure>').join("\n          "),
+    futureGallery: [
+      ["it-center-3.jpg", "itCenterTitle", itCenterSource],
+      ["it-center-4.jpg", "fDigitalTitle", itCenterSource],
+      ["physics.jpg", "fResearchTitle", university(10128)],
+      ["ai-water-news.jpg", "fWaterTitle", university(10111)],
+      ["field.jpg", "uPhoto", university(9714)],
+      ["water-saving-news.jpg", "fWaterTitle", ministry],
+    ].map(([image, label, source]) =>
+      '<figure>' + photo(image, t(label)) + '<figcaption>' + t(label) + ' · <a href="' + escape(source) + '">' + t("source") + '</a></figcaption></figure>').join("\n          "),
     portrait: photo("portrait.jpg", t("pName")),
     fieldPhoto: photo("field.jpg", t("uPhoto")),
     engineeringSource,

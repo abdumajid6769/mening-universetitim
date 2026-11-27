@@ -492,3 +492,9 @@ footer { background: #102f32; }
 .chapter-future { background: #eaf0ef; }
 @media (max-width: 850px) { .history-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .history-timeline, .history-gallery { grid-template-columns: 1fr; } .history-feature-photo img { max-height: 340px; } }
+.future-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.future-gallery figure { min-width: 0; margin: 0; padding: .6rem; border: 1px solid var(--line); border-radius: .9rem; background: #fff; }
+.future-gallery .photo-link { aspect-ratio: 16 / 10; border-radius: .6rem; }
+.future-gallery figcaption { padding: .65rem .25rem .3rem; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+@media (max-width: 820px) { .future-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .future-gallery { grid-template-columns: 1fr; } }
