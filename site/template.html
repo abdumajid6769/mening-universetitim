@@ -25,7 +25,7 @@
     <div class="wrap top">
       <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
       <nav class="main-nav" aria-label="{{nav}}">
-        <a href="#yangiliklar">{{news}}</a><a href="#universitet">{{universityNav}}</a><a href="#inshootlar">{{projects}}</a><a href="#raqamlar">{{metrics}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a>
+        <a href="#tarix">{{historyTitle}}</a><a href="#kelajak">{{futureTitle}}</a><a href="#yangiliklar">{{news}}</a><a href="#inshootlar">{{projects}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a>
       </nav>
       <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
     </div>
@@ -50,11 +50,33 @@
     <section class="section-index" aria-labelledby="sections-title">
       <div class="wrap section-index-inner">
         <div class="section-index-heading"><h2 id="sections-title">{{sectionsTitle}}</h2><p>{{sectionsIntro}}</p></div>
-        <nav class="section-index-grid" aria-label="{{sectionsTitle}}">
-          <a href="#yangiliklar">{{news}}</a><a href="#universitet">{{universityNav}}</a><a href="#prezident-va-tiqxmmi">{{universityActionsTitle}}</a>
-          <a href="#it-markazi">{{itCenterTitle}}</a><a href="#prezident">{{president}}</a><a href="#inshootlar">{{projects}}</a>
-          <a href="#raqamlar">{{metrics}}</a><a href="#islohotlar">{{reforms}}</a><a href="#organish">{{library}}</a>
-        </nav>
+        <div class="primary-path-grid">
+          <a class="primary-path" href="#tarix"><h3>{{historyTitle}}</h3><p>{{historyIntro}}</p></a>
+          <a class="primary-path" href="#kelajak"><h3>{{futureTitle}}</h3><p>{{futureIntro}}</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-history" id="tarix">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{historyTitle}}</h2><p>{{historyIntro}}</p></div>
+        <div class="chapter-grid">
+          <article class="chapter-card"><span class="chapter-label">{{hOriginLabel}}</span><h3>{{hOriginTitle}}</h3><p>{{hOriginText}}</p><a href="https://www.tiiame.uz/university/university_history/history">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{hTimelineLabel}}</span><h3>{{hTimelineTitle}}</h3><p>{{hTimelineText}}</p><a href="https://www.tiiame.uz/university/university_history/history">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{hHeritageLabel}}</span><h3>{{hHeritageTitle}}</h3><p>{{hHeritageText}}</p><a href="https://www.tiiame.uz/faculties/faculties?id=6">{{source}}</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-future" id="kelajak">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{futureTitle}}</h2><p>{{futureIntro}}</p></div>
+        <div class="chapter-grid chapter-grid-four">
+          <article class="chapter-card"><span class="chapter-label">{{fResearchLabel}}</span><h3>{{fResearchTitle}}</h3><p>{{fResearchText}}</p><a href="https://www.tiiame.uz/university/other/about">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{fDigitalLabel}}</span><h3>{{fDigitalTitle}}</h3><p>{{fDigitalText}}</p><a href="https://www.tiiame.uz/news?id=10111">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{fInternationalLabel}}</span><h3>{{fInternationalTitle}}</h3><p>{{fInternationalText}}</p><a href="https://www.tiiame.uz/university/other/about">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{fWaterLabel}}</span><h3>{{fWaterTitle}}</h3><p>{{fWaterText}}</p><a href="https://www.tiiame.uz/news?id=9714">{{source}}</a></article>
+        </div>
       </div>
     </section>
 

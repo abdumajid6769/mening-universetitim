@@ -345,6 +345,28 @@ a:hover { color: #0d5560; }
   .section-index-grid a { min-height: 56px; padding-inline: .7rem; font-size: .86rem; }
   #yangiliklar, #universitet, #prezident-va-tiqxmmi, #it-markazi, #prezident, #inshootlar, #raqamlar, #islohotlar, #organish { scroll-margin-top: 1rem; }
 }
+.primary-path-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.primary-path { min-height: 142px; display: flex; flex-direction: column; justify-content: center; gap: .55rem; padding: 1.2rem 1.4rem; border: 1px solid #d5e1e2; border-radius: 1rem; background: #fff; color: var(--ink); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.primary-path:hover { transform: translateY(-3px); border-color: #80aeb0; box-shadow: 0 12px 30px #102b3a12; }
+.primary-path h3 { font: 400 clamp(1.65rem, 3vw, 2.5rem)/1.1 var(--display); }
+.primary-path p { max-width: 58ch; color: var(--muted); font-size: .96rem; line-height: 1.55; }
+.chapter { scroll-margin-top: 7rem; }
+.chapter-history { background: #fff; }
+.chapter-future { background: #eaf0ef; border-block: 1px solid var(--line); }
+.chapter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.chapter-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.chapter-card { min-width: 0; min-height: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; padding: clamp(1.25rem, 2.5vw, 1.8rem); border: 1px solid var(--line); border-radius: 1rem; background: #fff; box-shadow: 0 8px 26px #122b3a09; }
+.chapter-label { padding: .2rem .65rem; border-radius: 999px; background: #e4efed; color: #255c5d; font-size: .78rem; font-weight: 800; letter-spacing: .045em; }
+.chapter-card h3 { max-width: 26ch; font-size: clamp(1.2rem, 2.15vw, 1.55rem); }
+.chapter-card p { flex: 1; color: var(--muted); font-size: .96rem; line-height: 1.7; }
+.chapter-card > a { margin-top: .2rem; font-size: .91rem; }
+#tarix, #kelajak { scroll-margin-top: 7rem; }
+@media (max-width: 760px) {
+  .primary-path-grid, .chapter-grid, .chapter-grid-four { grid-template-columns: 1fr; }
+  .primary-path { min-height: 0; padding: 1.1rem; }
+  .chapter-card { min-height: 0; }
+  .chapter { scroll-margin-top: 1rem; }
+}
 
 /* Editorial polish */
 :root {
