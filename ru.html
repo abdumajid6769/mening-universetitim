@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#092f35">
   <meta name="description" content="Новости ТИИИМСХ и Узбекистана, инициативы президента и инфраструктурные проекты.">
-  <title>Suv Ufqi — новости Узбекистана и ТИИИМСХ</title>
+  <title>TIQXMMI kutubxonasi — новости Узбекистана и ТИИИМСХ</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TIQXMMI kutubxonasi — новости Узбекистана и ТИИИМСХ">
+  <meta property="og:description" content="Новости ТИИИМСХ и Узбекистана, инициативы президента и инфраструктурные проекты.">
+  <meta property="og:image" content="https://abdumajid6769.github.io/mening-universetitim/assets/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light">
   <link rel="alternate" hreflang="uz" href="https://abdumajid6769.github.io/mening-universetitim/">
   <link rel="alternate" hreflang="ru" href="https://abdumajid6769.github.io/mening-universetitim/ru.html">
   <link rel="alternate" hreflang="zh-Hans" href="https://abdumajid6769.github.io/mening-universetitim/zh.html">
@@ -23,11 +29,12 @@
   <a href="#main" class="skip">Перейти к основному содержимому</a>
   <header class="masthead">
     <div class="wrap top">
-      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
-      <nav class="main-nav" aria-label="Основное меню">
-        <a href="#yangiliklar">Новости</a><a href="#inshootlar">Объекты</a><a href="#islohotlar">Реформы</a><a href="#prezident">Президент</a><a href="#organish">Библиотека</a><a href="about-ru.html">О проекте</a>
+      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
+      <nav class="main-nav" role="tablist" aria-label="Основное меню">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">История ТИИИМСХ</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">Будущее ТИИИМСХ</button>
       </nav>
-      <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="Официальный логотип НИУ «ТИИИМСХ»" width="170" height="49"></a>
+      <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="Официальный логотип НИУ «ТИИИМСХ»" width="170" height="49"></a>
     </div>
     <nav class="language-strip" aria-label="Язык сайта">
       <div class="wrap language-inner"><span>Язык сайта</span><a lang="uz" hreflang="uz" href="index.html">O‘zbekcha</a><a lang="ru" hreflang="ru" href="ru.html" aria-current="page">Русский</a><a lang="zh-Hans" hreflang="zh-Hans" href="zh.html">简体中文</a><a lang="tk" hreflang="tk" href="tk.html">Türkmençe</a><a lang="en" hreflang="en" href="en.html">English</a><a lang="kk" hreflang="kk" href="kk.html">Қазақша</a></div>
@@ -47,23 +54,153 @@
       </div>
     </section>
 
+    <section class="section-index" aria-labelledby="sections-title">
+      <div class="wrap section-index-inner">
+        <div class="section-index-heading"><h2 id="sections-title">Основные разделы</h2><p>Выберите тему: университет, инициативы президента, водное хозяйство, реформы или справочные материалы.</p></div>
+        <div class="primary-path-grid">
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>История ТИИИМСХ</h3><p>Исторический путь от инженерного образования в 1923 году до статуса национального исследовательского университета.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>Будущее ТИИИМСХ</h3><p>Новый этап с акцентом на науку, цифровое образование, международное сотрудничество и водную безопасность.</p></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>История ТИИИМСХ</h2><p>Исторический путь от инженерного образования в 1923 году до статуса национального исследовательского университета.</p></div>
+        <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Исторический учебный корпус 1934 года на улице Ниязбек" fetchpriority="high"><figcaption>Современный вид исторического здания, введённого в эксплуатацию в 1934 году. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Официальный источник</a></figcaption></figure>
+        <div class="history-gallery" id="history-gallery">
+          <figure><img src="assets/history-anniversary-main.jpg" alt="Мероприятие к 90-летию НИУ ТИИИМСХ" loading="lazy"><figcaption>С международной конференции и юбилейного мероприятия 2025 года. <a href="https://www.tiiame.uz/news?id=8586">Официальный источник</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-2.jpg" alt="Мероприятие к 90-летию НИУ ТИИИМСХ" loading="lazy"><figcaption>С международной конференции и юбилейного мероприятия 2025 года. <a href="https://www.tiiame.uz/news?id=8586">Официальный источник</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-3.jpg" alt="Мероприятие к 90-летию НИУ ТИИИМСХ" loading="lazy"><figcaption>С международной конференции и юбилейного мероприятия 2025 года. <a href="https://www.tiiame.uz/news?id=8586">Официальный источник</a></figcaption></figure>
+        </div>
+        <nav class="chapter-subnav" aria-label="История ТИИИМСХ">
+          <a href="#history-overview">1923 год: первые шаги</a><a href="#history-timeline">От института до национального исследовательского университета</a><a href="#history-gallery">С международной конференции и юбилейного мероприятия 2025 года.</a>
+        </nav>
+        <div class="chapter-grid" id="history-overview">
+          <article class="chapter-card"><span class="chapter-label">Начало</span><h3>1923 год: первые шаги</h3><p>История ТИИИМСХ начинается в 1923 году с создания факультета инженерной мелиорации при техническом факультете Туркестанского государственного университета. Среди первых выпускников были 24 агронома и 16 инженеров-гидромелиораторов.</p><a href="https://www.tiiame.uz/university/university_history/history">Официальный источник</a></article>
+          <article class="chapter-card"><span class="chapter-label">Этапы развития</span><h3>От института до национального исследовательского университета</h3><p>В 1929 году был создан Среднеазиатский хлопково-ирригационный политехнический институт. В 1934 году он стал Ташкентским институтом инженеров ирригации и механизации сельского хозяйства. После преобразования в 2017 году в 2021 году учреждение получило статус национального исследовательского университета.</p><a href="https://www.tiiame.uz/university/university_history/history">Официальный источник</a></article>
+          <article class="chapter-card"><span class="chapter-label">Научное наследие</span><h3>Научная школа ирригации и сельского хозяйства</h3><p>Научная школа гидромелиорации, орошения, мелиорации и механизации сельского хозяйства лежит в основе нынешних образовательных и исследовательских направлений университета.</p><a href="https://www.tiiame.uz/faculties/faculties?id=6">Официальный источник</a></article>
+        </div>
+        <div class="history-timeline" id="history-timeline" aria-label="Основные этапы истории">
+          <article><time>1923</time><h3>Начало инженерного образования</h3><p>История ТИИИМСХ начинается в 1923 году с создания факультета инженерной мелиорации при техническом факультете Туркестанского государственного университета. Среди первых выпускников были 24 агронома и 16 инженеров-гидромелиораторов.</p></article>
+          <article><time>1929–1934</time><h3>Самостоятельный институт и историческое здание</h3><p>В 1929 году был создан Среднеазиатский хлопково-ирригационный политехнический институт. В 1934 году институт оформился и разместился в специально построенном здании на улице Ниязбек.</p></article>
+          <article><time>2004</time><h3>Институт ирригации и мелиорации</h3><p>В 2004 году вуз получил название Ташкентского института ирригации и мелиорации. В дальнейшем расширились образовательные направления и научная деятельность.</p></article>
+          <article><time>2017–2021</time><h3>Реформы и статус национального исследовательского университета</h3><p>Реформы высшего образования 2017 года открыли новый этап. Постановлением PQ-42 от 7 апреля 2021 года университету присвоен статус Национального исследовательского университета.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
+    <section class="chapter chapter-future">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>Будущее ТИИИМСХ</h2><p>Новый этап с акцентом на науку, цифровое образование, международное сотрудничество и водную безопасность.</p></div>
+        <nav class="chapter-subnav" aria-label="Будущее ТИИИМСХ">
+          <a href="#yangiliklar">Новости</a><a href="#universitet">ТИИИМСХ: наука и практика</a><a href="#prezident-va-tiqxmmi">Президент и ТИИИМСХ</a><a href="#it-markazi">IT-центр ТИИИМСХ</a><a href="#inshootlar">Объекты</a><a href="#strategiyalar">Стратегии</a><a href="#islohotlar">Реформы</a><a href="#prezident">Президент</a><a href="#organish">Библиотека ТИИИМСХ</a>
+        </nav>
+        <div class="chapter-grid chapter-grid-four">
+          <article class="chapter-card"><span class="chapter-label">Исследования</span><h3>Национальный исследовательский университет</h3><p>Постановление PQ-42 от 2021 года определило развитие университета как национального исследовательского вуза с упором на инновации и цифровизацию. Среди задач — укрепление инженерного образования, исследований и сотрудничества с производством.</p><a href="https://www.tiiame.uz/university/other/about">Официальный источник</a></article>
+          <article class="chapter-card"><span class="chapter-label">Цифровизация</span><h3>Цифровое обучение и искусственный интеллект</h3><p>Платформа «Цифровой университет», обновление учебных лабораторий, IT-центр и применение искусственного интеллекта призваны расширить возможности обучения и исследований.</p><a href="https://www.tiiame.uz/news?id=10111">Официальный источник</a></article>
+          <article class="chapter-card"><span class="chapter-label">Партнёрство</span><h3>Международное сотрудничество</h3><p>По данным университета, международный филиал в Алматы открылся в 2024 году, а открытие филиала в Бишкеке запланировано на 2028 год. Партнёрства развивают совместные образовательные и научные связи.</p><a href="https://www.tiiame.uz/university/other/about">Официальный источник</a></article>
+          <article class="chapter-card"><span class="chapter-label">Вода и климат</span><h3>Инженерные решения для водной безопасности</h3><p>Обучение и исследования в области ирригации, водосбережения, мелиорации и гидротехники помогают разрабатывать решения водных и климатических проблем региона.</p><a href="https://www.tiiame.uz/news?id=9714">Официальный источник</a></article>
+        </div>
+        <div class="future-gallery" aria-label="Будущее ТИИИМСХ">
+          <figure><a class="photo-link" href="assets/it-center-3.jpg" data-photo><img src="assets/it-center-3.jpg" alt="IT-центр ТИИИМСХ" loading="lazy"></a><figcaption>IT-центр ТИИИМСХ · <a href="https://tiiame.uz/news?id=8777">Официальный источник</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-4.jpg" data-photo><img src="assets/it-center-4.jpg" alt="Цифровое обучение и искусственный интеллект" loading="lazy"></a><figcaption>Цифровое обучение и искусственный интеллект · <a href="https://tiiame.uz/news?id=8777">Официальный источник</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="Национальный исследовательский университет" loading="lazy"></a><figcaption>Национальный исследовательский университет · <a href="https://www.tiiame.uz/news?id=10128">Официальный источник</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/ai-water-news.jpg" data-photo><img src="assets/ai-water-news.jpg" alt="Инженерные решения для водной безопасности" loading="lazy"></a><figcaption>Инженерные решения для водной безопасности · <a href="https://www.tiiame.uz/news?id=10111">Официальный источник</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="Работа специалистов ТИИИМСХ в поле в Ташкентской области" loading="lazy"></a><figcaption>Работа специалистов ТИИИМСХ в поле в Ташкентской области · <a href="https://www.tiiame.uz/news?id=9714">Официальный источник</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/water-saving-news.jpg" data-photo><img src="assets/water-saving-news.jpg" alt="Инженерные решения для водной безопасности" loading="lazy"></a><figcaption>Инженерные решения для водной безопасности · <a href="https://gov.uz/oz/suvchi/news/view/249915">Официальный источник</a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-section" id="strategiyalar">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>Стратегии</h2><p>Подборка ключевых действующих стратегий и программ в области водного хозяйства, сельского хозяйства и развития НИУ ТИИИМСХ.</p></div>
+        <div class="strategy-grid">
+          <article class="strategy-card"><span>2030</span><h3>Стратегия «Узбекистан — 2030»</h3><p>Обновлённая государственная стратегия на 2026–2030 годы: цели по водной безопасности, эффективному сельскому хозяйству и человеческому капиталу.</p><a href="https://lex.uz/uz/docs/-8050769">Официальный источник · PF-21</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>Концепция развития водного хозяйства</h3><p>Концепция на 2020–2030 годы, утверждённая указом PF-6024, направлена на эффективное управление водными ресурсами, модернизацию ирригации и водосбережение.</p><a href="https://lex.uz/uz/docs/-4892953">Официальный источник · PF-6024</a></article>
+          <article class="strategy-card"><span>2025–2028</span><h3>Программа водных ресурсов и ирригации</h3><p>Программа PQ-250 на 2025–2028 годы предусматривает повышение эффективности подачи воды, обновление каналов, модернизацию насосов и цифровой учёт.</p><a href="https://lex.uz/docs/-7686130">Официальный источник · PQ-250</a></article>
+          <article class="strategy-card"><span>PF-183</span><h3>Цифровизация и устойчивое развитие водного сектора</h3><p>Указ PF-183 предусматривает цифровой учёт воды и электроэнергии, развитие системы «Suv hisobi» и создание центра цифровизации в министерстве.</p><a href="https://lex.uz/uz/docs/-7775508">Официальный источник · PF-183</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>Стратегия развития сельского хозяйства</h3><p>Стратегия на 2020–2030 годы, утверждённая указом PF-5853, направлена на рост производительности, продовольственную безопасность, рыночные механизмы и устойчивое развитие сельского хозяйства.</p><a href="https://lex.uz/docs/-4567334">Официальный источник · PF-5853</a></article>
+          <article class="strategy-card"><span>PF-130</span><h3>Современные технологии в сельском хозяйстве</h3><p>Указ PF-130 поддерживает цифровые услуги, дистанционный мониторинг и работу с данными для рационального использования земли и воды и роста производительности.</p><a href="https://lex.uz/docs/-7694880">Официальный источник · PF-130</a></article>
+          <article class="strategy-card"><span>2025–2035</span><h3>Стратегия развития университета на 2025–2035 годы</h3><p>Представленная университетом долгосрочная стратегия предусматривает международную конкурентоспособность, исследования, цифровое обучение и рост позиций в рейтингах QS и THE к 2030 году.</p><a href="https://tiiame.uz/news?id=9470">Официальный источник · TIQXMMI MTU</a></article>
+          <article class="strategy-card"><span>2030</span><h3>Программа развития НИУ ТИИИМСХ до 2030 года</h3><p>Решение PQ-122 предусматривает сближение образовательных стандартов с международными, платформу «Цифровой университет», подготовку инженеров и укрепление связей науки с производством.</p><a href="https://lex.uz/uz/acts/-8115447">Официальный источник · PQ-122</a></article>
+        </div>
+      </div>
+    </section>
+
     <section class="wrap section" id="yangiliklar" data-list data-count="Результатов: {n}">
       <div class="section-heading split-heading"><h2>Новости</h2><p>Жизнь университета, научное сотрудничество и крупные проекты страны.</p></div>
       <div class="controls" hidden><fieldset class="filters"><legend class="sr-only">Фильтр</legend><button type="button" data-filter="all" aria-pressed="true">Все</button><button type="button" data-filter="education" aria-pressed="false">Образование и наука</button><button type="button" data-filter="city" aria-pressed="false">Градостроительство</button><button type="button" data-filter="energy" aria-pressed="false">Энергетика и промышленность</button><button type="button" data-filter="transport" aria-pressed="false">Транспорт</button><button type="button" data-filter="culture" aria-pressed="false">Культура</button><button type="button" data-filter="water" aria-pressed="false">Водное хозяйство</button></fieldset><label class="search"><span class="sr-only">Поиск новостей</span><input type="search" placeholder="Поиск новостей"></label></div><p class="sr-only" data-result-count role="status"></p>
-      <div class="news-grid"><article class="news-card" data-item="education"><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="Результаты школы ТИИИМСХ на олимпиадах по физике" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-23">23 нояб. 2026 г.</time></div><h3>Результаты школы ТИИИМСХ на олимпиадах по физике</h3><p>Ученики и наставники специализированной школы получили награды за результаты на международных олимпиадах по физике.</p><a href="https://www.tiiame.uz/news?id=10128">Официальный источник</a></div></article>
-          <article class="news-card" data-item="water"><div class="news-copy"><div class="meta"><span class="pill">Водное хозяйство</span><time datetime="2026-11-19">19 нояб. 2026 г.</time></div><h3>Итоги экономии воды в 2026 году</h3><p>Министерство сообщило об экономии 10,69 млрд м³ воды в январе–октябре.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Официальный источник</a></div></article>
-          <article class="news-card" data-item="city"><div class="news-copy"><div class="meta"><span class="pill">Градостроительство</span><time datetime="2026-11-18">18 нояб. 2026 г.</time></div><h3>Строительство и озеленение Нового Ташкента</h3><p>На совещании у президента рассмотрели темпы строительства, единую архитектурную концепцию и осеннюю посадку деревьев.</p><a href="https://www.president.uz/oz/lists/view/9871">Официальный источник</a></div></article>
+      <div class="news-grid"><article class="news-card" data-item="education"><a class="photo-link" href="assets/meeting-rector-1.jpg" data-photo><img src="assets/meeting-rector-1.jpg" alt="Уроки из письма внуку президента обсуждают со студентами" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-27">27 нояб. 2026 г.</time></div><h3>Уроки из письма внуку президента обсуждают со студентами</h3><p>На факультетах Национального исследовательского университета «ТИИИМСХ» проходят встречи под руководством ректора. Студентам рассказывают о жизненных уроках и наставлениях из письма президента внуку Шавкатбеку.</p><p>Ректор объясняет значение изложенных в письме мыслей на жизненных примерах. Особое внимание уделяется знаниям, постоянному саморазвитию, разумному использованию современных технологий и искусственного интеллекта, изучению иностранных языков и верности национальным ценностям.</p><p>Наставления ценить каждую минуту, ставить ясные цели и приносить пользу Родине призваны укрепить у молодёжи ответственность, уверенность в будущем и стремление внести вклад в развитие страны.</p><div class="news-photo-grid"><figure><a class="photo-link" href="assets/meeting-rector-2.jpg" data-photo><img src="assets/meeting-rector-2.jpg" alt="Ректор выступает на встрече" loading="lazy"></a><figcaption>Ректор выступает на встрече</figcaption></figure><figure><a class="photo-link" href="assets/meeting-rector-3.jpg" data-photo><img src="assets/meeting-rector-3.jpg" alt="Студенты на встрече" loading="lazy"></a><figcaption>Студенты на встрече</figcaption></figure><figure><a class="photo-link" href="assets/meeting-rector-4.jpg" data-photo><img src="assets/meeting-rector-4.jpg" alt="Участник встречи" loading="lazy"></a><figcaption>Участник встречи</figcaption></figure></div><a href="https://www.tiiame.uz/news?id=10135">Официальный источник</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="Результаты школы ТИИИМСХ на олимпиадах по физике" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-23">23 нояб. 2026 г.</time></div><h3>Результаты школы ТИИИМСХ на олимпиадах по физике</h3><p>Ученики и наставники специализированной школы получили награды за результаты на международных олимпиадах по физике.</p><a href="https://www.tiiame.uz/news?id=10128">Официальный источник</a></div></article>
+          <article class="news-card" data-item="water"><a class="photo-link" href="assets/water-saving-news.jpg" data-photo><img src="assets/water-saving-news.jpg" alt="Итоги экономии воды в 2026 году" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Водное хозяйство</span><time datetime="2026-11-19">19 нояб. 2026 г.</time></div><h3>Итоги экономии воды в 2026 году</h3><p>Министерство сообщило об экономии 10,69 млрд м³ воды в январе–октябре.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Официальный источник</a></div></article>
+          <article class="news-card" data-item="city"><a class="photo-link" href="assets/new-tashkent-news.jpg" data-photo><img src="assets/new-tashkent-news.jpg" alt="Строительство и озеленение Нового Ташкента" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Градостроительство</span><time datetime="2026-11-18">18 нояб. 2026 г.</time></div><h3>Строительство и озеленение Нового Ташкента</h3><p>На совещании у президента рассмотрели темпы строительства, единую архитектурную концепцию и осеннюю посадку деревьев.</p><a href="https://www.president.uz/oz/lists/view/9871">Официальный источник</a></div></article>
           <article class="news-card" data-item="education"><a class="photo-link" href="assets/rectors-forum.jpg" data-photo><img src="assets/rectors-forum.jpg" alt="Узбекско-иорданский форум ректоров в ТИИИМСХ" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-17">17 нояб. 2026 г.</time></div><h3>Узбекско-иорданский форум ректоров в ТИИИМСХ</h3><p>Вузы договорились о совместных образовательных программах, исследованиях и академическом обмене.</p><a href="https://www.tiiame.uz/news?id=10122">Официальный источник</a></div></article>
-          <article class="news-card" data-item="education"><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-17">17 нояб. 2026 г.</time></div><h3>British Council наградил ректора ТИИИМСХ</h3><p>Баходир Мирзаев получил специальную награду за организацию международных экзаменов.</p><a href="https://www.tiiame.uz/news?id=10119">Официальный источник</a></div></article>
-          <article class="news-card" data-item="education"><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-09">9 нояб. 2026 г.</time></div><h3>Искусственный интеллект в обучении ТИИИМСХ</h3><p>Университет сообщил о преобразованиях, предусматривающих применение ИИ в обучении.</p><a href="https://www.tiiame.uz/news?id=10111">Официальный источник</a></div></article>
-          <article class="news-card" data-item="energy"><div class="news-copy"><div class="meta"><span class="pill">Энергетика и промышленность</span><time datetime="2026-11-09">9 нояб. 2026 г.</time></div><h3>Новые мощности электротехнической промышленности</h3><p>На встрече с президентом сообщили о вводе в эксплуатацию 413 новых производственных мощностей.</p><a href="https://www.president.uz/oz/lists/view/9831">Официальный источник</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/british-council-news.jpg" data-photo><img src="assets/british-council-news.jpg" alt="British Council наградил ректора ТИИИМСХ" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-17">17 нояб. 2026 г.</time></div><h3>British Council наградил ректора ТИИИМСХ</h3><p>Баходир Мирзаев получил специальную награду за организацию международных экзаменов.</p><a href="https://www.tiiame.uz/news?id=10119">Официальный источник</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/ai-water-news.jpg" data-photo><img src="assets/ai-water-news.jpg" alt="Искусственный интеллект в обучении ТИИИМСХ" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Образование и наука</span><time datetime="2026-11-09">9 нояб. 2026 г.</time></div><h3>Искусственный интеллект в обучении ТИИИМСХ</h3><p>Университет сообщил о преобразованиях, предусматривающих применение ИИ в обучении.</p><a href="https://www.tiiame.uz/news?id=10111">Официальный источник</a></div></article>
+          <article class="news-card" data-item="energy"><a class="photo-link" href="assets/industry-news.jpg" data-photo><img src="assets/industry-news.jpg" alt="Новые мощности электротехнической промышленности" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Энергетика и промышленность</span><time datetime="2026-11-09">9 нояб. 2026 г.</time></div><h3>Новые мощности электротехнической промышленности</h3><p>На встрече с президентом сообщили о вводе в эксплуатацию 413 новых производственных мощностей.</p><a href="https://www.president.uz/oz/lists/view/9831">Официальный источник</a></div></article>
           <article class="news-card" data-item="culture"><a class="photo-link" href="assets/imam-bukhari.jpg" data-photo><img src="assets/imam-bukhari.jpg" alt="Обновление комплекса Имама Бухари" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Культура</span><time datetime="2026-10-18">18 окт. 2026 г.</time></div><h3>Обновление комплекса Имама Бухари</h3><p>Президент ознакомился с условиями для паломников в заново построенном комплексе в Самаркандской области.</p><a href="https://www.president.uz/oz/lists/view/9737">Официальный источник</a></div></article>
           <article class="news-card" data-item="city"><a class="photo-link" href="assets/new-tashkent.jpg" data-photo><img src="assets/new-tashkent.jpg" alt="В Новом Ташкенте открыли семь объектов" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Градостроительство</span><time datetime="2026-10-12">12 окт. 2026 г.</time></div><h3>В Новом Ташкенте открыли семь объектов</h3><p>В числе открытых объектов — школа на 2 000 мест, парк «Сохил» и энергетическая инфраструктура.</p><a href="https://www.president.uz/oz/lists/view/9707">Официальный источник</a></div></article>
-          <article class="news-card" data-item="culture"><div class="news-copy"><div class="meta"><span class="pill">Культура</span><time datetime="2026-09-11">11 сент. 2026 г.</time></div><h3>Строительство Национального музея Узбекистана</h3><p>Президент осмотрел стройплощадку музея по проекту Тадао Андо. Строительство продолжается.</p><a href="https://www.president.uz/oz/lists/view/9600">Официальный источник</a></div></article>
-          <article class="news-card" data-item="energy"><div class="news-copy"><div class="meta"><span class="pill">Энергетика и промышленность</span><time datetime="2026-08-13">13 авг. 2026 г.</time></div><h3>Улучшение энергоснабжения в регионах</h3><p>Президенту представили опыт 14 районов, меры по сокращению потерь и пятилетнюю программу.</p><a href="https://www.president.uz/oz/lists/view/9496">Официальный источник</a></div></article>
-          <article class="news-card" data-item="transport"><div class="news-copy"><div class="meta"><span class="pill">Транспорт</span><time datetime="2026-07-31">31 июл. 2026 г.</time></div><h3>Новые направления железнодорожной сети</h3><p>Построены линии Самарканд–Ургут и аэропорт Ургенча–Хива. На участке Навои–Бухара открыли вторую электрифицированную линию.</p><a href="https://www.president.uz/oz/lists/view/9479">Официальный источник</a></div></article>
-          <article class="news-card" data-item="culture"><div class="news-copy"><div class="meta"><span class="pill">Культура</span><time datetime="2026-07-07">7 июл. 2026 г.</time></div><h3>Международный форум исламской цивилизации</h3><p>Первый форум в Центре исламской цивилизации в Узбекистане собрал участников более чем из 40 стран.</p><a href="https://www.president.uz/oz/lists/view/9390">Официальный источник</a></div></article></div>
+          <article class="news-card" data-item="culture"><a class="photo-link" href="assets/national-museum-news.jpg" data-photo><img src="assets/national-museum-news.jpg" alt="Строительство Национального музея Узбекистана" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Культура</span><time datetime="2026-09-11">11 сент. 2026 г.</time></div><h3>Строительство Национального музея Узбекистана</h3><p>Президент осмотрел стройплощадку музея по проекту Тадао Андо. Строительство продолжается.</p><a href="https://www.president.uz/oz/lists/view/9600">Официальный источник</a></div></article>
+          <article class="news-card" data-item="energy"><a class="photo-link" href="assets/regional-energy-news.jpg" data-photo><img src="assets/regional-energy-news.jpg" alt="Улучшение энергоснабжения в регионах" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Энергетика и промышленность</span><time datetime="2026-08-13">13 авг. 2026 г.</time></div><h3>Улучшение энергоснабжения в регионах</h3><p>Президенту представили опыт 14 районов, меры по сокращению потерь и пятилетнюю программу.</p><a href="https://www.president.uz/oz/lists/view/9496">Официальный источник</a></div></article>
+          <article class="news-card" data-item="transport"><a class="photo-link" href="assets/railway-news.jpg" data-photo><img src="assets/railway-news.jpg" alt="Новые направления железнодорожной сети" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Транспорт</span><time datetime="2026-07-31">31 июл. 2026 г.</time></div><h3>Новые направления железнодорожной сети</h3><p>Построены линии Самарканд–Ургут и аэропорт Ургенча–Хива. На участке Навои–Бухара открыли вторую электрифицированную линию.</p><a href="https://www.president.uz/oz/lists/view/9479">Официальный источник</a></div></article>
+          <article class="news-card" data-item="culture"><a class="photo-link" href="assets/civilization-forum-news.jpg" data-photo><img src="assets/civilization-forum-news.jpg" alt="Международный форум исламской цивилизации" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Культура</span><time datetime="2026-07-07">7 июл. 2026 г.</time></div><h3>Международный форум исламской цивилизации</h3><p>Первый форум в Центре исламской цивилизации в Узбекистане собрал участников более чем из 40 стран.</p><a href="https://www.president.uz/oz/lists/view/9390">Официальный источник</a></div></article></div>
       <p class="empty" hidden>Подходящих записей нет.</p>
+    </section>
+
+    <section class="wrap section" id="universitet">
+      <div class="university-feature">
+        <div class="university-copy">
+          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="Официальный логотип НИУ «ТИИИМСХ»" width="170" height="49" loading="lazy"></a>
+          <h2>ТИИИМСХ: наука и практика</h2>
+          <p>Национальный исследовательский университет готовит специалистов по ирригации, мелиорации и гидротехнике. В 2026 году его специалисты изучили монтаж водосберегающего оборудования и труб в Ташкентской области и подготовили рекомендации.</p>
+          <p class="university-facts">По данным УзА от 10 марта 2026 года, в университете обучались более 11 тысяч студентов, действовали 7 факультетов, 37 кафедр и 38 направлений подготовки. <a href="https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888">O‘zA</a></p>
+          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">Об университете</a><a href="https://www.tiiame.uz/news">Новости · TIQXMMI</a><a href="#it-markazi">IT-центр ТИИИМСХ</a></div>
+        </div>
+        <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="Работа специалистов ТИИИМСХ в поле в Ташкентской области" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">Работа специалистов ТИИИМСХ в поле в Ташкентской области</a></figcaption></figure>
+      </div>
+    </section>
+    <section class="wrap section" id="prezident-va-tiqxmmi">
+      <div class="university-actions">
+        <h3>Президент и ТИИИМСХ</h3>
+        <div class="reforms"><article class="reform"><div class="meta"><time datetime="2021-12-10">10 дек. 2021 г.</time></div><h4>Статус национального исследовательского университета</h4><p>Постановлением президента № ПП-42 институт получил статус национального исследовательского университета. Документ одобрил создание Института фундаментальных и прикладных исследований и утвердил программу модернизации учебных лабораторий.</p><a href="https://uza.uz/oz/posts/iqtisodiyot-tarmoqlari-uchun-muhandis-kadrlarni-tayyorlash-tizimini-innovatsiya-va-raqamlashtirish-asosida-tubdan-takomillashtirish-chora-tadbirlari-togrisida_328345">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2023-05-29">29 мая 2023 г.</time></div><h4>Открылась Школа водников</h4><p>По инициативе президента при ТИИИМСХ открылась Школа водников. Она обучает фермеров и специалистов водного хозяйства практическому применению водосберегающих технологий.</p><a href="https://uza.uz/sp/posts/suvchilar-maktabi-bilim-tajriba-va-kelajak-kafolati_749285">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2024-08-08">8 авг. 2024 г.</time></div><h4>Открылся филиал в Алматы</h4><p>Шавкат Мирзиёев и президент Казахстана Касым-Жомарт Токаев торжественно открыли филиал ТИИИМСХ в Алматы для подготовки специалистов по востребованным техническим направлениям.</p><a href="https://uza.uz/uz/posts/ozbekiston-va-qozogiston-strategik-sheriklik-va-ittifoqchilik-munosabatlari-rivojida-tarixiy-voqea_623388">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2025-11-16">16 нояб. 2025 г.</time></div><h4>Предложен региональный центр водного хозяйства</h4><p>На встрече глав государств Центральной Азии президент предложил создать при ТИИИМСХ региональный центр компетенций для подготовки специалистов водного хозяйства.</p><a href="https://uza.uz/uz/posts/markaziy-osiyo-davlatlari-rahbarlarining-vii-maslahat-uchrashuvida-ozbekiston-respublikasi-prezidenti-ilgari-surgan-asosiy-fikr-va-tashabbuslar_783507">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2026-03-10">10 мар. 2026 г.</time></div><h4>Инженерное образование и водная дипломатия</h4><p>Президент рассмотрел предложения по инженерному образованию. Для дуального обучения предложили четыре дня теории и два дня оплачиваемой практики в неделю. Одобрено предложение расширить магистратуру по водной дипломатии и увеличить число грантовых мест.</p><a href="https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2026-04-02">2 апр. 2026 г.</time></div><h4>Новое решение об образовании и лабораториях</h4><p>Постановление президента № ПП-122 предусмотрело внедрение дуального обучения, создание платформы «Цифровой университет» и модернизацию учебных лабораторий ТИИИМСХ в 2026–2028 годах.</p><a href="https://lex.uz/uz/docs/-8115447">Lex.uz</a></article></div>
+      </div>
+    </section>
+    <section class="wrap section" id="it-markazi">
+      <div class="university-actions">
+        <h3>IT-центр ТИИИМСХ</h3>
+        <p>Четырёхэтажный IT-центр открылся 10 мая 2025 года. В нём есть помещения для программирования и обучения, офис регистратора и отдел разработки ПО для цифрового управления водными ресурсами. <a href="https://gov.uz/oz/edu/news/view/53069">Официальный источник</a></p>
+        <p>По сообщению УзА, 15 декабря 2025 года президенту доложили об IT-центре на 200 мест, цифровой библиотеке и офисе регистратора. Президент поручил разработать меры для вхождения ТИИИМСХ в число 300 лучших университетов мира. <a href="https://uza.uz/uz/posts/key-tasks-in-the-water-management-sector-discussed_795532">O‘zA</a></p>
+        <div class="it-center-photos"><figure><a class="photo-link" href="assets/it-center-3.jpg" data-photo><img src="assets/it-center-3.jpg" alt="Здание IT-центра" loading="lazy"></a><figcaption>Здание IT-центра</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-1.jpg" data-photo><img src="assets/it-center-1.jpg" alt="Перерезание ленты на открытии" loading="lazy"></a><figcaption>Перерезание ленты на открытии</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-4.jpg" data-photo><img src="assets/it-center-4.jpg" alt="Зал программирования центра" loading="lazy"></a><figcaption>Зал программирования центра</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-2.jpg" data-photo><img src="assets/it-center-2.jpg" alt="Меморандум о сотрудничестве" loading="lazy"></a><figcaption>Меморандум о сотрудничестве</figcaption></figure></div>
+        <a href="https://tiiame.uz/news?id=8777">Фоторепортаж и источник · TIQXMMI</a>
+      </div>
+    </section>
+
+    <section class="president-section" id="prezident">
+      <div class="wrap president-grid">
+        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo><img src="assets/portrait.jpg" alt="Шавкат Мирзиёев" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Пресс-служба Президента Республики Узбекистан</a></figcaption></figure>
+        <div class="president-copy">
+          <p class="eyebrow">Президент</p><h2>Шавкат Мирзиёев</h2>
+          <p>В 1981 году окончил ТИИИМСХ по специальности инженер-механик. Работал в институте научным сотрудником, преподавателем и проректором. Избран президентом в 2016 году, после выборов 2023 года вступил в должность 14 июля.</p>
+          <ul class="initiatives">
+            <li><a href="https://lex.uz/uz/docs/-7686130">Развитие ирригации в 2025–2028 годах</a><span>Программа ПП–250 предусматривает обновление каналов и сооружений, цифровизацию управления и внедрение водосберегающих технологий.</span></li>
+            <li><a href="https://www.president.uz/oz/lists/view/9707">В Новом Ташкенте открыли семь объектов</a><span>В числе открытых объектов — школа на 2 000 мест, парк «Сохил» и энергетическая инфраструктура.</span></li>
+            <li><a href="https://www.tiiame.uz/news?id=10111">Искусственный интеллект в обучении ТИИИМСХ</a><span>Университет сообщил о преобразованиях, предусматривающих применение ИИ в обучении.</span></li>
+          </ul>
+          <p>Родился 24 июля 1957 года в Зааминском районе Джизакской области. Кандидат технических наук, доцент. В 2003 году утверждён премьер-министром Узбекистана.</p>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Официальная биография</a><a href="https://uza.uz/oz/posts/davlatimiz-rahbari-barcha-yurtdoshlarimga-yana-bir-bor-minnatdorchilik-bildirdi_501877">Вступление в должность в 2023 году · O‘zA</a><a href="#prezident-va-tiqxmmi">Президент и ТИИИМСХ</a></div>
+        </div>
+      </div>
     </section>
 
     <section class="projects-section" id="inshootlar">
@@ -80,23 +217,7 @@
       </div>
     </section>
 
-    <section class="president-section" id="prezident">
-      <div class="wrap president-grid">
-        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo><img src="assets/portrait.jpg" alt="Шавкат Мирзиёев" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Пресс-служба Президента Республики Узбекистан</a></figcaption></figure>
-        <div class="president-copy">
-          <p class="eyebrow">Президент</p><h2>Шавкат Мирзиёев</h2>
-          <p>В 1981 году окончил ТИИИМСХ по специальности инженер-механик. Работал в институте научным сотрудником, преподавателем и проректором. Избран президентом в 2016 году, после выборов 2023 года вступил в должность 14 июля.</p>
-          <ul class="initiatives">
-            <li><a href="https://lex.uz/uz/docs/-7686130">Развитие ирригации в 2025–2028 годах</a><span>Программа ПП–250 предусматривает обновление каналов и сооружений, цифровизацию управления и внедрение водосберегающих технологий.</span></li>
-            <li><a href="https://www.president.uz/oz/lists/view/9707">В Новом Ташкенте открыли семь объектов</a><span>В числе открытых объектов — школа на 2 000 мест, парк «Сохил» и энергетическая инфраструктура.</span></li>
-            <li><a href="https://www.tiiame.uz/news?id=10111">Искусственный интеллект в обучении ТИИИМСХ</a><span>Университет сообщил о преобразованиях, предусматривающих применение ИИ в обучении.</span></li>
-          </ul>
-          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Официальная биография</a><a href="https://president.uz/oz/lists/view/6485">Вступление в должность в 2023 году</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="numbers" aria-labelledby="numbers-title">
+    <section class="numbers" id="raqamlar" aria-labelledby="numbers-title">
       <div class="wrap">
         <div class="numbers-header"><h2 id="numbers-title">Водное хозяйство в цифрах</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">Минводхоз · ноябрь 2026 года</a></div>
         <dl class="number-grid">
@@ -130,21 +251,9 @@
       </div>
     </section>
 
-    <section class="wrap section" id="universitet">
-      <div class="university-feature">
-        <div class="university-copy">
-          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="Официальный логотип НИУ «ТИИИМСХ»" width="170" height="49" loading="lazy"></a>
-          <h2>ТИИИМСХ: наука и практика</h2>
-          <p>Национальный исследовательский университет готовит специалистов по ирригации, мелиорации и гидротехнике. В 2026 году его специалисты изучили монтаж водосберегающего оборудования и труб в Ташкентской области и подготовили рекомендации.</p>
-          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">Об университете</a><a href="https://www.tiiame.uz/news">Новости · TIQXMMI</a></div>
-        </div>
-        <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="Работа специалистов ТИИИМСХ в поле в Ташкентской области" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">Работа специалистов ТИИИМСХ в поле в Ташкентской области</a></figcaption></figure>
-      </div>
-    </section>
-
     <section class="library" id="organish">
       <div class="wrap section">
-        <div class="section-heading"><h2>Библиотека</h2></div>
+        <div class="section-heading"><h2>Библиотека ТИИИМСХ</h2></div>
         <div class="card-grid">
           <article class="card"><h3><a href="https://waterknowledgehub.org/learn">Комплексное управление водными ресурсами</a></h3></article>
           <article class="card"><h3><a href="https://waterknowledgehub.org/country-info/UZ">Опыт Узбекистана</a></h3></article>
@@ -152,13 +261,14 @@
         </div>
       </div>
     </section>
+    </section>
   </main>
   <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="photo-title">
     <div class="viewer-bar"><p id="photo-title">Фотография</p><form method="dialog"><button type="submit">Закрыть</button></form></div>
     <img src="assets/termiz.jpg" alt="">
   </dialog>
   <footer id="surat-manbalari"><div class="wrap footer-inner">
-    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>Учебный проект о ТИИИМСХ и Узбекистане.</p></div>
+    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a><p>Учебный проект о ТИИИМСХ и Узбекистане.</p><p><a href="about-ru.html">О проекте</a></p></div>
     <div class="credit"><strong>Источники фотографий</strong><p><a href="https://president.uz/oz">Пресс-служба Президента Республики Узбекистан</a> · <a href="https://tiiame.uz/tiiame_national_research_university_logo">TIQXMMI</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">Панорама Чарвака · Arina Pan</a> · <a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Шавкат Мирзиёев</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Размер панорамы уменьшен. При показе на странице фотографии кадрируются.</p></div>
   </div></footer>
 </body>

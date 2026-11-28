@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#092f35">
   <meta name="description" content="TIIAME and Uzbekistan news, presidential initiatives and completed infrastructure projects.">
-  <title>Suv Ufqi — Uzbekistan and TIIAME news</title>
+  <title>TIQXMMI kutubxonasi — Uzbekistan and TIIAME news</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TIQXMMI kutubxonasi — Uzbekistan and TIIAME news">
+  <meta property="og:description" content="TIIAME and Uzbekistan news, presidential initiatives and completed infrastructure projects.">
+  <meta property="og:image" content="https://abdumajid6769.github.io/mening-universetitim/assets/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light">
   <link rel="alternate" hreflang="uz" href="https://abdumajid6769.github.io/mening-universetitim/">
   <link rel="alternate" hreflang="ru" href="https://abdumajid6769.github.io/mening-universetitim/ru.html">
   <link rel="alternate" hreflang="zh-Hans" href="https://abdumajid6769.github.io/mening-universetitim/zh.html">
@@ -23,11 +29,12 @@
   <a href="#main" class="skip">Skip to main content</a>
   <header class="masthead">
     <div class="wrap top">
-      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#yangiliklar">News</a><a href="#inshootlar">Projects</a><a href="#islohotlar">Reforms</a><a href="#prezident">President</a><a href="#organish">Knowledge library</a><a href="about-en.html">About</a>
+      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
+      <nav class="main-nav" role="tablist" aria-label="Main navigation">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">TIIAME history</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">The future of TIIAME</button>
       </nav>
-      <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="Official logo of TIIAME National Research University" width="170" height="49"></a>
+      <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="Official logo of TIIAME National Research University" width="170" height="49"></a>
     </div>
     <nav class="language-strip" aria-label="Site language">
       <div class="wrap language-inner"><span>Site language</span><a lang="uz" hreflang="uz" href="index.html">O‘zbekcha</a><a lang="ru" hreflang="ru" href="ru.html">Русский</a><a lang="zh-Hans" hreflang="zh-Hans" href="zh.html">简体中文</a><a lang="tk" hreflang="tk" href="tk.html">Türkmençe</a><a lang="en" hreflang="en" href="en.html" aria-current="page">English</a><a lang="kk" hreflang="kk" href="kk.html">Қазақша</a></div>
@@ -47,23 +54,153 @@
       </div>
     </section>
 
+    <section class="section-index" aria-labelledby="sections-title">
+      <div class="wrap section-index-inner">
+        <div class="section-index-heading"><h2 id="sections-title">Explore by topic</h2><p>Choose a topic: the university, presidential initiatives, water management, reforms or learning resources.</p></div>
+        <div class="primary-path-grid">
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>TIIAME history</h3><p>From engineering education in 1923 to national research university status.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>The future of TIIAME</h3><p>A new chapter focused on research, digital learning, international partnerships and water security.</p></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>TIIAME history</h2><p>From engineering education in 1923 to national research university status.</p></div>
+        <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Historic 1934 academic building on Niyozbek Street" fetchpriority="high"><figcaption>Present-day view of the historic building opened in 1934. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Official source</a></figcaption></figure>
+        <div class="history-gallery" id="history-gallery">
+          <figure><img src="assets/history-anniversary-main.jpg" alt="TIIAME National Research University 90th anniversary event" loading="lazy"><figcaption>At the 2025 international conference and anniversary event. <a href="https://www.tiiame.uz/news?id=8586">Official source</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-2.jpg" alt="TIIAME National Research University 90th anniversary event" loading="lazy"><figcaption>At the 2025 international conference and anniversary event. <a href="https://www.tiiame.uz/news?id=8586">Official source</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-3.jpg" alt="TIIAME National Research University 90th anniversary event" loading="lazy"><figcaption>At the 2025 international conference and anniversary event. <a href="https://www.tiiame.uz/news?id=8586">Official source</a></figcaption></figure>
+        </div>
+        <nav class="chapter-subnav" aria-label="TIIAME history">
+          <a href="#history-overview">1923: the beginnings</a><a href="#history-timeline">From institute to national research university</a><a href="#history-gallery">At the 2025 international conference and anniversary event.</a>
+        </nav>
+        <div class="chapter-grid" id="history-overview">
+          <article class="chapter-card"><span class="chapter-label">Origins</span><h3>1923: the beginnings</h3><p>TIIAME’s history begins in 1923, with the establishment of an engineering land-reclamation faculty at the technical faculty of Turkestan State University. Its early graduates included 24 agronomists and 16 hydro-reclamation engineers.</p><a href="https://www.tiiame.uz/university/university_history/history">Official source</a></article>
+          <article class="chapter-card"><span class="chapter-label">Milestones</span><h3>From institute to national research university</h3><p>The Central Asian Cotton Irrigation Polytechnic Institute was established in 1929. In 1934 it became the Tashkent Institute of Irrigation and Agricultural Mechanization Engineers. Reorganized in 2017, it gained national research university status in 2021.</p><a href="https://www.tiiame.uz/university/university_history/history">Official source</a></article>
+          <article class="chapter-card"><span class="chapter-label">Academic legacy</span><h3>Research in irrigation and agriculture</h3><p>The university’s research tradition in hydro-reclamation, irrigation, land reclamation and agricultural mechanization underpins its current teaching and research.</p><a href="https://www.tiiame.uz/faculties/faculties?id=6">Official source</a></article>
+        </div>
+        <div class="history-timeline" id="history-timeline" aria-label="Historical milestones">
+          <article><time>1923</time><h3>Engineering education begins</h3><p>TIIAME’s history begins in 1923, with the establishment of an engineering land-reclamation faculty at the technical faculty of Turkestan State University. Its early graduates included 24 agronomists and 16 hydro-reclamation engineers.</p></article>
+          <article><time>1929–1934</time><h3>Independent institute and historic building</h3><p>The Central Asian Cotton and Irrigation Polytechnic Institute was established in 1929. In 1934 it took shape as an institute and moved into a purpose-built building on Niyozbek Street.</p></article>
+          <article><time>2004</time><h3>Institute of Irrigation and Land Reclamation</h3><p>In 2004, the university was renamed the Tashkent Institute of Irrigation and Land Reclamation. Its academic programs and research later expanded.</p></article>
+          <article><time>2017–2021</time><h3>Reforms and national research university status</h3><p>Higher education reforms in 2017 began a new phase. Under Resolution PQ-42 of 7 April 2021, the university received National Research University status.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
+    <section class="chapter chapter-future">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>The future of TIIAME</h2><p>A new chapter focused on research, digital learning, international partnerships and water security.</p></div>
+        <nav class="chapter-subnav" aria-label="The future of TIIAME">
+          <a href="#yangiliklar">News</a><a href="#universitet">TIIAME: research and practice</a><a href="#prezident-va-tiqxmmi">The president and TIIAME</a><a href="#it-markazi">TIIAME IT Centre</a><a href="#inshootlar">Projects</a><a href="#strategiyalar">Strategies</a><a href="#islohotlar">Reforms</a><a href="#prezident">President</a><a href="#organish">TIIAME Library</a>
+        </nav>
+        <div class="chapter-grid chapter-grid-four">
+          <article class="chapter-card"><span class="chapter-label">Research</span><h3>National research university</h3><p>Resolution PQ-42 of 2021 set out the university’s development as a national research institution focused on innovation and digitalization, strengthening engineering education, research and industry links.</p><a href="https://www.tiiame.uz/university/other/about">Official source</a></article>
+          <article class="chapter-card"><span class="chapter-label">Digital learning</span><h3>Digital learning and artificial intelligence</h3><p>The Digital University platform, upgraded teaching laboratories, IT centre and artificial intelligence initiatives aim to expand learning and research.</p><a href="https://www.tiiame.uz/news?id=10111">Official source</a></article>
+          <article class="chapter-card"><span class="chapter-label">Partnerships</span><h3>International partnerships</h3><p>The university says its Almaty branch opened in 2024, with a Bishkek branch planned for 2028. Partnerships support joint education and research.</p><a href="https://www.tiiame.uz/university/other/about">Official source</a></article>
+          <article class="chapter-card"><span class="chapter-label">Water and climate</span><h3>Engineering for water security</h3><p>Teaching and research in irrigation, water conservation, land reclamation and hydraulic engineering contribute to solutions for regional water and climate challenges.</p><a href="https://www.tiiame.uz/news?id=9714">Official source</a></article>
+        </div>
+        <div class="future-gallery" aria-label="The future of TIIAME">
+          <figure><a class="photo-link" href="assets/it-center-3.jpg" data-photo><img src="assets/it-center-3.jpg" alt="TIIAME IT Centre" loading="lazy"></a><figcaption>TIIAME IT Centre · <a href="https://tiiame.uz/news?id=8777">Official source</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-4.jpg" data-photo><img src="assets/it-center-4.jpg" alt="Digital learning and artificial intelligence" loading="lazy"></a><figcaption>Digital learning and artificial intelligence · <a href="https://tiiame.uz/news?id=8777">Official source</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="National research university" loading="lazy"></a><figcaption>National research university · <a href="https://www.tiiame.uz/news?id=10128">Official source</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/ai-water-news.jpg" data-photo><img src="assets/ai-water-news.jpg" alt="Engineering for water security" loading="lazy"></a><figcaption>Engineering for water security · <a href="https://www.tiiame.uz/news?id=10111">Official source</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="TIIAME specialists at work in the Tashkent Region" loading="lazy"></a><figcaption>TIIAME specialists at work in the Tashkent Region · <a href="https://www.tiiame.uz/news?id=9714">Official source</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/water-saving-news.jpg" data-photo><img src="assets/water-saving-news.jpg" alt="Engineering for water security" loading="lazy"></a><figcaption>Engineering for water security · <a href="https://gov.uz/oz/suvchi/news/view/249915">Official source</a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-section" id="strategiyalar">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>Strategies</h2><p>A curated overview of major current strategies and programmes for water, agriculture and TIIAME National Research University.</p></div>
+        <div class="strategy-grid">
+          <article class="strategy-card"><span>2030</span><h3>Uzbekistan–2030 Strategy</h3><p>The updated national strategy for 2026–2030 sets goals for water security, productive agriculture and human capital.</p><a href="https://lex.uz/uz/docs/-8050769">Official source · PF-21</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>Water Sector Development Concept</h3><p>The 2020–2030 concept approved by Decree PF-6024 focuses on efficient water management, irrigation upgrades and conservation.</p><a href="https://lex.uz/uz/docs/-4892953">Official source · PF-6024</a></article>
+          <article class="strategy-card"><span>2025–2028</span><h3>Water Resources and Irrigation Programme</h3><p>The 2025–2028 programme under Resolution PQ-250 targets better water delivery, canal rehabilitation, pump upgrades and digital accounting.</p><a href="https://lex.uz/docs/-7686130">Official source · PQ-250</a></article>
+          <article class="strategy-card"><span>PF-183</span><h3>Digitalization and Sustainable Water Management</h3><p>Decree PF-183 advances digital water and electricity accounting, the Suv Hisobi system and a dedicated ministry digitalization centre.</p><a href="https://lex.uz/uz/docs/-7775508">Official source · PF-183</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>Agriculture Development Strategy</h3><p>The 2020–2030 strategy approved by Decree PF-5853 addresses productivity, food security, market mechanisms and sustainable agriculture.</p><a href="https://lex.uz/docs/-4567334">Official source · PF-5853</a></article>
+          <article class="strategy-card"><span>PF-130</span><h3>Modern Technology in Agriculture</h3><p>Decree PF-130 promotes digital services, remote monitoring and data tools to improve land and water use and agricultural productivity.</p><a href="https://lex.uz/docs/-7694880">Official source · PF-130</a></article>
+          <article class="strategy-card"><span>2025–2035</span><h3>University Development Strategy for 2025–2035</h3><p>The university’s long-term roadmap focuses on international competitiveness, research and digital learning, with higher QS and THE rankings targeted by 2030.</p><a href="https://tiiame.uz/news?id=9470">Official source · TIQXMMI MTU</a></article>
+          <article class="strategy-card"><span>2030</span><h3>TIIAME National Research University Programme to 2030</h3><p>Resolution PQ-122 sets out internationalized education standards, a Digital University platform, engineering education and stronger research–industry links.</p><a href="https://lex.uz/uz/acts/-8115447">Official source · PQ-122</a></article>
+        </div>
+      </div>
+    </section>
+
     <section class="wrap section" id="yangiliklar" data-list data-count="Results: {n}">
       <div class="section-heading split-heading"><h2>News</h2><p>Campus life, research partnerships and major national projects.</p></div>
       <div class="controls" hidden><fieldset class="filters"><legend class="sr-only">Filter</legend><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="education" aria-pressed="false">Education and science</button><button type="button" data-filter="city" aria-pressed="false">Urban development</button><button type="button" data-filter="energy" aria-pressed="false">Energy and industry</button><button type="button" data-filter="transport" aria-pressed="false">Transport</button><button type="button" data-filter="culture" aria-pressed="false">Culture</button><button type="button" data-filter="water" aria-pressed="false">Water management</button></fieldset><label class="search"><span class="sr-only">Search news</span><input type="search" placeholder="Search news"></label></div><p class="sr-only" data-result-count role="status"></p>
-      <div class="news-grid"><article class="news-card" data-item="education"><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="Physics olympiad results for the TIIAME school" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-23">Nov 23, 2026</time></div><h3>Physics olympiad results for the TIIAME school</h3><p>Pupils and teachers at the specialist school were recognized for their international physics olympiad results.</p><a href="https://www.tiiame.uz/news?id=10128">Official source</a></div></article>
-          <article class="news-card" data-item="water"><div class="news-copy"><div class="meta"><span class="pill">Water management</span><time datetime="2026-11-19">Nov 19, 2026</time></div><h3>Water savings reported in 2026</h3><p>The ministry reported saving 10.69 billion m³ from January through October.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Official source</a></div></article>
-          <article class="news-card" data-item="city"><div class="news-copy"><div class="meta"><span class="pill">Urban development</span><time datetime="2026-11-18">Nov 18, 2026</time></div><h3>Construction and greening in New Tashkent</h3><p>A presidential meeting reviewed construction progress, the citywide architectural concept and autumn tree planting.</p><a href="https://www.president.uz/oz/lists/view/9871">Official source</a></div></article>
+      <div class="news-grid"><article class="news-card" data-item="education"><a class="photo-link" href="assets/meeting-rector-1.jpg" data-photo><img src="assets/meeting-rector-1.jpg" alt="Life lessons from a letter are being shared with students" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-27">Nov 27, 2026</time></div><h3>Life lessons from a letter are being shared with students</h3><p>Faculties at the National Research University “TIIAME” are holding educational meetings with the rector to share life lessons from a letter the President addressed to his grandson, Shavkatbek.</p><p>The rector explains the letter’s ideas through practical examples, highlighting learning, continuous self-development, thoughtful use of modern technology and artificial intelligence, foreign languages, and respect for national values.</p><p>Its calls to value every minute, set clear goals, and serve the country aim to strengthen young people’s sense of responsibility, confidence in the future, and commitment to Uzbekistan’s development.</p><div class="news-photo-grid"><figure><a class="photo-link" href="assets/meeting-rector-2.jpg" data-photo><img src="assets/meeting-rector-2.jpg" alt="The rector speaks at the meeting" loading="lazy"></a><figcaption>The rector speaks at the meeting</figcaption></figure><figure><a class="photo-link" href="assets/meeting-rector-3.jpg" data-photo><img src="assets/meeting-rector-3.jpg" alt="Students attending the meeting" loading="lazy"></a><figcaption>Students attending the meeting</figcaption></figure><figure><a class="photo-link" href="assets/meeting-rector-4.jpg" data-photo><img src="assets/meeting-rector-4.jpg" alt="A participant at the meeting" loading="lazy"></a><figcaption>A participant at the meeting</figcaption></figure></div><a href="https://www.tiiame.uz/news?id=10135">Official source</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="Physics olympiad results for the TIIAME school" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-23">Nov 23, 2026</time></div><h3>Physics olympiad results for the TIIAME school</h3><p>Pupils and teachers at the specialist school were recognized for their international physics olympiad results.</p><a href="https://www.tiiame.uz/news?id=10128">Official source</a></div></article>
+          <article class="news-card" data-item="water"><a class="photo-link" href="assets/water-saving-news.jpg" data-photo><img src="assets/water-saving-news.jpg" alt="Water savings reported in 2026" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Water management</span><time datetime="2026-11-19">Nov 19, 2026</time></div><h3>Water savings reported in 2026</h3><p>The ministry reported saving 10.69 billion m³ from January through October.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Official source</a></div></article>
+          <article class="news-card" data-item="city"><a class="photo-link" href="assets/new-tashkent-news.jpg" data-photo><img src="assets/new-tashkent-news.jpg" alt="Construction and greening in New Tashkent" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Urban development</span><time datetime="2026-11-18">Nov 18, 2026</time></div><h3>Construction and greening in New Tashkent</h3><p>A presidential meeting reviewed construction progress, the citywide architectural concept and autumn tree planting.</p><a href="https://www.president.uz/oz/lists/view/9871">Official source</a></div></article>
           <article class="news-card" data-item="education"><a class="photo-link" href="assets/rectors-forum.jpg" data-photo><img src="assets/rectors-forum.jpg" alt="Uzbekistan–Jordan rectors’ forum at TIIAME" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-17">Nov 17, 2026</time></div><h3>Uzbekistan–Jordan rectors’ forum at TIIAME</h3><p>Universities reached agreements on joint degree programmes, research and academic exchanges.</p><a href="https://www.tiiame.uz/news?id=10122">Official source</a></div></article>
-          <article class="news-card" data-item="education"><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-17">Nov 17, 2026</time></div><h3>British Council recognizes TIIAME rector</h3><p>Bahodir Mirzayev received an award for excellence in delivering international exams.</p><a href="https://www.tiiame.uz/news?id=10119">Official source</a></div></article>
-          <article class="news-card" data-item="education"><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-09">Nov 9, 2026</time></div><h3>TIIAME plans to introduce AI in teaching</h3><p>The university announced plans to use artificial intelligence in teaching.</p><a href="https://www.tiiame.uz/news?id=10111">Official source</a></div></article>
-          <article class="news-card" data-item="energy"><div class="news-copy"><div class="meta"><span class="pill">Energy and industry</span><time datetime="2026-11-09">Nov 9, 2026</time></div><h3>New capacity in electrical equipment manufacturing</h3><p>A meeting with the president heard that 413 new production facilities had opened in the sector.</p><a href="https://www.president.uz/oz/lists/view/9831">Official source</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/british-council-news.jpg" data-photo><img src="assets/british-council-news.jpg" alt="British Council recognizes TIIAME rector" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-17">Nov 17, 2026</time></div><h3>British Council recognizes TIIAME rector</h3><p>Bahodir Mirzayev received an award for excellence in delivering international exams.</p><a href="https://www.tiiame.uz/news?id=10119">Official source</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/ai-water-news.jpg" data-photo><img src="assets/ai-water-news.jpg" alt="TIIAME plans to introduce AI in teaching" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Education and science</span><time datetime="2026-11-09">Nov 9, 2026</time></div><h3>TIIAME plans to introduce AI in teaching</h3><p>The university announced plans to use artificial intelligence in teaching.</p><a href="https://www.tiiame.uz/news?id=10111">Official source</a></div></article>
+          <article class="news-card" data-item="energy"><a class="photo-link" href="assets/industry-news.jpg" data-photo><img src="assets/industry-news.jpg" alt="New capacity in electrical equipment manufacturing" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Energy and industry</span><time datetime="2026-11-09">Nov 9, 2026</time></div><h3>New capacity in electrical equipment manufacturing</h3><p>A meeting with the president heard that 413 new production facilities had opened in the sector.</p><a href="https://www.president.uz/oz/lists/view/9831">Official source</a></div></article>
           <article class="news-card" data-item="culture"><a class="photo-link" href="assets/imam-bukhari.jpg" data-photo><img src="assets/imam-bukhari.jpg" alt="The rebuilt Imam Bukhari complex" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Culture</span><time datetime="2026-10-18">Oct 18, 2026</time></div><h3>The rebuilt Imam Bukhari complex</h3><p>The president reviewed visitor facilities at the rebuilt complex in the Samarkand Region.</p><a href="https://www.president.uz/oz/lists/view/9737">Official source</a></div></article>
           <article class="news-card" data-item="city"><a class="photo-link" href="assets/new-tashkent.jpg" data-photo><img src="assets/new-tashkent.jpg" alt="Seven projects open in New Tashkent" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Urban development</span><time datetime="2026-10-12">Oct 12, 2026</time></div><h3>Seven projects open in New Tashkent</h3><p>The openings included a 2,000-place school, Sohil Park and energy facilities.</p><a href="https://www.president.uz/oz/lists/view/9707">Official source</a></div></article>
-          <article class="news-card" data-item="culture"><div class="news-copy"><div class="meta"><span class="pill">Culture</span><time datetime="2026-09-11">Sep 11, 2026</time></div><h3>Construction of Uzbekistan’s National Museum</h3><p>The president visited the construction site of the museum designed by Tadao Ando. Work is ongoing.</p><a href="https://www.president.uz/oz/lists/view/9600">Official source</a></div></article>
-          <article class="news-card" data-item="energy"><div class="news-copy"><div class="meta"><span class="pill">Energy and industry</span><time datetime="2026-08-13">Aug 13, 2026</time></div><h3>Improving regional energy supply</h3><p>The president was briefed on a pilot in 14 districts, efforts to reduce energy losses and a five-year programme.</p><a href="https://www.president.uz/oz/lists/view/9496">Official source</a></div></article>
-          <article class="news-card" data-item="transport"><div class="news-copy"><div class="meta"><span class="pill">Transport</span><time datetime="2026-07-31">Jul 31, 2026</time></div><h3>New routes on the rail network</h3><p>The Samarkand–Urgut and Urgench Airport–Khiva lines were built, and a second electrified line opened between Navoi and Bukhara.</p><a href="https://www.president.uz/oz/lists/view/9479">Official source</a></div></article>
-          <article class="news-card" data-item="culture"><div class="news-copy"><div class="meta"><span class="pill">Culture</span><time datetime="2026-07-07">Jul 7, 2026</time></div><h3>International Forum on Islamic Civilization</h3><p>The first forum at Uzbekistan’s Center for Islamic Civilization drew participants from more than 40 countries.</p><a href="https://www.president.uz/oz/lists/view/9390">Official source</a></div></article></div>
+          <article class="news-card" data-item="culture"><a class="photo-link" href="assets/national-museum-news.jpg" data-photo><img src="assets/national-museum-news.jpg" alt="Construction of Uzbekistan’s National Museum" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Culture</span><time datetime="2026-09-11">Sep 11, 2026</time></div><h3>Construction of Uzbekistan’s National Museum</h3><p>The president visited the construction site of the museum designed by Tadao Ando. Work is ongoing.</p><a href="https://www.president.uz/oz/lists/view/9600">Official source</a></div></article>
+          <article class="news-card" data-item="energy"><a class="photo-link" href="assets/regional-energy-news.jpg" data-photo><img src="assets/regional-energy-news.jpg" alt="Improving regional energy supply" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Energy and industry</span><time datetime="2026-08-13">Aug 13, 2026</time></div><h3>Improving regional energy supply</h3><p>The president was briefed on a pilot in 14 districts, efforts to reduce energy losses and a five-year programme.</p><a href="https://www.president.uz/oz/lists/view/9496">Official source</a></div></article>
+          <article class="news-card" data-item="transport"><a class="photo-link" href="assets/railway-news.jpg" data-photo><img src="assets/railway-news.jpg" alt="New routes on the rail network" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Transport</span><time datetime="2026-07-31">Jul 31, 2026</time></div><h3>New routes on the rail network</h3><p>The Samarkand–Urgut and Urgench Airport–Khiva lines were built, and a second electrified line opened between Navoi and Bukhara.</p><a href="https://www.president.uz/oz/lists/view/9479">Official source</a></div></article>
+          <article class="news-card" data-item="culture"><a class="photo-link" href="assets/civilization-forum-news.jpg" data-photo><img src="assets/civilization-forum-news.jpg" alt="International Forum on Islamic Civilization" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Culture</span><time datetime="2026-07-07">Jul 7, 2026</time></div><h3>International Forum on Islamic Civilization</h3><p>The first forum at Uzbekistan’s Center for Islamic Civilization drew participants from more than 40 countries.</p><a href="https://www.president.uz/oz/lists/view/9390">Official source</a></div></article></div>
       <p class="empty" hidden>No matching entries.</p>
+    </section>
+
+    <section class="wrap section" id="universitet">
+      <div class="university-feature">
+        <div class="university-copy">
+          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="Official logo of TIIAME National Research University" width="170" height="49" loading="lazy"></a>
+          <h2>TIIAME: research and practice</h2>
+          <p>The national research university trains specialists in irrigation, land reclamation and hydraulic engineering. In 2026 its team reviewed the installation of water-saving equipment and pipes in the Tashkent Region and issued recommendations.</p>
+          <p class="university-facts">On 10 March 2026, UzA reported that the university had more than 11,000 students, 7 faculties, 37 departments and 38 fields of study. <a href="https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888">O‘zA</a></p>
+          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">About the university</a><a href="https://www.tiiame.uz/news">News · TIQXMMI</a><a href="#it-markazi">TIIAME IT Centre</a></div>
+        </div>
+        <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="TIIAME specialists at work in the Tashkent Region" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">TIIAME specialists at work in the Tashkent Region</a></figcaption></figure>
+      </div>
+    </section>
+    <section class="wrap section" id="prezident-va-tiqxmmi">
+      <div class="university-actions">
+        <h3>The president and TIIAME</h3>
+        <div class="reforms"><article class="reform"><div class="meta"><time datetime="2021-12-10">Dec 10, 2021</time></div><h4>National research university status</h4><p>Presidential Resolution PQ-42 gave the institute national research university status. It approved the creation of the Institute of Fundamental and Applied Research and a programme to modernise teaching laboratories.</p><a href="https://uza.uz/oz/posts/iqtisodiyot-tarmoqlari-uchun-muhandis-kadrlarni-tayyorlash-tizimini-innovatsiya-va-raqamlashtirish-asosida-tubdan-takomillashtirish-chora-tadbirlari-togrisida_328345">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2023-05-29">May 29, 2023</time></div><h4>Water Management School opened</h4><p>The Water Management School opened at TIIAME on the president’s initiative. It provides farmers and water management specialists with practical training in water-saving technologies.</p><a href="https://uza.uz/sp/posts/suvchilar-maktabi-bilim-tajriba-va-kelajak-kafolati_749285">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2024-08-08">Aug 8, 2024</time></div><h4>Almaty branch opened</h4><p>Shavkat Mirziyoyev and Kazakhstan’s President Kassym-Jomart Tokayev inaugurated the TIIAME branch in Almaty to train specialists in technical fields with high demand.</p><a href="https://uza.uz/uz/posts/ozbekiston-va-qozogiston-strategik-sheriklik-va-ittifoqchilik-munosabatlari-rivojida-tarixiy-voqea_623388">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2025-11-16">Nov 16, 2025</time></div><h4>Regional water management centre proposed</h4><p>At a meeting of Central Asian leaders, the president proposed a regional centre at TIIAME to train water management professionals.</p><a href="https://uza.uz/uz/posts/markaziy-osiyo-davlatlari-rahbarlarining-vii-maslahat-uchrashuvida-ozbekiston-respublikasi-prezidenti-ilgari-surgan-asosiy-fikr-va-tashabbuslar_783507">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2026-03-10">Mar 10, 2026</time></div><h4>Engineering education and water diplomacy</h4><p>The president reviewed proposals for engineering education. The proposed dual model pairs four days of theory with two days of paid work experience each week. A proposal to expand the water diplomacy master’s programme and add government-funded places was approved.</p><a href="https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2026-04-02">Apr 2, 2026</time></div><h4>New resolution on education and laboratories</h4><p>Presidential Resolution PQ-122 calls for dual education, a Digital University platform, and upgrades to TIIAME’s teaching laboratories in 2026–2028.</p><a href="https://lex.uz/uz/docs/-8115447">Lex.uz</a></article></div>
+      </div>
+    </section>
+    <section class="wrap section" id="it-markazi">
+      <div class="university-actions">
+        <h3>TIIAME IT Centre</h3>
+        <p>The four-storey IT centre opened on 10 May 2025. It houses programming and training rooms, a registrar’s office, and a team that develops software for digital water management. <a href="https://gov.uz/oz/edu/news/view/53069">Official source</a></p>
+        <p>UzA reported that on 15 December 2025 the president was briefed on the 200-seat IT centre, the digital library, and the registrar’s office. He called for specific measures to bring TIIAME into the world’s top 300 universities. <a href="https://uza.uz/uz/posts/key-tasks-in-the-water-management-sector-discussed_795532">O‘zA</a></p>
+        <div class="it-center-photos"><figure><a class="photo-link" href="assets/it-center-3.jpg" data-photo><img src="assets/it-center-3.jpg" alt="IT centre building" loading="lazy"></a><figcaption>IT centre building</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-1.jpg" data-photo><img src="assets/it-center-1.jpg" alt="Ribbon-cutting at the opening" loading="lazy"></a><figcaption>Ribbon-cutting at the opening</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-4.jpg" data-photo><img src="assets/it-center-4.jpg" alt="Programming room" loading="lazy"></a><figcaption>Programming room</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-2.jpg" data-photo><img src="assets/it-center-2.jpg" alt="Cooperation memorandum" loading="lazy"></a><figcaption>Cooperation memorandum</figcaption></figure></div>
+        <a href="https://tiiame.uz/news?id=8777">Photo report and source · TIQXMMI</a>
+      </div>
+    </section>
+
+    <section class="president-section" id="prezident">
+      <div class="wrap president-grid">
+        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo><img src="assets/portrait.jpg" alt="Shavkat Mirziyoyev" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Press Service of the President of Uzbekistan</a></figcaption></figure>
+        <div class="president-copy">
+          <p class="eyebrow">President</p><h2>Shavkat Mirziyoyev</h2>
+          <p>He graduated from TIIAME in mechanical engineering in 1981 and worked there as a researcher, lecturer and vice-rector. He was elected president in 2016 and took office on 14 July after the 2023 election.</p>
+          <ul class="initiatives">
+            <li><a href="https://lex.uz/uz/docs/-7686130">Irrigation development for 2025–2028</a><span>The PQ–250 programme covers canal and facility upgrades, digital management and wider use of water-saving technology.</span></li>
+            <li><a href="https://www.president.uz/oz/lists/view/9707">Seven projects open in New Tashkent</a><span>The openings included a 2,000-place school, Sohil Park and energy facilities.</span></li>
+            <li><a href="https://www.tiiame.uz/news?id=10111">TIIAME plans to introduce AI in teaching</a><span>The university announced plans to use artificial intelligence in teaching.</span></li>
+          </ul>
+          <p>He was born on 24 July 1957 in Zaamin District, Jizzakh Region. He holds a Candidate of Technical Sciences degree and was an associate professor. He was confirmed as prime minister of Uzbekistan in 2003.</p>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Official biography</a><a href="https://uza.uz/oz/posts/davlatimiz-rahbari-barcha-yurtdoshlarimga-yana-bir-bor-minnatdorchilik-bildirdi_501877">2023 inauguration · O‘zA</a><a href="#prezident-va-tiqxmmi">The president and TIIAME</a></div>
+        </div>
+      </div>
     </section>
 
     <section class="projects-section" id="inshootlar">
@@ -80,23 +217,7 @@
       </div>
     </section>
 
-    <section class="president-section" id="prezident">
-      <div class="wrap president-grid">
-        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo><img src="assets/portrait.jpg" alt="Shavkat Mirziyoyev" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Press Service of the President of Uzbekistan</a></figcaption></figure>
-        <div class="president-copy">
-          <p class="eyebrow">President</p><h2>Shavkat Mirziyoyev</h2>
-          <p>He graduated from TIIAME in mechanical engineering in 1981 and worked there as a researcher, lecturer and vice-rector. He was elected president in 2016 and took office on 14 July after the 2023 election.</p>
-          <ul class="initiatives">
-            <li><a href="https://lex.uz/uz/docs/-7686130">Irrigation development for 2025–2028</a><span>The PQ–250 programme covers canal and facility upgrades, digital management and wider use of water-saving technology.</span></li>
-            <li><a href="https://www.president.uz/oz/lists/view/9707">Seven projects open in New Tashkent</a><span>The openings included a 2,000-place school, Sohil Park and energy facilities.</span></li>
-            <li><a href="https://www.tiiame.uz/news?id=10111">TIIAME plans to introduce AI in teaching</a><span>The university announced plans to use artificial intelligence in teaching.</span></li>
-          </ul>
-          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Official biography</a><a href="https://president.uz/oz/lists/view/6485">2023 inauguration</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="numbers" aria-labelledby="numbers-title">
+    <section class="numbers" id="raqamlar" aria-labelledby="numbers-title">
       <div class="wrap">
         <div class="numbers-header"><h2 id="numbers-title">Water management in numbers</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">Ministry of Water Resources · November 2026</a></div>
         <dl class="number-grid">
@@ -130,21 +251,9 @@
       </div>
     </section>
 
-    <section class="wrap section" id="universitet">
-      <div class="university-feature">
-        <div class="university-copy">
-          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="Official logo of TIIAME National Research University" width="170" height="49" loading="lazy"></a>
-          <h2>TIIAME: research and practice</h2>
-          <p>The national research university trains specialists in irrigation, land reclamation and hydraulic engineering. In 2026 its team reviewed the installation of water-saving equipment and pipes in the Tashkent Region and issued recommendations.</p>
-          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">About the university</a><a href="https://www.tiiame.uz/news">News · TIQXMMI</a></div>
-        </div>
-        <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="TIIAME specialists at work in the Tashkent Region" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">TIIAME specialists at work in the Tashkent Region</a></figcaption></figure>
-      </div>
-    </section>
-
     <section class="library" id="organish">
       <div class="wrap section">
-        <div class="section-heading"><h2>Knowledge library</h2></div>
+        <div class="section-heading"><h2>TIIAME Library</h2></div>
         <div class="card-grid">
           <article class="card"><h3><a href="https://waterknowledgehub.org/learn">Integrated water resources management</a></h3></article>
           <article class="card"><h3><a href="https://waterknowledgehub.org/country-info/UZ">Uzbekistan’s experience</a></h3></article>
@@ -152,13 +261,14 @@
         </div>
       </div>
     </section>
+    </section>
   </main>
   <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="photo-title">
     <div class="viewer-bar"><p id="photo-title">Photo</p><form method="dialog"><button type="submit">Close</button></form></div>
     <img src="assets/termiz.jpg" alt="">
   </dialog>
   <footer id="surat-manbalari"><div class="wrap footer-inner">
-    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>An educational project about TIIAME and Uzbekistan.</p></div>
+    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a><p>An educational project about TIIAME and Uzbekistan.</p><p><a href="about-en.html">About</a></p></div>
     <div class="credit"><strong>Photo credits</strong><p><a href="https://president.uz/oz">Press Service of the President of Uzbekistan</a> · <a href="https://tiiame.uz/tiiame_national_research_university_logo">TIQXMMI</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">Charvak panorama · Arina Pan</a> · <a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Shavkat Mirziyoyev</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. The panorama was resized. Photos are cropped for display.</p></div>
   </div></footer>
 </body>

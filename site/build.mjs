@@ -14,7 +14,7 @@ const template = read("template.html");
 const aboutTemplate = read("about-template.html");
 const copy = new Map();
 
-for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "about.txt"]) {
+for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "university.txt", "about.txt"]) {
   for (const line of read(file).trim().split(/\r?\n/)) {
     if (line.startsWith("#")) continue;
     const [key, ...translations] = line.split("|").map((value) => value.trim());
@@ -47,19 +47,20 @@ const university = (id) => "https://www.tiiame.uz/news?id=" + id;
 const law = (id) => "https://lex.uz/uz/docs/-" + id;
 const ministry = "https://gov.uz/oz/suvchi/news/view/249915";
 const news = [
+  [14, "2026-11-27", "education", "https://www.tiiame.uz/news?id=10135", "meeting-rector-1.jpg"],
   [1, "2026-11-23", "education", university(10128), "physics.jpg"],
-  [2, "2026-11-19", "water", ministry],
-  [3, "2026-11-18", "city", president(9871)],
+  [2, "2026-11-19", "water", ministry, "water-saving-news.jpg"],
+  [3, "2026-11-18", "city", president(9871), "new-tashkent-news.jpg"],
   [4, "2026-11-17", "education", university(10122), "rectors-forum.jpg"],
-  [5, "2026-11-17", "education", university(10119)],
-  [6, "2026-11-09", "education", university(10111)],
-  [7, "2026-11-09", "energy", president(9831)],
+  [5, "2026-11-17", "education", university(10119), "british-council-news.jpg"],
+  [6, "2026-11-09", "education", university(10111), "ai-water-news.jpg"],
+  [7, "2026-11-09", "energy", president(9831), "industry-news.jpg"],
   [8, "2026-10-18", "culture", president(9737), "imam-bukhari.jpg"],
   [9, "2026-10-12", "city", president(9707), "new-tashkent.jpg"],
-  [10, "2026-09-11", "culture", president(9600)],
-  [11, "2026-08-13", "energy", president(9496)],
-  [12, "2026-07-31", "transport", president(9479)],
-  [13, "2026-07-07", "culture", president(9390)],
+  [10, "2026-09-11", "culture", president(9600), "national-museum-news.jpg"],
+  [11, "2026-08-13", "energy", president(9496), "regional-energy-news.jpg"],
+  [12, "2026-07-31", "transport", president(9479), "railway-news.jpg"],
+  [13, "2026-07-07", "culture", president(9390), "civilization-forum-news.jpg"],
 ];
 const projects = [
   [4, "tashkent", "new-tashkent.jpg", president(9707)],
@@ -90,6 +91,16 @@ const reforms = [
   [14, "2020-07-10", "current", law(4892953)],
 ];
 const stateLabel = { result: "resultsTag", current: "currentTag", past: "pastTag" };
+const engineeringSource = "https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888";
+const universityActions = [
+  ["status", "2021-12-10", "https://uza.uz/oz/posts/iqtisodiyot-tarmoqlari-uchun-muhandis-kadrlarni-tayyorlash-tizimini-innovatsiya-va-raqamlashtirish-asosida-tubdan-takomillashtirish-chora-tadbirlari-togrisida_328345"],
+  ["school", "2023-05-29", "https://uza.uz/sp/posts/suvchilar-maktabi-bilim-tajriba-va-kelajak-kafolati_749285"],
+  ["almaty", "2024-08-08", "https://uza.uz/uz/posts/ozbekiston-va-qozogiston-strategik-sheriklik-va-ittifoqchilik-munosabatlari-rivojida-tarixiy-voqea_623388"],
+  ["waterCenter", "2025-11-16", "https://uza.uz/uz/posts/markaziy-osiyo-davlatlari-rahbarlarining-vii-maslahat-uchrashuvida-ozbekiston-respublikasi-prezidenti-ilgari-surgan-asosiy-fikr-va-tashabbuslar_783507"],
+  ["engineering", "2026-03-10", engineeringSource],
+  ["educationDecision", "2026-04-02", law(8115447), "Lex.uz"],
+];
+const itCenterSource = "https://tiiame.uz/news?id=8777";
 
 for (const [index, [lang, , file]] of locales.entries()) {
   const t = (key) => {
@@ -112,14 +123,29 @@ for (const [index, [lang, , file]] of locales.entries()) {
     reformControls: controls([["all", "all"], ...Object.entries(stateLabel)], "searchReforms"),
     newsCards: news.map(([id, day, category, url, image]) =>
       '<article class="news-card" data-item="' + category + '">' +
-      (image ? photo(image, t("n" + id)) : "") + '<div class="news-copy"><div class="meta"><span class="pill">' + t(category) + '</span>' + time(day) + '</div><h3>' + t("n" + id) + '</h3><p>' + t("d" + id) + '</p><a href="' + escape(url) + '">' + t("source") + '</a></div></article>').join("\n          "),
+      (image ? photo(image, t("n" + id)) : "") + '<div class="news-copy"><div class="meta"><span class="pill">' + t(category) + '</span>' + time(day) + '</div><h3>' + t("n" + id) + '</h3>' + copy.get("d" + id)[index].split("~~").map((paragraph) => '<p>' + escape(paragraph) + '</p>').join("") + (id === 14 ? '<div class="news-photo-grid">' + [2, 3, 4].map((number) => '<figure>' + photo("meeting-rector-" + number + ".jpg", t("i14photo" + number)) + '<figcaption>' + t("i14photo" + number) + '</figcaption></figure>').join("") + '</div>' : "") + '<a href="' + escape(url) + '">' + t("source") + '</a></div></article>').join("\n          "),
     projectCards: projects.map(([id, place, image, url], position) =>
       '<article class="project' + (position === 0 ? ' project-featured' : '') + '">' + photo(image, t("p" + id)) +
       '<div class="project-copy"><p class="location">' + t(place) + '</p><h3>' + t("p" + id) + '</h3><p>' + t("q" + id) + '</p><a class="text-link" href="' + escape(url) + '">' + t("photoSource") + '</a></div></article>').join("\n          "),
     gallery: gallery.map(([id, image, url]) =>
       '<figure>' + photo(image, t("detail" + id)) + '<figcaption><a href="' + escape(url) + '">' + t("detail" + id) + '</a></figcaption></figure>').join("\n          "),
+    futureGallery: [
+      ["it-center-3.jpg", "itCenterTitle", itCenterSource],
+      ["it-center-4.jpg", "fDigitalTitle", itCenterSource],
+      ["physics.jpg", "fResearchTitle", university(10128)],
+      ["ai-water-news.jpg", "fWaterTitle", university(10111)],
+      ["field.jpg", "uPhoto", university(9714)],
+      ["water-saving-news.jpg", "fWaterTitle", ministry],
+    ].map(([image, label, source]) =>
+      '<figure>' + photo(image, t(label)) + '<figcaption>' + t(label) + ' · <a href="' + escape(source) + '">' + t("source") + '</a></figcaption></figure>').join("\n          "),
     portrait: photo("portrait.jpg", t("pName")),
     fieldPhoto: photo("field.jpg", t("uPhoto")),
+    engineeringSource,
+    universityCards: universityActions.map(([key, day, url, source = "O‘zA"]) =>
+      '<article class="reform"><div class="meta">' + time(day) + '</div><h4>' + t(key + "Title") + '</h4><p>' + t(key + "Body") + '</p><a href="' + escape(url) + '">' + escape(source) + '</a></article>').join("\n          "),
+    itCenterSource,
+    itCenterPhotos: [3, 1, 4, 2].map((number) =>
+      '<figure>' + photo("it-center-" + number + ".jpg", t("itPhoto" + number)) + '<figcaption>' + t("itPhoto" + number) + '</figcaption></figure>').join("\n          "),
     reformCards: reforms.map(([id, day, state, url]) =>
       '<article class="reform" data-item="' + state + '"><div class="meta">' + time(day) + '<span class="pill ' + state + '">' + t(stateLabel[state]) + '</span></div><h3>' + t("t" + id) + '</h3><p>' + t("s" + id) + '</p><a href="' + escape(url) + '">' + t("source") + '</a></article>').join("\n          "),
   };

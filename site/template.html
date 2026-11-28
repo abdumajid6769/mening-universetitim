@@ -6,6 +6,12 @@
   <meta name="theme-color" content="#092f35">
   <meta name="description" content="{{desc}}">
   <title>{{title}}</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{desc}}">
+  <meta property="og:image" content="https://abdumajid6769.github.io/mening-universetitim/assets/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light">
   {{{alternateLinks}}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +23,12 @@
   <a href="#main" class="skip">{{skip}}</a>
   <header class="masthead">
     <div class="wrap top">
-      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
-      <nav class="main-nav" aria-label="{{nav}}">
-        <a href="#yangiliklar">{{news}}</a><a href="#inshootlar">{{projects}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a><a href="{{{aboutFile}}}">{{aboutNav}}</a>
+      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
+      <nav class="main-nav" role="tablist" aria-label="{{nav}}">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">{{historyTitle}}</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">{{futureTitle}}</button>
       </nav>
-      <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
+      <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49"></a>
     </div>
     <nav class="language-strip" aria-label="{{language}}">
       <div class="wrap language-inner"><span>{{language}}</span>{{{languageLinks}}}</div>
@@ -41,6 +48,77 @@
       </div>
     </section>
 
+    <section class="section-index" aria-labelledby="sections-title">
+      <div class="wrap section-index-inner">
+        <div class="section-index-heading"><h2 id="sections-title">{{sectionsTitle}}</h2><p>{{sectionsIntro}}</p></div>
+        <div class="primary-path-grid">
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>{{historyTitle}}</h3><p>{{historyIntro}}</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>{{futureTitle}}</h3><p>{{futureIntro}}</p></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{historyTitle}}</h2><p>{{historyIntro}}</p></div>
+        <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="{{historyBuildingAlt}}" fetchpriority="high"><figcaption>{{historyBuildingCaption}} <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">{{source}}</a></figcaption></figure>
+        <div class="history-gallery" id="history-gallery">
+          <figure><img src="assets/history-anniversary-main.jpg" alt="{{historyAnniversaryAlt}}" loading="lazy"><figcaption>{{historyAnniversaryCaption}} <a href="https://www.tiiame.uz/news?id=8586">{{source}}</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-2.jpg" alt="{{historyAnniversaryAlt}}" loading="lazy"><figcaption>{{historyAnniversaryCaption}} <a href="https://www.tiiame.uz/news?id=8586">{{source}}</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-3.jpg" alt="{{historyAnniversaryAlt}}" loading="lazy"><figcaption>{{historyAnniversaryCaption}} <a href="https://www.tiiame.uz/news?id=8586">{{source}}</a></figcaption></figure>
+        </div>
+        <nav class="chapter-subnav" aria-label="{{historyTitle}}">
+          <a href="#history-overview">{{hOriginTitle}}</a><a href="#history-timeline">{{hTimelineTitle}}</a><a href="#history-gallery">{{historyAnniversaryCaption}}</a>
+        </nav>
+        <div class="chapter-grid" id="history-overview">
+          <article class="chapter-card"><span class="chapter-label">{{hOriginLabel}}</span><h3>{{hOriginTitle}}</h3><p>{{hOriginText}}</p><a href="https://www.tiiame.uz/university/university_history/history">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{hTimelineLabel}}</span><h3>{{hTimelineTitle}}</h3><p>{{hTimelineText}}</p><a href="https://www.tiiame.uz/university/university_history/history">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{hHeritageLabel}}</span><h3>{{hHeritageTitle}}</h3><p>{{hHeritageText}}</p><a href="https://www.tiiame.uz/faculties/faculties?id=6">{{source}}</a></article>
+        </div>
+        <div class="history-timeline" id="history-timeline" aria-label="{{historyTimelineLabel}}">
+          <article><time>1923</time><h3>{{hist1923Title}}</h3><p>{{hOriginText}}</p></article>
+          <article><time>1929–1934</time><h3>{{hist1934Title}}</h3><p>{{hist1934Text}}</p></article>
+          <article><time>2004</time><h3>{{hist2004Title}}</h3><p>{{hist2004Text}}</p></article>
+          <article><time>2017–2021</time><h3>{{hist2021Title}}</h3><p>{{hist2021Text}}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
+    <section class="chapter chapter-future">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{futureTitle}}</h2><p>{{futureIntro}}</p></div>
+        <nav class="chapter-subnav" aria-label="{{futureTitle}}">
+          <a href="#yangiliklar">{{news}}</a><a href="#universitet">{{university}}</a><a href="#prezident-va-tiqxmmi">{{universityActionsTitle}}</a><a href="#it-markazi">{{itCenterTitle}}</a><a href="#inshootlar">{{projects}}</a><a href="#strategiyalar">{{strategyTitle}}</a><a href="#islohotlar">{{reforms}}</a><a href="#prezident">{{president}}</a><a href="#organish">{{library}}</a>
+        </nav>
+        <div class="chapter-grid chapter-grid-four">
+          <article class="chapter-card"><span class="chapter-label">{{fResearchLabel}}</span><h3>{{fResearchTitle}}</h3><p>{{fResearchText}}</p><a href="https://www.tiiame.uz/university/other/about">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{fDigitalLabel}}</span><h3>{{fDigitalTitle}}</h3><p>{{fDigitalText}}</p><a href="https://www.tiiame.uz/news?id=10111">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{fInternationalLabel}}</span><h3>{{fInternationalTitle}}</h3><p>{{fInternationalText}}</p><a href="https://www.tiiame.uz/university/other/about">{{source}}</a></article>
+          <article class="chapter-card"><span class="chapter-label">{{fWaterLabel}}</span><h3>{{fWaterTitle}}</h3><p>{{fWaterText}}</p><a href="https://www.tiiame.uz/news?id=9714">{{source}}</a></article>
+        </div>
+        <div class="future-gallery" aria-label="{{futureTitle}}">
+          {{{futureGallery}}}
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-section" id="strategiyalar">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{strategyTitle}}</h2><p>{{strategyIntro}}</p></div>
+        <div class="strategy-grid">
+          <article class="strategy-card"><span>2030</span><h3>{{sUz2030Title}}</h3><p>{{sUz2030Text}}</p><a href="https://lex.uz/uz/docs/-8050769">{{source}} · PF-21</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>{{sWaterConceptTitle}}</h3><p>{{sWaterConceptText}}</p><a href="https://lex.uz/uz/docs/-4892953">{{source}} · PF-6024</a></article>
+          <article class="strategy-card"><span>2025–2028</span><h3>{{sWaterPlanTitle}}</h3><p>{{sWaterPlanText}}</p><a href="https://lex.uz/docs/-7686130">{{source}} · PQ-250</a></article>
+          <article class="strategy-card"><span>PF-183</span><h3>{{sWaterDigitalTitle}}</h3><p>{{sWaterDigitalText}}</p><a href="https://lex.uz/uz/docs/-7775508">{{source}} · PF-183</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>{{sAgriTitle}}</h3><p>{{sAgriText}}</p><a href="https://lex.uz/docs/-4567334">{{source}} · PF-5853</a></article>
+          <article class="strategy-card"><span>PF-130</span><h3>{{sAgriTechTitle}}</h3><p>{{sAgriTechText}}</p><a href="https://lex.uz/docs/-7694880">{{source}} · PF-130</a></article>
+          <article class="strategy-card"><span>2025–2035</span><h3>{{sUniRoadmapTitle}}</h3><p>{{sUniRoadmapText}}</p><a href="https://tiiame.uz/news?id=9470">{{source}} · TIQXMMI MTU</a></article>
+          <article class="strategy-card"><span>2030</span><h3>{{sUniProgramTitle}}</h3><p>{{sUniProgramText}}</p><a href="https://lex.uz/uz/acts/-8115447">{{source}} · PQ-122</a></article>
+        </div>
+      </div>
+    </section>
+
     <section class="wrap section" id="yangiliklar" data-list data-count="{{results}}">
       <div class="section-heading split-heading"><h2>{{news}}</h2><p>{{newsIntro}}</p></div>
       {{{newsControls}}}
@@ -48,11 +126,31 @@
       <p class="empty" hidden>{{noResults}}</p>
     </section>
 
-    <section class="projects-section" id="inshootlar">
-      <div class="wrap section">
-        <div class="section-heading split-heading"><h2>{{projects}}</h2><p>{{projectIntro}}</p></div>
-        <div class="project-grid">{{{projectCards}}}</div>
-        <div class="photo-strip">{{{gallery}}}</div>
+    <section class="wrap section" id="universitet">
+      <div class="university-feature">
+        <div class="university-copy">
+          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49" loading="lazy"></a>
+          <h2>{{university}}</h2>
+          <p>{{uIntro}}</p>
+          <p class="university-facts">{{universityFacts}} <a href="{{{engineeringSource}}}">O‘zA</a></p>
+          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">{{uAbout}}</a><a href="https://www.tiiame.uz/news">{{news}} · TIQXMMI</a><a href="#it-markazi">{{itCenterTitle}}</a></div>
+        </div>
+        <figure>{{{fieldPhoto}}}<figcaption><a href="https://tiiame.uz/news?id=9714">{{uPhoto}}</a></figcaption></figure>
+      </div>
+    </section>
+    <section class="wrap section" id="prezident-va-tiqxmmi">
+      <div class="university-actions">
+        <h3>{{universityActionsTitle}}</h3>
+        <div class="reforms">{{{universityCards}}}</div>
+      </div>
+    </section>
+    <section class="wrap section" id="it-markazi">
+      <div class="university-actions">
+        <h3>{{itCenterTitle}}</h3>
+        <p>{{itCenterIntro}} <a href="https://gov.uz/oz/edu/news/view/53069">{{source}}</a></p>
+        <p>{{itCenterPresident}} <a href="https://uza.uz/uz/posts/key-tasks-in-the-water-management-sector-discussed_795532">O‘zA</a></p>
+        <div class="it-center-photos">{{{itCenterPhotos}}}</div>
+        <a href="{{{itCenterSource}}}">{{photoSource}} · TIQXMMI</a>
       </div>
     </section>
 
@@ -67,12 +165,21 @@
             <li><a href="https://www.president.uz/oz/lists/view/9707">{{n9}}</a><span>{{d9}}</span></li>
             <li><a href="https://www.tiiame.uz/news?id=10111">{{n6}}</a><span>{{d6}}</span></li>
           </ul>
-          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">{{bio}}</a><a href="https://president.uz/oz/lists/view/6485">{{inauguration}}</a></div>
+          <p>{{career}}</p>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">{{bio}}</a><a href="https://uza.uz/oz/posts/davlatimiz-rahbari-barcha-yurtdoshlarimga-yana-bir-bor-minnatdorchilik-bildirdi_501877">{{inauguration}} · O‘zA</a><a href="#prezident-va-tiqxmmi">{{universityActionsTitle}}</a></div>
         </div>
       </div>
     </section>
 
-    <section class="numbers" aria-labelledby="numbers-title">
+    <section class="projects-section" id="inshootlar">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>{{projects}}</h2><p>{{projectIntro}}</p></div>
+        <div class="project-grid">{{{projectCards}}}</div>
+        <div class="photo-strip">{{{gallery}}}</div>
+      </div>
+    </section>
+
+    <section class="numbers" id="raqamlar" aria-labelledby="numbers-title">
       <div class="wrap">
         <div class="numbers-header"><h2 id="numbers-title">{{metrics}}</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">{{mSource}}</a></div>
         <dl class="number-grid">
@@ -93,18 +200,6 @@
       </div>
     </section>
 
-    <section class="wrap section" id="universitet">
-      <div class="university-feature">
-        <div class="university-copy">
-          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="{{logo}}" width="170" height="49" loading="lazy"></a>
-          <h2>{{university}}</h2>
-          <p>{{uIntro}}</p>
-          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">{{uAbout}}</a><a href="https://www.tiiame.uz/news">{{news}} · TIQXMMI</a></div>
-        </div>
-        <figure>{{{fieldPhoto}}}<figcaption><a href="https://tiiame.uz/news?id=9714">{{uPhoto}}</a></figcaption></figure>
-      </div>
-    </section>
-
     <section class="library" id="organish">
       <div class="wrap section">
         <div class="section-heading"><h2>{{library}}</h2></div>
@@ -115,13 +210,14 @@
         </div>
       </div>
     </section>
+    </section>
   </main>
   <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="photo-title">
     <div class="viewer-bar"><p id="photo-title">{{photo}}</p><form method="dialog"><button type="submit">{{close}}</button></form></div>
     <img src="assets/termiz.jpg" alt="">
   </dialog>
   <footer id="surat-manbalari"><div class="wrap footer-inner">
-    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>{{eduProject}}</p></div>
+    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a><p>{{eduProject}}</p><p><a href="{{{aboutFile}}}">{{aboutNav}}</a></p></div>
     <div class="credit"><strong>{{credits}}</strong><p><a href="https://president.uz/oz">{{press}}</a> · <a href="https://tiiame.uz/tiiame_national_research_university_logo">TIQXMMI</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">{{panorama}}</a> · <a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">{{pName}}</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. {{creditsEdit}}</p></div>
   </div></footer>
 </body>

@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#092f35">
   <meta name="description" content="TIIAME мен Өзбекстан жаңалықтары, Президент бастамалары және салынған нысандар.">
-  <title>Suv Ufqi — Өзбекстан мен TIIAME жаңалықтары</title>
+  <title>TIQXMMI kutubxonasi — Өзбекстан мен TIIAME жаңалықтары</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TIQXMMI kutubxonasi — Өзбекстан мен TIIAME жаңалықтары">
+  <meta property="og:description" content="TIIAME мен Өзбекстан жаңалықтары, Президент бастамалары және салынған нысандар.">
+  <meta property="og:image" content="https://abdumajid6769.github.io/mening-universetitim/assets/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light">
   <link rel="alternate" hreflang="uz" href="https://abdumajid6769.github.io/mening-universetitim/">
   <link rel="alternate" hreflang="ru" href="https://abdumajid6769.github.io/mening-universetitim/ru.html">
   <link rel="alternate" hreflang="zh-Hans" href="https://abdumajid6769.github.io/mening-universetitim/zh.html">
@@ -23,11 +29,12 @@
   <a href="#main" class="skip">Негізгі мазмұнға өту</a>
   <header class="masthead">
     <div class="wrap top">
-      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a>
-      <nav class="main-nav" aria-label="Негізгі мәзір">
-        <a href="#yangiliklar">Жаңалықтар</a><a href="#inshootlar">Нысандар</a><a href="#islohotlar">Реформалар</a><a href="#prezident">Президент</a><a href="#organish">Білім кітапханасы</a><a href="about-kk.html">Жоба туралы</a>
+      <a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a>
+      <nav class="main-nav" role="tablist" aria-label="Негізгі мәзір">
+        <button type="button" id="tab-tarix" role="tab" aria-controls="tarix" aria-selected="true" data-section-switch="tarix">TIIAME тарихы</button>
+        <button type="button" id="tab-kelajak" role="tab" aria-controls="kelajak" aria-selected="false" data-section-switch="kelajak">TIIAME болашағы</button>
       </nav>
-      <a class="university-mark" href="#universitet"><img src="assets/tiqxmm-logo.png" alt="TIIAME Ұлттық зерттеу университетінің ресми логотипі" width="170" height="49"></a>
+      <a class="university-mark" href="#kelajak"><img src="assets/tiqxmm-logo.png" alt="TIIAME Ұлттық зерттеу университетінің ресми логотипі" width="170" height="49"></a>
     </div>
     <nav class="language-strip" aria-label="Сайт тілі">
       <div class="wrap language-inner"><span>Сайт тілі</span><a lang="uz" hreflang="uz" href="index.html">O‘zbekcha</a><a lang="ru" hreflang="ru" href="ru.html">Русский</a><a lang="zh-Hans" hreflang="zh-Hans" href="zh.html">简体中文</a><a lang="tk" hreflang="tk" href="tk.html">Türkmençe</a><a lang="en" hreflang="en" href="en.html">English</a><a lang="kk" hreflang="kk" href="kk.html" aria-current="page">Қазақша</a></div>
@@ -47,23 +54,153 @@
       </div>
     </section>
 
+    <section class="section-index" aria-labelledby="sections-title">
+      <div class="wrap section-index-inner">
+        <div class="section-index-heading"><h2 id="sections-title">Негізгі бөлімдер</h2><p>Тақырыпты таңдаңыз: университет, Президент бастамалары, су шаруашылығы, реформалар немесе білім ресурстары.</p></div>
+        <div class="primary-path-grid">
+          <button class="primary-path" type="button" data-section-switch="tarix"><h3>TIIAME тарихы</h3><p>1923 жылғы инженерлік білімнен ұлттық зерттеу университеті мәртебесіне дейінгі жол.</p></button>
+          <button class="primary-path" type="button" data-section-switch="kelajak"><h3>TIIAME болашағы</h3><p>Ғылымға, цифрлық білімге, халықаралық әріптестікке және су қауіпсіздігіне бағытталған жаңа кезең.</p></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter-history" id="tarix" data-main-panel role="tabpanel" aria-labelledby="tab-tarix" tabindex="0">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>TIIAME тарихы</h2><p>1923 жылғы инженерлік білімнен ұлттық зерттеу университеті мәртебесіне дейінгі жол.</p></div>
+        <figure class="history-feature-photo" id="history-building"><img src="assets/history-campus.jpg" alt="Ниязбек көшесіндегі 1934 жылғы тарихи оқу ғимараты" fetchpriority="high"><figcaption>1934 жылы пайдалануға берілген тарихи ғимараттың бүгінгі көрінісі. <a href="https://yangihayot.tashkent.uz/uz/city/interesting-places/56">Ресми дереккөз</a></figcaption></figure>
+        <div class="history-gallery" id="history-gallery">
+          <figure><img src="assets/history-anniversary-main.jpg" alt="TIIAME ұлттық зерттеу университетінің 90 жылдығына арналған іс-шара" loading="lazy"><figcaption>2025 жылғы 90 жылдық халықаралық конференция мен мерейтойлық іс-шарадан. <a href="https://www.tiiame.uz/news?id=8586">Ресми дереккөз</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-2.jpg" alt="TIIAME ұлттық зерттеу университетінің 90 жылдығына арналған іс-шара" loading="lazy"><figcaption>2025 жылғы 90 жылдық халықаралық конференция мен мерейтойлық іс-шарадан. <a href="https://www.tiiame.uz/news?id=8586">Ресми дереккөз</a></figcaption></figure>
+          <figure><img src="assets/history-anniversary-3.jpg" alt="TIIAME ұлттық зерттеу университетінің 90 жылдығына арналған іс-шара" loading="lazy"><figcaption>2025 жылғы 90 жылдық халықаралық конференция мен мерейтойлық іс-шарадан. <a href="https://www.tiiame.uz/news?id=8586">Ресми дереккөз</a></figcaption></figure>
+        </div>
+        <nav class="chapter-subnav" aria-label="TIIAME тарихы">
+          <a href="#history-overview">1923 жыл: алғашқы қадамдар</a><a href="#history-timeline">Институттан ұлттық зерттеу университетіне дейін</a><a href="#history-gallery">2025 жылғы 90 жылдық халықаралық конференция мен мерейтойлық іс-шарадан.</a>
+        </nav>
+        <div class="chapter-grid" id="history-overview">
+          <article class="chapter-card"><span class="chapter-label">Бастауы</span><h3>1923 жыл: алғашқы қадамдар</h3><p>TIIAME тарихы 1923 жылы Түркістан мемлекеттік университетінің техникалық факультетінде инженерлік мелиорация факультеті ашылған кезден басталады. Алғашқы түлектердің қатарында 24 агроном және 16 гидромелиорация инженері болды.</p><a href="https://www.tiiame.uz/university/university_history/history">Ресми дереккөз</a></article>
+          <article class="chapter-card"><span class="chapter-label">Даму кезеңдері</span><h3>Институттан ұлттық зерттеу университетіне дейін</h3><p>1929 жылы Орта Азия мақта және ирригация политехникалық институты құрылды. 1934 жылы ол Ташкент ирригация және ауыл шаруашылығын механикаландыру инженерлері институтына айналды. 2017 жылы қайта құрылып, 2021 жылы ұлттық зерттеу университеті мәртебесін алды.</p><a href="https://www.tiiame.uz/university/university_history/history">Ресми дереккөз</a></article>
+          <article class="chapter-card"><span class="chapter-label">Ғылыми мұра</span><h3>Ирригация және ауыл шаруашылығы ғылыми мектебі</h3><p>Гидромелиорация, суару, мелиорация және ауыл шаруашылығын механикаландыру бойынша ғылыми мектеп университеттің қазіргі білім беру және зерттеу бағыттарының негізі.</p><a href="https://www.tiiame.uz/faculties/faculties?id=6">Ресми дереккөз</a></article>
+        </div>
+        <div class="history-timeline" id="history-timeline" aria-label="Тарихи кезеңдер">
+          <article><time>1923</time><h3>Инженерлік білімнің басталуы</h3><p>TIIAME тарихы 1923 жылы Түркістан мемлекеттік университетінің техникалық факультетінде инженерлік мелиорация факультеті ашылған кезден басталады. Алғашқы түлектердің қатарында 24 агроном және 16 гидромелиорация инженері болды.</p></article>
+          <article><time>1929–1934</time><h3>Дербес институт және тарихи ғимарат</h3><p>1929 жылы Орта Азия мақта және ирригация политехникалық институты құрылды. 1934 жылы институт қалыптасып, Ниязбек көшесіндегі арнайы салынған ғимаратқа орналасты.</p></article>
+          <article><time>2004</time><h3>Ирригация және мелиорация институты</h3><p>2004 жылы оқу орны Ташкент ирригация және мелиорация институты деп аталды. Кейін білім беру бағыттары мен ғылыми қызметі кеңейді.</p></article>
+          <article><time>2017–2021</time><h3>Реформалар және ұлттық зерттеу университеті мәртебесі</h3><p>2017 жылғы жоғары білім реформалары жаңа кезеңді бастады. 2021 жылғы 7 сәуірдегі PQ-42 қаулысымен университетке Ұлттық зерттеу университеті мәртебесі берілді.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-division" id="kelajak" data-main-panel role="tabpanel" aria-labelledby="tab-kelajak" tabindex="0" hidden>
+    <section class="chapter chapter-future">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>TIIAME болашағы</h2><p>Ғылымға, цифрлық білімге, халықаралық әріптестікке және су қауіпсіздігіне бағытталған жаңа кезең.</p></div>
+        <nav class="chapter-subnav" aria-label="TIIAME болашағы">
+          <a href="#yangiliklar">Жаңалықтар</a><a href="#universitet">TIIAME: ғылым және тәжірибе</a><a href="#prezident-va-tiqxmmi">Президент және TIIAME</a><a href="#it-markazi">TIIAME IT орталығы</a><a href="#inshootlar">Нысандар</a><a href="#strategiyalar">Стратегиялар</a><a href="#islohotlar">Реформалар</a><a href="#prezident">Президент</a><a href="#organish">TIIAME кітапханасы</a>
+        </nav>
+        <div class="chapter-grid chapter-grid-four">
+          <article class="chapter-card"><span class="chapter-label">Зерттеу</span><h3>Ұлттық зерттеу университеті</h3><p>2021 жылғы PQ-42 қаулысы университетті инновация мен цифрландыруға негізделген ұлттық зерттеу орны ретінде дамытуды белгіледі. Міндеттерге инженерлік білімді, зерттеуді және өндіріс байланысын нығайту кіреді.</p><a href="https://www.tiiame.uz/university/other/about">Ресми дереккөз</a></article>
+          <article class="chapter-card"><span class="chapter-label">Цифрландыру</span><h3>Цифрлық білім және жасанды интеллект</h3><p>Цифрлық университет платформасы, оқу зертханаларын жаңарту, IT орталығы және жасанды интеллект бастамалары білім мен зерттеу мүмкіндіктерін кеңейтуге бағытталған.</p><a href="https://www.tiiame.uz/news?id=10111">Ресми дереккөз</a></article>
+          <article class="chapter-card"><span class="chapter-label">Әріптестік</span><h3>Халықаралық әріптестік</h3><p>Университет мәліметінше, Алматыдағы халықаралық филиал 2024 жылы ашылды, ал Бішкекте филиал ашу 2028 жылға жоспарланған. Әріптестік бірлескен білім мен зерттеуді дамытады.</p><a href="https://www.tiiame.uz/university/other/about">Ресми дереккөз</a></article>
+          <article class="chapter-card"><span class="chapter-label">Су және климат</span><h3>水安全工程方案</h3><p>Ирригация, су үнемдеу, мелиорация және гидротехника салаларындағы білім мен зерттеу аймақтың су және климат мәселелеріне шешім іздеуге көмектеседі.</p><a href="https://www.tiiame.uz/news?id=9714">Ресми дереккөз</a></article>
+        </div>
+        <div class="future-gallery" aria-label="TIIAME болашағы">
+          <figure><a class="photo-link" href="assets/it-center-3.jpg" data-photo><img src="assets/it-center-3.jpg" alt="TIIAME IT орталығы" loading="lazy"></a><figcaption>TIIAME IT орталығы · <a href="https://tiiame.uz/news?id=8777">Ресми дереккөз</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-4.jpg" data-photo><img src="assets/it-center-4.jpg" alt="Цифрлық білім және жасанды интеллект" loading="lazy"></a><figcaption>Цифрлық білім және жасанды интеллект · <a href="https://tiiame.uz/news?id=8777">Ресми дереккөз</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="Ұлттық зерттеу университеті" loading="lazy"></a><figcaption>Ұлттық зерттеу университеті · <a href="https://www.tiiame.uz/news?id=10128">Ресми дереккөз</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/ai-water-news.jpg" data-photo><img src="assets/ai-water-news.jpg" alt="水安全工程方案" loading="lazy"></a><figcaption>水安全工程方案 · <a href="https://www.tiiame.uz/news?id=10111">Ресми дереккөз</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="TIIAME мамандарының Ташкент облысындағы далалық жұмысы" loading="lazy"></a><figcaption>TIIAME мамандарының Ташкент облысындағы далалық жұмысы · <a href="https://www.tiiame.uz/news?id=9714">Ресми дереккөз</a></figcaption></figure>
+          <figure><a class="photo-link" href="assets/water-saving-news.jpg" data-photo><img src="assets/water-saving-news.jpg" alt="水安全工程方案" loading="lazy"></a><figcaption>水安全工程方案 · <a href="https://gov.uz/oz/suvchi/news/view/249915">Ресми дереккөз</a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-section" id="strategiyalar">
+      <div class="wrap section">
+        <div class="section-heading split-heading"><h2>Стратегиялар</h2><p>Су шаруашылығы, ауыл шаруашылығы және TIIAME ұлттық зерттеу университетінің дамуына қатысты негізгі қолданыстағы стратегиялар мен бағдарламалар.</p></div>
+        <div class="strategy-grid">
+          <article class="strategy-card"><span>2030</span><h3>«Өзбекстан — 2030» стратегиясы</h3><p>2026–2030 жылдарға арналған жаңартылған мемлекеттік стратегия су қауіпсіздігі, тиімді ауыл шаруашылығы және адами капитал мақсаттарын айқындайды.</p><a href="https://lex.uz/uz/docs/-8050769">Ресми дереккөз · PF-21</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>Су шаруашылығын дамыту тұжырымдамасы</h3><p>PF-6024 жарлығымен бекітілген 2020–2030 жылдарға арналған тұжырымдама су ресурстарын тиімді басқаруға, ирригацияны жаңғыртуға және суды үнемдеуге бағытталған.</p><a href="https://lex.uz/uz/docs/-4892953">Ресми дереккөз · PF-6024</a></article>
+          <article class="strategy-card"><span>2025–2028</span><h3>Су ресурстары мен ирригация бағдарламасы</h3><p>PQ-250 қаулысындағы 2025–2028 жылдарға арналған бағдарлама су жеткізу тиімділігін арттыруды, арналарды жаңартуды, сорғыларды жаңғыртуды және цифрлық есепті енгізуді көздейді.</p><a href="https://lex.uz/docs/-7686130">Ресми дереккөз · PQ-250</a></article>
+          <article class="strategy-card"><span>PF-183</span><h3>Су саласын цифрландыру және тұрақты дамыту</h3><p>PF-183 жарлығы су мен электр энергиясының цифрлық есебін, «Suv hisobi» жүйесін дамытуды және министрлікте цифрландыру орталығын құруды көздейді.</p><a href="https://lex.uz/uz/docs/-7775508">Ресми дереккөз · PF-183</a></article>
+          <article class="strategy-card"><span>2020–2030</span><h3>Ауыл шаруашылығын дамыту стратегиясы</h3><p>PF-5853 жарлығымен бекітілген 2020–2030 жылдарға арналған стратегия өнімділікті, азық-түлік қауіпсіздігін, нарық тетіктерін және тұрақты ауыл шаруашылығын қамтиды.</p><a href="https://lex.uz/docs/-4567334">Ресми дереккөз · PF-5853</a></article>
+          <article class="strategy-card"><span>PF-130</span><h3>Ауыл шаруашылығындағы заманауи технологиялар</h3><p>PF-130 жарлығы цифрлық қызметтерді, қашықтан бақылауды және деректер жүйесін қолдап, жер мен суды ұтымды пайдалану мен өнімділікті арттыруға бағытталған.</p><a href="https://lex.uz/docs/-7694880">Ресми дереккөз · PF-130</a></article>
+          <article class="strategy-card"><span>2025–2035</span><h3>Университеттің 2025–2035 жылдарға арналған даму стратегиясы</h3><p>Университет ұсынған ұзақ мерзімді жол картасы халықаралық бәсекеге қабілеттілікке, зерттеуге, цифрлық оқытуға және 2030 жылға қарай QS пен THE рейтингтеріндегі жоғары орындарға бағытталған.</p><a href="https://tiiame.uz/news?id=9470">Ресми дереккөз · TIQXMMI MTU</a></article>
+          <article class="strategy-card"><span>2030</span><h3>TIIAME ұлттық зерттеу университетінің 2030 жылға дейінгі даму бағдарламасы</h3><p>PQ-122 қаулысы білім стандарттарын халықаралық талаптарға сәйкестендіруді, «Цифрлық университет» платформасын құруды, инженер даярлауды және ғылым мен өндіріс байланысын нығайтуды көздейді.</p><a href="https://lex.uz/uz/acts/-8115447">Ресми дереккөз · PQ-122</a></article>
+        </div>
+      </div>
+    </section>
+
     <section class="wrap section" id="yangiliklar" data-list data-count="Нәтиже саны: {n}">
       <div class="section-heading split-heading"><h2>Жаңалықтар</h2><p>Университет өмірі, ғылыми ынтымақтастық және елдегі ірі жобалар.</p></div>
       <div class="controls" hidden><fieldset class="filters"><legend class="sr-only">Сүзгі</legend><button type="button" data-filter="all" aria-pressed="true">Барлығы</button><button type="button" data-filter="education" aria-pressed="false">Білім және ғылым</button><button type="button" data-filter="city" aria-pressed="false">Қала құрылысы</button><button type="button" data-filter="energy" aria-pressed="false">Энергетика және өнеркәсіп</button><button type="button" data-filter="transport" aria-pressed="false">Көлік</button><button type="button" data-filter="culture" aria-pressed="false">Мәдениет</button><button type="button" data-filter="water" aria-pressed="false">Су шаруашылығы</button></fieldset><label class="search"><span class="sr-only">Жаңалықтарды іздеу</span><input type="search" placeholder="Жаңалықтарды іздеу"></label></div><p class="sr-only" data-result-count role="status"></p>
-      <div class="news-grid"><article class="news-card" data-item="education"><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="TIIAME мектебінің физика олимпиадаларындағы нәтижелері" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-23">2026 ж. 23 қар.</time></div><h3>TIIAME мектебінің физика олимпиадаларындағы нәтижелері</h3><p>Мамандандырылған мектеп оқушылары мен ұстаздары халықаралық физика олимпиадаларындағы жетістіктері үшін марапатталды.</p><a href="https://www.tiiame.uz/news?id=10128">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="water"><div class="news-copy"><div class="meta"><span class="pill">Су шаруашылығы</span><time datetime="2026-11-19">2026 ж. 19 қар.</time></div><h3>2026 жылғы су үнемдеу нәтижелері</h3><p>Министрлік қаңтар–қазан айларында 10,69 млрд м³ су үнемделгенін хабарлады.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="city"><div class="news-copy"><div class="meta"><span class="pill">Қала құрылысы</span><time datetime="2026-11-18">2026 ж. 18 қар.</time></div><h3>Жаңа Ташкенттегі құрылыс пен көгалдандыру</h3><p>Президенттің жиынында құрылыс қарқыны, бірыңғай сәулет тұжырымдамасы және күзгі көшет отырғызу қаралды.</p><a href="https://www.president.uz/oz/lists/view/9871">Ресми дереккөз</a></div></article>
+      <div class="news-grid"><article class="news-card" data-item="education"><a class="photo-link" href="assets/meeting-rector-1.jpg" data-photo><img src="assets/meeting-rector-1.jpg" alt="Президенттің немересіне жазған хатындағы өмірлік өсиеттер студенттерге жеткізілуде" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-27">2026 ж. 27 қар.</time></div><h3>Президенттің немересіне жазған хатындағы өмірлік өсиеттер студенттерге жеткізілуде</h3><p>TIIAME ұлттық зерттеу университетінің факультеттерінде ректордың қатысуымен Президенттің немересі Шавкатбекке жолдаған хатындағы өмірлік сабақтарды студенттерге түсіндіретін кездесулер өтуде.</p><p>Ректор хаттағы ойлардың мәнін өмірлік мысалдармен түсіндіріп, білім алу, үздіксіз іздену, заманауи технологиялар мен жасанды интеллектіні орынды пайдалану, шет тілдерін үйрену және ұлттық құндылықтарға адалдық мәселелеріне тоқталады.</p><p>Әр минутты бағалау, нақты мақсат қою және Отанға пайда келтіру туралы өсиеттер жастардың жауапкершілігін, болашаққа сенімін нығайтуға бағытталған.</p><div class="news-photo-grid"><figure><a class="photo-link" href="assets/meeting-rector-2.jpg" data-photo><img src="assets/meeting-rector-2.jpg" alt="Ректор кездесуде сөз сөйлеп тұр" loading="lazy"></a><figcaption>Ректор кездесуде сөз сөйлеп тұр</figcaption></figure><figure><a class="photo-link" href="assets/meeting-rector-3.jpg" data-photo><img src="assets/meeting-rector-3.jpg" alt="Кездесуге қатысқан студенттер" loading="lazy"></a><figcaption>Кездесуге қатысқан студенттер</figcaption></figure><figure><a class="photo-link" href="assets/meeting-rector-4.jpg" data-photo><img src="assets/meeting-rector-4.jpg" alt="Кездесуге қатысушы" loading="lazy"></a><figcaption>Кездесуге қатысушы</figcaption></figure></div><a href="https://www.tiiame.uz/news?id=10135">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/physics.jpg" data-photo><img src="assets/physics.jpg" alt="TIIAME мектебінің физика олимпиадаларындағы нәтижелері" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-23">2026 ж. 23 қар.</time></div><h3>TIIAME мектебінің физика олимпиадаларындағы нәтижелері</h3><p>Мамандандырылған мектеп оқушылары мен ұстаздары халықаралық физика олимпиадаларындағы жетістіктері үшін марапатталды.</p><a href="https://www.tiiame.uz/news?id=10128">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="water"><a class="photo-link" href="assets/water-saving-news.jpg" data-photo><img src="assets/water-saving-news.jpg" alt="2026 жылғы су үнемдеу нәтижелері" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Су шаруашылығы</span><time datetime="2026-11-19">2026 ж. 19 қар.</time></div><h3>2026 жылғы су үнемдеу нәтижелері</h3><p>Министрлік қаңтар–қазан айларында 10,69 млрд м³ су үнемделгенін хабарлады.</p><a href="https://gov.uz/oz/suvchi/news/view/249915">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="city"><a class="photo-link" href="assets/new-tashkent-news.jpg" data-photo><img src="assets/new-tashkent-news.jpg" alt="Жаңа Ташкенттегі құрылыс пен көгалдандыру" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Қала құрылысы</span><time datetime="2026-11-18">2026 ж. 18 қар.</time></div><h3>Жаңа Ташкенттегі құрылыс пен көгалдандыру</h3><p>Президенттің жиынында құрылыс қарқыны, бірыңғай сәулет тұжырымдамасы және күзгі көшет отырғызу қаралды.</p><a href="https://www.president.uz/oz/lists/view/9871">Ресми дереккөз</a></div></article>
           <article class="news-card" data-item="education"><a class="photo-link" href="assets/rectors-forum.jpg" data-photo><img src="assets/rectors-forum.jpg" alt="TIIAME-де Өзбекстан–Иордания ректорлар форумы" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-17">2026 ж. 17 қар.</time></div><h3>TIIAME-де Өзбекстан–Иордания ректорлар форумы</h3><p>Университеттер бірлескен білім бағдарламалары, зерттеу және академиялық алмасу жөнінде келісімге келді.</p><a href="https://www.tiiame.uz/news?id=10122">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="education"><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-17">2026 ж. 17 қар.</time></div><h3>British Council TIIAME ректорын марапаттады</h3><p>Баходир Мирзаев халықаралық емтихандарды ұйымдастырудағы жетістіктері үшін арнайы марапат алды.</p><a href="https://www.tiiame.uz/news?id=10119">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="education"><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-09">2026 ж. 9 қар.</time></div><h3>TIIAME-де жасанды интеллект арқылы оқыту</h3><p>Университет оқу үдерісіне жасанды интеллект енгізуді көздейтін өзгерістер туралы хабарлады.</p><a href="https://www.tiiame.uz/news?id=10111">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="energy"><div class="news-copy"><div class="meta"><span class="pill">Энергетика және өнеркәсіп</span><time datetime="2026-11-09">2026 ж. 9 қар.</time></div><h3>Электр техникасы өнеркәсібіндегі жаңа өндіріс қуаттары</h3><p>Президентпен кездесуде салада 413 жаңа өндіріс қуаты іске қосылғаны хабарланды.</p><a href="https://www.president.uz/oz/lists/view/9831">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/british-council-news.jpg" data-photo><img src="assets/british-council-news.jpg" alt="British Council TIIAME ректорын марапаттады" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-17">2026 ж. 17 қар.</time></div><h3>British Council TIIAME ректорын марапаттады</h3><p>Баходир Мирзаев халықаралық емтихандарды ұйымдастырудағы жетістіктері үшін арнайы марапат алды.</p><a href="https://www.tiiame.uz/news?id=10119">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="education"><a class="photo-link" href="assets/ai-water-news.jpg" data-photo><img src="assets/ai-water-news.jpg" alt="TIIAME-де жасанды интеллект арқылы оқыту" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Білім және ғылым</span><time datetime="2026-11-09">2026 ж. 9 қар.</time></div><h3>TIIAME-де жасанды интеллект арқылы оқыту</h3><p>Университет оқу үдерісіне жасанды интеллект енгізуді көздейтін өзгерістер туралы хабарлады.</p><a href="https://www.tiiame.uz/news?id=10111">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="energy"><a class="photo-link" href="assets/industry-news.jpg" data-photo><img src="assets/industry-news.jpg" alt="Электр техникасы өнеркәсібіндегі жаңа өндіріс қуаттары" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Энергетика және өнеркәсіп</span><time datetime="2026-11-09">2026 ж. 9 қар.</time></div><h3>Электр техникасы өнеркәсібіндегі жаңа өндіріс қуаттары</h3><p>Президентпен кездесуде салада 413 жаңа өндіріс қуаты іске қосылғаны хабарланды.</p><a href="https://www.president.uz/oz/lists/view/9831">Ресми дереккөз</a></div></article>
           <article class="news-card" data-item="culture"><a class="photo-link" href="assets/imam-bukhari.jpg" data-photo><img src="assets/imam-bukhari.jpg" alt="Имам Бұхари кешенінің жаңаруы" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Мәдениет</span><time datetime="2026-10-18">2026 ж. 18 қаз.</time></div><h3>Имам Бұхари кешенінің жаңаруы</h3><p>Президент Самарқанд облысындағы қайта салынған кешенде зияратшыларға жасалған жағдаймен танысты.</p><a href="https://www.president.uz/oz/lists/view/9737">Ресми дереккөз</a></div></article>
           <article class="news-card" data-item="city"><a class="photo-link" href="assets/new-tashkent.jpg" data-photo><img src="assets/new-tashkent.jpg" alt="Жаңа Ташкентте жеті нысан іске қосылды" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Қала құрылысы</span><time datetime="2026-10-12">2026 ж. 12 қаз.</time></div><h3>Жаңа Ташкентте жеті нысан іске қосылды</h3><p>Ашылған нысандар қатарында 2 мың орындық мектеп, «Сохил» саябағы және энергетика нысандары бар.</p><a href="https://www.president.uz/oz/lists/view/9707">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="culture"><div class="news-copy"><div class="meta"><span class="pill">Мәдениет</span><time datetime="2026-09-11">2026 ж. 11 қыр.</time></div><h3>Өзбекстан Ұлттық музейінің құрылысы</h3><p>Президент Тадао Андо жобалаған музейдің құрылыс алаңын аралады. Құрылыс жалғасуда.</p><a href="https://www.president.uz/oz/lists/view/9600">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="energy"><div class="news-copy"><div class="meta"><span class="pill">Энергетика және өнеркәсіп</span><time datetime="2026-08-13">2026 ж. 13 там.</time></div><h3>Өңірлердің энергиямен қамтылуын жақсарту</h3><p>Президентке 14 аудандағы тәжірибе, энергия шығынын азайту және бес жылдық бағдарлама туралы баяндалды.</p><a href="https://www.president.uz/oz/lists/view/9496">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="transport"><div class="news-copy"><div class="meta"><span class="pill">Көлік</span><time datetime="2026-07-31">2026 ж. 31 шіл.</time></div><h3>Теміржол желісіндегі жаңа бағыттар</h3><p>Самарқанд–Үргіт және Үргеніш әуежайы–Хиуа желілері салынды. Науаи–Бұхара бөлігінде екінші электрлендірілген желі іске қосылды.</p><a href="https://www.president.uz/oz/lists/view/9479">Ресми дереккөз</a></div></article>
-          <article class="news-card" data-item="culture"><div class="news-copy"><div class="meta"><span class="pill">Мәдениет</span><time datetime="2026-07-07">2026 ж. 7 шіл.</time></div><h3>Ислам өркениетінің халықаралық форумы</h3><p>Өзбекстандағы Ислам өркениеті орталығында өткен алғашқы форумға 40-тан астам елдің өкілдері қатысты.</p><a href="https://www.president.uz/oz/lists/view/9390">Ресми дереккөз</a></div></article></div>
+          <article class="news-card" data-item="culture"><a class="photo-link" href="assets/national-museum-news.jpg" data-photo><img src="assets/national-museum-news.jpg" alt="Өзбекстан Ұлттық музейінің құрылысы" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Мәдениет</span><time datetime="2026-09-11">2026 ж. 11 қыр.</time></div><h3>Өзбекстан Ұлттық музейінің құрылысы</h3><p>Президент Тадао Андо жобалаған музейдің құрылыс алаңын аралады. Құрылыс жалғасуда.</p><a href="https://www.president.uz/oz/lists/view/9600">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="energy"><a class="photo-link" href="assets/regional-energy-news.jpg" data-photo><img src="assets/regional-energy-news.jpg" alt="Өңірлердің энергиямен қамтылуын жақсарту" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Энергетика және өнеркәсіп</span><time datetime="2026-08-13">2026 ж. 13 там.</time></div><h3>Өңірлердің энергиямен қамтылуын жақсарту</h3><p>Президентке 14 аудандағы тәжірибе, энергия шығынын азайту және бес жылдық бағдарлама туралы баяндалды.</p><a href="https://www.president.uz/oz/lists/view/9496">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="transport"><a class="photo-link" href="assets/railway-news.jpg" data-photo><img src="assets/railway-news.jpg" alt="Теміржол желісіндегі жаңа бағыттар" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Көлік</span><time datetime="2026-07-31">2026 ж. 31 шіл.</time></div><h3>Теміржол желісіндегі жаңа бағыттар</h3><p>Самарқанд–Үргіт және Үргеніш әуежайы–Хиуа желілері салынды. Науаи–Бұхара бөлігінде екінші электрлендірілген желі іске қосылды.</p><a href="https://www.president.uz/oz/lists/view/9479">Ресми дереккөз</a></div></article>
+          <article class="news-card" data-item="culture"><a class="photo-link" href="assets/civilization-forum-news.jpg" data-photo><img src="assets/civilization-forum-news.jpg" alt="Ислам өркениетінің халықаралық форумы" loading="lazy"></a><div class="news-copy"><div class="meta"><span class="pill">Мәдениет</span><time datetime="2026-07-07">2026 ж. 7 шіл.</time></div><h3>Ислам өркениетінің халықаралық форумы</h3><p>Өзбекстандағы Ислам өркениеті орталығында өткен алғашқы форумға 40-тан астам елдің өкілдері қатысты.</p><a href="https://www.president.uz/oz/lists/view/9390">Ресми дереккөз</a></div></article></div>
       <p class="empty" hidden>Сәйкес жазба табылмады.</p>
+    </section>
+
+    <section class="wrap section" id="universitet">
+      <div class="university-feature">
+        <div class="university-copy">
+          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="TIIAME Ұлттық зерттеу университетінің ресми логотипі" width="170" height="49" loading="lazy"></a>
+          <h2>TIIAME: ғылым және тәжірибе</h2>
+          <p>Ұлттық зерттеу университеті суару, мелиорация және гидротехника мамандарын даярлайды. 2026 жылы университет тобы Ташкент облысында су үнемдейтін жабдықтар мен құбырларды орнату жұмыстарын зерттеп, ұсыным берді.</p>
+          <p class="university-facts">ӨзА-ның 2026 жылғы 10 наурыздағы дерегіне сүйенсек, университетте 11 мыңнан астам студент оқыған, 7 факультет, 37 кафедра және 38 білім беру бағыты болған. <a href="https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888">O‘zA</a></p>
+          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">Университет туралы</a><a href="https://www.tiiame.uz/news">Жаңалықтар · TIQXMMI</a><a href="#it-markazi">TIIAME IT орталығы</a></div>
+        </div>
+        <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="TIIAME мамандарының Ташкент облысындағы далалық жұмысы" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">TIIAME мамандарының Ташкент облысындағы далалық жұмысы</a></figcaption></figure>
+      </div>
+    </section>
+    <section class="wrap section" id="prezident-va-tiqxmmi">
+      <div class="university-actions">
+        <h3>Президент және TIIAME</h3>
+        <div class="reforms"><article class="reform"><div class="meta"><time datetime="2021-12-10">2021 ж. 10 жел.</time></div><h4>Ұлттық зерттеу университеті мәртебесі</h4><p>Президенттің PQ-42 қаулысымен институт ұлттық зерттеу университеті мәртебесін алды. Қаулымен Іргелі және қолданбалы зерттеулер институтын ашу мақұлданып, оқу зертханаларын жаңарту бағдарламасы бекітілді.</p><a href="https://uza.uz/oz/posts/iqtisodiyot-tarmoqlari-uchun-muhandis-kadrlarni-tayyorlash-tizimini-innovatsiya-va-raqamlashtirish-asosida-tubdan-takomillashtirish-chora-tadbirlari-togrisida_328345">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2023-05-29">2023 ж. 29 мам.</time></div><h4>Су мамандары мектебі ашылды</h4><p>Президент бастамасымен TIIAME-де Су мамандары мектебі ашылды. Ол фермерлер мен су шаруашылығы мамандарына су үнемдеу технологияларын іс жүзінде қолдануды үйретеді.</p><a href="https://uza.uz/sp/posts/suvchilar-maktabi-bilim-tajriba-va-kelajak-kafolati_749285">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2024-08-08">2024 ж. 8 там.</time></div><h4>Алматыдағы филиал ашылды</h4><p>Шавкат Мирзиёев пен Қазақстан Президенті Қасым-Жомарт Тоқаев TIIAME-нің Алматыдағы филиалын ашты. Филиал сұранысқа ие техникалық бағыттар бойынша маман даярлауға арналған.</p><a href="https://uza.uz/uz/posts/ozbekiston-va-qozogiston-strategik-sheriklik-va-ittifoqchilik-munosabatlari-rivojida-tarixiy-voqea_623388">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2025-11-16">2025 ж. 16 қар.</time></div><h4>Өңірлік су шаруашылығы орталығы ұсынылды</h4><p>Орталық Азия мемлекеттері басшыларының кездесуінде Президент су шаруашылығы мамандарын даярлау үшін TIIAME жанынан өңірлік құзыреттер орталығын құруды ұсынды.</p><a href="https://uza.uz/uz/posts/markaziy-osiyo-davlatlari-rahbarlarining-vii-maslahat-uchrashuvida-ozbekiston-respublikasi-prezidenti-ilgari-surgan-asosiy-fikr-va-tashabbuslar_783507">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2026-03-10">2026 ж. 10 нау.</time></div><h4>Инженерлік білім және су дипломатиясы</h4><p>Президент инженерлік білім беру жөніндегі ұсыныстарды қарады. Дуалды оқыту үшін аптасына төрт күн теория және екі күн ақылы тәжірибе ұсынылды. Су дипломатиясы магистратурасын кеңейту және грант орындарын көбейту ұсынысы мақұлданды.</p><a href="https://uza.uz/oz/posts/qishloq-va-suv-xojaligi-uchun-muhandis-kadrlar-tayyorlash-tizimini-takomillashtirish-masalalari-korib-chiqildi_829888">O‘zA</a></article>
+          <article class="reform"><div class="meta"><time datetime="2026-04-02">2026 ж. 2 сәу.</time></div><h4>Білім мен зертханалар жөніндегі жаңа қаулы</h4><p>Президенттің PQ-122 қаулысында TIIAME-де дуалды оқытуды енгізу, «Цифрлық университет» платформасын құру және 2026–2028 жылдары оқу зертханаларын жаңарту көзделген.</p><a href="https://lex.uz/uz/docs/-8115447">Lex.uz</a></article></div>
+      </div>
+    </section>
+    <section class="wrap section" id="it-markazi">
+      <div class="university-actions">
+        <h3>TIIAME IT орталығы</h3>
+        <p>Төрт қабатты IT орталығы 2025 жылғы 10 мамырда ашылды. Мұнда бағдарламалау және оқыту бөлмелері, тіркеуші кеңсесі және су ресурстарын цифрлық басқаруға арналған бағдарламалық қамтылым әзірлейтін бөлім бар. <a href="https://gov.uz/oz/edu/news/view/53069">Ресми дереккөз</a></p>
+        <p>ӨзА хабарлағандай, 2025 жылғы 15 желтоқсанда Президентке 200 орындық IT орталығы, цифрлық кітапхана және тіркеуші кеңсесі туралы мәлімет берілді. Президент TIIAME-ді әлемнің үздік 300 университетінің қатарына қосу үшін нақты шаралар әзірлеуді тапсырды. <a href="https://uza.uz/uz/posts/key-tasks-in-the-water-management-sector-discussed_795532">O‘zA</a></p>
+        <div class="it-center-photos"><figure><a class="photo-link" href="assets/it-center-3.jpg" data-photo><img src="assets/it-center-3.jpg" alt="IT орталығының ғимараты" loading="lazy"></a><figcaption>IT орталығының ғимараты</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-1.jpg" data-photo><img src="assets/it-center-1.jpg" alt="Ашылу салтанатында лента қию" loading="lazy"></a><figcaption>Ашылу салтанатында лента қию</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-4.jpg" data-photo><img src="assets/it-center-4.jpg" alt="Орталықтың бағдарламалау бөлмесі" loading="lazy"></a><figcaption>Орталықтың бағдарламалау бөлмесі</figcaption></figure>
+          <figure><a class="photo-link" href="assets/it-center-2.jpg" data-photo><img src="assets/it-center-2.jpg" alt="Ынтымақтастық меморандумы" loading="lazy"></a><figcaption>Ынтымақтастық меморандумы</figcaption></figure></div>
+        <a href="https://tiiame.uz/news?id=8777">Фоторепортаж және дереккөз · TIQXMMI</a>
+      </div>
+    </section>
+
+    <section class="president-section" id="prezident">
+      <div class="wrap president-grid">
+        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo><img src="assets/portrait.jpg" alt="Шавкат Мирзиёев" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Өзбекстан Республикасы Президентінің баспасөз қызметі</a></figcaption></figure>
+        <div class="president-copy">
+          <p class="eyebrow">Президент</p><h2>Шавкат Мирзиёев</h2>
+          <p>1981 жылы TIIAME-ді инженер-механик мамандығы бойынша бітірген. Институтта ғылыми қызметкер, оқытушы және проректор болып жұмыс істеген. 2016 жылы Президент болып сайланды, 2023 жылғы сайлаудан кейін 14 шілдеде қызметіне кірісті.</p>
+          <ul class="initiatives">
+            <li><a href="https://lex.uz/uz/docs/-7686130">2025–2028 жылдары ирригацияны дамыту</a><span>ПҚ–250 бағдарламасы каналдар мен су нысандарын жаңартуды, басқаруды цифрландыруды және су үнемдеу технологияларын кеңейтуді көздейді.</span></li>
+            <li><a href="https://www.president.uz/oz/lists/view/9707">Жаңа Ташкентте жеті нысан іске қосылды</a><span>Ашылған нысандар қатарында 2 мың орындық мектеп, «Сохил» саябағы және энергетика нысандары бар.</span></li>
+            <li><a href="https://www.tiiame.uz/news?id=10111">TIIAME-де жасанды интеллект арқылы оқыту</a><span>Университет оқу үдерісіне жасанды интеллект енгізуді көздейтін өзгерістер туралы хабарлады.</span></li>
+          </ul>
+          <p>1957 жылы 24 шілдеде Жызақ облысының Заамин ауданында туған. Техника ғылымдарының кандидаты, доцент. 2003 жылы Өзбекстанның премьер-министрі болып бекітілді.</p>
+          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Ресми өмірбаян</a><a href="https://uza.uz/oz/posts/davlatimiz-rahbari-barcha-yurtdoshlarimga-yana-bir-bor-minnatdorchilik-bildirdi_501877">2023 жылы қызметіне кірісуі · O‘zA</a><a href="#prezident-va-tiqxmmi">Президент және TIIAME</a></div>
+        </div>
+      </div>
     </section>
 
     <section class="projects-section" id="inshootlar">
@@ -80,23 +217,7 @@
       </div>
     </section>
 
-    <section class="president-section" id="prezident">
-      <div class="wrap president-grid">
-        <figure class="president-photo"><a class="photo-link" href="assets/portrait.jpg" data-photo><img src="assets/portrait.jpg" alt="Шавкат Мирзиёев" loading="lazy"></a><figcaption><a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Өзбекстан Республикасы Президентінің баспасөз қызметі</a></figcaption></figure>
-        <div class="president-copy">
-          <p class="eyebrow">Президент</p><h2>Шавкат Мирзиёев</h2>
-          <p>1981 жылы TIIAME-ді инженер-механик мамандығы бойынша бітірген. Институтта ғылыми қызметкер, оқытушы және проректор болып жұмыс істеген. 2016 жылы Президент болып сайланды, 2023 жылғы сайлаудан кейін 14 шілдеде қызметіне кірісті.</p>
-          <ul class="initiatives">
-            <li><a href="https://lex.uz/uz/docs/-7686130">2025–2028 жылдары ирригацияны дамыту</a><span>ПҚ–250 бағдарламасы каналдар мен су нысандарын жаңартуды, басқаруды цифрландыруды және су үнемдеу технологияларын кеңейтуді көздейді.</span></li>
-            <li><a href="https://www.president.uz/oz/lists/view/9707">Жаңа Ташкентте жеті нысан іске қосылды</a><span>Ашылған нысандар қатарында 2 мың орындық мектеп, «Сохил» саябағы және энергетика нысандары бар.</span></li>
-            <li><a href="https://www.tiiame.uz/news?id=10111">TIIAME-де жасанды интеллект арқылы оқыту</a><span>Университет оқу үдерісіне жасанды интеллект енгізуді көздейтін өзгерістер туралы хабарлады.</span></li>
-          </ul>
-          <div class="profile-links"><a href="https://president.uz/oz/pages/view/biography">Ресми өмірбаян</a><a href="https://president.uz/oz/lists/view/6485">2023 жылы қызметіне кірісуі</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="numbers" aria-labelledby="numbers-title">
+    <section class="numbers" id="raqamlar" aria-labelledby="numbers-title">
       <div class="wrap">
         <div class="numbers-header"><h2 id="numbers-title">Су шаруашылығы сандармен</h2><a href="https://gov.uz/oz/suvchi/news/view/249915">Су шаруашылығы министрлігі · 2026 жылғы қараша</a></div>
         <dl class="number-grid">
@@ -130,21 +251,9 @@
       </div>
     </section>
 
-    <section class="wrap section" id="universitet">
-      <div class="university-feature">
-        <div class="university-copy">
-          <a class="university-mark" href="https://tiiame.uz/tiiame_national_research_university_logo"><img src="assets/tiqxmm-logo.png" alt="TIIAME Ұлттық зерттеу университетінің ресми логотипі" width="170" height="49" loading="lazy"></a>
-          <h2>TIIAME: ғылым және тәжірибе</h2>
-          <p>Ұлттық зерттеу университеті суару, мелиорация және гидротехника мамандарын даярлайды. 2026 жылы университет тобы Ташкент облысында су үнемдейтін жабдықтар мен құбырларды орнату жұмыстарын зерттеп, ұсыным берді.</p>
-          <div class="profile-links"><a href="https://tiiame.uz/university/other/about">Университет туралы</a><a href="https://www.tiiame.uz/news">Жаңалықтар · TIQXMMI</a></div>
-        </div>
-        <figure><a class="photo-link" href="assets/field.jpg" data-photo><img src="assets/field.jpg" alt="TIIAME мамандарының Ташкент облысындағы далалық жұмысы" loading="lazy"></a><figcaption><a href="https://tiiame.uz/news?id=9714">TIIAME мамандарының Ташкент облысындағы далалық жұмысы</a></figcaption></figure>
-      </div>
-    </section>
-
     <section class="library" id="organish">
       <div class="wrap section">
-        <div class="section-heading"><h2>Білім кітапханасы</h2></div>
+        <div class="section-heading"><h2>TIIAME кітапханасы</h2></div>
         <div class="card-grid">
           <article class="card"><h3><a href="https://waterknowledgehub.org/learn">Су ресурстарын кешенді басқару</a></h3></article>
           <article class="card"><h3><a href="https://waterknowledgehub.org/country-info/UZ">Өзбекстан тәжірибесі</a></h3></article>
@@ -152,13 +261,14 @@
         </div>
       </div>
     </section>
+    </section>
   </main>
   <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="photo-title">
     <div class="viewer-bar"><p id="photo-title">Сурет</p><form method="dialog"><button type="submit">Жабу</button></form></div>
     <img src="assets/termiz.jpg" alt="">
   </dialog>
   <footer id="surat-manbalari"><div class="wrap footer-inner">
-    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>Suv Ufqi</a><p>TIIAME мен Өзбекстан туралы оқу жобасы.</p></div>
+    <div><a class="brand" href="#main"><span class="mark" aria-hidden="true">≋</span>TIQXMMI kutubxonasi</a><p>TIIAME мен Өзбекстан туралы оқу жобасы.</p><p><a href="about-kk.html">Жоба туралы</a></p></div>
     <div class="credit"><strong>Сурет дереккөздері</strong><p><a href="https://president.uz/oz">Өзбекстан Республикасы Президентінің баспасөз қызметі</a> · <a href="https://tiiame.uz/tiiame_national_research_university_logo">TIQXMMI</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Панорама_летнего_Чарвака.jpg">Шарвак панорамасы · Arina Pan</a> · <a href="https://commons.wikimedia.org/wiki/File:Shavkat_Mirziyoyev_official_portrait.jpg">Шавкат Мирзиёев</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Панораманың өлшемі кішірейтілді. Суреттер бетте қиылып көрсетіледі.</p></div>
   </div></footer>
 </body>
