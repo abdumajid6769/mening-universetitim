@@ -23,14 +23,17 @@ const indexedGroups = groups.map((element) => ({
 const initialOpen = new Set(groups.filter((group) => group.open));
 
 function restoreFilters() {
-  const fragment = new URLSearchParams(location.hash.slice(1));
+  const hash = location.hash.slice(1);
+  const fragment = new URLSearchParams(hash);
+  const target = groups.find((group) => group.id === hash);
+  if (target) fragment.set(direction.name, target.dataset.direction);
   search.value = fragment.get("q") ?? "";
   for (const select of [direction, year]) {
     const value = fragment.get(select.name) ?? "";
     select.value = [...select.options].some((option) => option.value === value) ? value : "";
   }
   updateResults(false);
-  if (direction.value && fragment.has("yonalish")) document.getElementById("maqsadlar").scrollIntoView();
+  if (direction.value) (target ?? document.getElementById("maqsadlar")).scrollIntoView();
 }
 
 function updateResults(saveState) {

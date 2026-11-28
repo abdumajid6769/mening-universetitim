@@ -40,7 +40,7 @@ function page(title, description, content, { nested = false, catalogue = false }
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${base}style.css">
   <link rel="stylesheet" href="${section}strategiya.css">
-  ${catalogue ? '<script src="strategiya.js" defer></script>' : ""}
+  ${catalogue ? `<script src="${section}strategiya.js" defer></script>` : ""}
 </head>
 <body class="strategy-page">
   <a class="skip" href="#main">Asosiy mazmunga o‘tish</a>
@@ -117,12 +117,14 @@ function documentPage(document) {
   const links = [];
   const blocks = [];
   if (data) {
-    links.push(["yonalishlar", "Ustuvor yo‘nalishlar"]);
+    links.push(["yonalishlar", "Ustuvor yo‘nalishlar"], ["maqsadlar", "Maqsadlarni qidirish"]);
     const groups = data.groups.map(({ id, title }) => {
       const goals = data.goals.filter((goal) => goal.direction === id);
-      return record(`${id}-yo‘nalish · ${goals.length} ta maqsad`, title, "", link(`../index.html#yonalish=${document.id}-${id}`, "Maqsadlarni ko‘rish"));
+      return record(`${id}-yo‘nalish · ${goals.length} ta maqsad`, title, "",
+        link(`#yonalish-${document.id}-${id}`, "Maqsadlarni ko‘rish"));
     });
     blocks.push(block("yonalishlar", "Ustuvor yo‘nalishlar va maqsadlar", tiles(groups)));
+    blocks.push(goalCatalogue([[document.id, data]], document.id));
   }
   if (document.plans?.length) {
     links.push(["reja", "Rejalashtirilgan ishlar"]);
@@ -135,7 +137,7 @@ function documentPage(document) {
     hero(`${document.code} · ${document.period}`, document.title, document.intro, link("../index.html", "Taraqqiyot strategiyasi")),
     jump(links),
     `    <div class="wrap strategy-body">\n${blocks.join("\n")}\n    </div>`,
-  ].join("\n"), { nested: true });
+  ].join("\n"), { nested: true, catalogue: Boolean(data) });
 }
 
 function indicatorRecord(indicator, document) {
@@ -199,34 +201,39 @@ function goalPage(document, goal, direction) {
   ].filter(Boolean).join("\n"), { nested: true });
 }
 
-function catalogPage() {
-  const intro = "Davlat va tarmoq strategiyalaridagi maqsadlar, rejalashtirilgan vazifalar va rasmiy manbalarda e’lon qilingan natijalar.";
-  const cards = documents.map((document) => `<article class="strategy-card"><span>${escape(document.code)} · ${escape(document.period)}</span><h3>${link(documentFile(document), document.title)}</h3><p>${escape(document.intro)}</p></article>`).join("\n          ");
-  const groups = [...catalogues.entries()].flatMap(([code, data]) => data.groups.map((group) => ({
+function goalCatalogue(entries, localCode) {
+  const groups = [...entries].flatMap(([code, data]) => data.groups.map((group) => ({
     ...group, code, goals: data.goals.filter((goal) => goal.direction === group.id),
   })));
+  const label = (code, title) => localCode ? title : `${code.toUpperCase()} · ${title}`;
   const years = [...new Set(groups.flatMap(({ goals }) => goals.flatMap(({ years }) => years)))].sort();
   const controls = `<form class="strategy-filters" id="maqsad-filtrlari" hidden role="search">
           <div class="strategy-filters-grid">
             <label>Raqam yoki nom <input type="search" name="q" placeholder="Masalan, 64 yoki irrigatsiya"></label>
-            <label>Yo‘nalish <select name="yonalish"><option value="">Barcha yo‘nalishlar</option>${groups.map(({ code, id, title }) => `<option value="${code}-${id}">${escape(code.toUpperCase() + " · " + id + " · " + title)}</option>`).join("")}</select></label>
+            <label>Yo‘nalish <select name="yonalish"><option value="">Barcha yo‘nalishlar</option>${groups.map(({ code, id, title }) => `<option value="${code}-${id}">${escape(label(code, id + " · " + title))}</option>`).join("")}</select></label>
             <label>Yil <select name="yil"><option value="">Barcha yillar</option>${years.map((year) => `<option>${year}</option>`).join("")}</select></label>
           </div>
           <button type="reset" class="text-link">Filtrlarni tozalash</button>
         </form>
         <p id="maqsadlar-soni" role="status"></p>`;
-  const goalLists = groups.map(({ code, id, title, goals }, index) => `<details class="strategy-goal-group" data-direction="${code}-${id}"${index === 0 ? " open" : ""}>
-          <summary>${escape(code.toUpperCase() + " · " + id + ". " + title)} (${goals.length})</summary>
+  const goalLists = groups.map(({ code, id, title, goals }, index) => `<details class="strategy-goal-group" id="yonalish-${code}-${id}" data-direction="${code}-${id}"${index === 0 ? " open" : ""}>
+          <summary>${escape(label(code, id + ". " + title))} (${goals.length})</summary>
           <ul class="strategy-goals">
-            ${goals.map((goal) => `<li data-number="${goal.number}" data-years="${goal.years.join(" ")}"><a href="${code}/${goalFile(goal.number)}"><span>${goal.number}</span><span data-title>${escape(goal.title)}</span></a></li>`).join("\n            ")}
+            ${goals.map((goal) => `<li data-number="${goal.number}" data-years="${goal.years.join(" ")}"><a href="${localCode ? "" : code + "/"}${goalFile(goal.number)}"><span>${goal.number}</span><span data-title>${escape(goal.title)}</span></a></li>`).join("\n            ")}
           </ul>
         </details>`).join("\n        ");
+  return block("maqsadlar", "Maqsadlar katalogi", `${controls}\n        ${goalLists}`);
+}
+
+function catalogPage() {
+  const intro = "Davlat va tarmoq strategiyalaridagi maqsadlar, rejalashtirilgan vazifalar va rasmiy manbalarda e’lon qilingan natijalar.";
+  const cards = documents.map((document) => `<article class="strategy-card"><span>${escape(document.code)} · ${escape(document.period)}</span><h3>${link(documentFile(document), document.title)}</h3><p>${escape(document.intro)}</p></article>`).join("\n          ");
   return page("Taraqqiyot strategiyasi", intro, [
     hero("", "Taraqqiyot strategiyasi", intro),
     jump([["strategiyalar", "Strategiyalar va dasturlar"], ["maqsadlar", "Maqsadlarni qidirish"]]),
     `    <div class="wrap strategy-body">`,
     block("strategiyalar", "Strategiyalar va dasturlar", `<div class="strategy-docs">\n          ${cards}\n        </div>`),
-    block("maqsadlar", "Maqsadlar katalogi", `<p>PF-21 va PF-60 maqsadlarini hujjatdagi raqami, nomi, yo‘nalishi yoki yili bo‘yicha toping.</p>\n        ${controls}\n        ${goalLists}`),
+    goalCatalogue(catalogues),
     "    </div>",
   ].join("\n"), { catalogue: true });
 }
@@ -239,8 +246,12 @@ for (const document of documents) {
     throw new Error(`Maqsad raqamlari to‘liq emas: ${document.code}`);
   }
   const directions = new Map(data.groups.map(({ id, title }) => [id, `${id}. ${title}`]));
+  const allowedTaskSources = document.id === "pf-21" ? ["PF-22"] : ["PF-60", "PF-27"];
   for (const goal of data.goals) {
     if (!directions.has(goal.direction)) throw new Error(`Yo‘nalish topilmadi: ${document.code}, ${goal.number}`);
+    if (goal.tasks.some(({ source }) => !allowedTaskSources.includes(source))) {
+      throw new Error(`Maqsadga boshqa strategiyaning dasturi biriktirilgan: ${document.code}, ${goal.number}`);
+    }
     write(`${document.id}/${goalFile(goal.number)}`, goalPage(document, goal, directions.get(goal.direction)));
   }
 }
