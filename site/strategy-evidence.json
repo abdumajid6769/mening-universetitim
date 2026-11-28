@@ -1,0 +1,40 @@
+{
+  "pf-21": {
+    "64": {
+      "intro": "Maqsad irrigatsiya tizimini rivojlantirish va suv tejash texnologiyalarini kengaytirishni qamrab oladi. PF-21 da ikkita mezon belgilangan: suv xo‘jaligi obyektlarini davlat-xususiy sheriklik asosida boshqarish loyihalari sonini 2 183 taga yetkazish va sug‘oriladigan ekin maydonlarini suv tejash texnologiyalari, jumladan lazerli tekislash bilan to‘liq qamrab olish.",
+      "status": "Oraliq natijalar e’lon qilingan",
+      "note": "Vazirlik e’lon qilgan raqamlar tegishli hisobot sanalaridagi natijalarni ko‘rsatadi. 64-maqsadning yakuniy ijrosi bo‘yicha ochiq tasdiq katalogga kiritilmagan.",
+      "tasks": {
+        "218": "2026-yil uchun 33,8 ming gektar yerni qayta foydalanishga kiritish bo‘yicha hududiy manzilli ro‘yxatlarni ishlab chiqish va tasdiqlash.",
+        "219": "Suvni tejash dasturini tayyorlash, suv tejovchi texnologiyalar qamrovini 2,8 mln gektarga va tomchilatib sug‘orish maydonini 685 ming gektarga yetkazish."
+      },
+      "results": [
+        ["2026-yil 1-noyabr holati · 306-ko‘rsatkichga oid", "1 976 ta suv xo‘jaligi DXSh loyihasi qayd etilgan", "Vazirlik manbasida ushbu loyihalar doirasida 494 ta nasos stansiyasi, 2 217 ta tik quduq va 3 041 km irrigatsiya hamda melioratsiya tarmog‘i xususiy boshqaruvga berilgani qayd etilgan.", "https://gov.uz/oz/suvchi/news/view/244517", "Suv xo‘jaligi vazirligi, 08.11.2026"],
+        ["2026-yil noyabrida e’lon qilingan · 307-ko‘rsatkichga oid", "2,8 mln gektar qamrov", "Vazirlik qamrovni sug‘oriladigan maydonlarning 65 foizi deb e’lon qildi. 2026-yil yanvar–oktabrda 654 ming gektar maydonda suv tejovchi texnologiyalarni joriy etish va lazerli tekislash ishlari bajarilgan.", "https://gov.uz/oz/suvchi/news/view/245786", "Suv xo‘jaligi vazirligi, 10.11.2026"],
+        ["2026-yil yanvar–oktabr · 219-bandga oid", "10,69 mlrd m³ suv tejalgan", "Vazirlik umumiy natijani texnologiyalarni joriy etish, irrigatsiya tarmoqlarini yaxshilash, raqamlashtirish va agrotexnik tadbirlar bilan bog‘ladi. Shundan 4,935 mlrd m³ suv tejovchi texnologiyalar va lazerli tekislash hisobiga to‘g‘ri kelgan.", "https://gov.uz/oz/suvchi/news/view/245786", "Suv xo‘jaligi vazirligi, 10.11.2026"]
+      ]
+    },
+    "63": {
+      "status": "Tegishli sohaviy natija e’lon qilingan",
+      "note": "Kanallar bo‘yicha e’lon qilingan uzunlikni strategiyadagi beton qoplama ulushi bilan solishtirish uchun bir xil hisoblash bazasi kerak.",
+      "results": [
+        ["2026-yil noyabrida e’lon qilingan · 304-ko‘rsatkichga oid", "Davlat budjeti hisobidan 1 000 km kanal betonlashtirildi", "Vazirlik tizimida beton qoplamali magistral va xo‘jaliklararo kanallarning umumiy uzunligi 12,7 ming km ga yetgani ma’lum qilindi.", "https://gov.uz/oz/suvchi/news/view/249915", "Suv xo‘jaligi vazirligi, 19.11.2026"]
+      ]
+    }
+  },
+  "pf-60": {
+    "35": {
+      "status": "185-band bo‘yicha natijalar e’lon qilingan",
+      "note": "Ma’lumotlar Navoiy viloyatidagi ishlarni qamrab oladi. Ular 35-maqsad bo‘yicha yakuniy respublika natijasini belgilamaydi.",
+      "results": [
+        ["2022-yil · 185-band", "Sentobda 20 ta oilaviy mehmon uyi va 3 ta xostel tashkil etildi", "Davlat dasturi monitoringida qishloqqa kirishdagi 5 km ichki yo‘l ta’mirlangani va turistik axborot markazi qurilgani ham qayd etilgan.", "https://insonqadri.gov.uz/uz-Latn/stateProgram?year=2022", "Inson qadri · 2022-yil davlat dasturi, 185-band"]
+      ]
+    },
+    "80": {
+      "status": "294-band bo‘yicha oraliq natija e’lon qilingan",
+      "results": [
+        ["2022-yil · 294-band", "Hududiy laboratoriyalarga 135 ta o‘lchov-nazorat uskunasi yetkazilgan", "Davlat dasturi monitoringida 16 turdagi asbob-uskunalar bilan birga 33 ta laboratoriya mebeli va 33 ta laboratoriya idishlari to‘plami yetkazilgani qayd etilgan.", "https://insonqadri.gov.uz/uz-Latn/stateProgram?year=2022", "Inson qadri · 2022-yil davlat dasturi, 294-band"]
+      ]
+    }
+  }
+}

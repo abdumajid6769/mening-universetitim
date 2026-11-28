@@ -141,3 +141,5 @@ for (const [index, [lang, , file]] of locales.entries()) {
   writeFileSync(new URL("../" + file, import.meta.url), html);
   console.log(file + " (" + lang + ")");
 }
+
+await import("./build-strategy.mjs");
