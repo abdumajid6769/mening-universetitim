@@ -11,10 +11,12 @@ const locales = [
 const site = "https://abdumajid6769.github.io/mening-universetitim/";
 const read = (name) => readFileSync(new URL(name, import.meta.url), "utf8");
 const template = read("template.html");
+const aboutTemplate = read("about-template.html");
 const copy = new Map();
 
-for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "university.txt"]) {
+for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "university.txt", "about.txt"]) {
   for (const line of read(file).trim().split(/\r?\n/)) {
+    if (line.startsWith("#")) continue;
     const [key, ...translations] = line.split("|").map((value) => value.trim());
     if (copy.has(key) || translations.length !== locales.length || translations.some((value) => !value)) {
       throw new Error("Invalid or duplicate translation: " + key);
@@ -25,6 +27,21 @@ for (const file of ["ui.txt", "stories.txt", "projects.txt", "reforms.txt", "uni
 const escape = (value) => value.replace(/[&<>"']/g, (char) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
 })[char]);
+const homeUrl = (file) => site + (file === "index.html" ? "" : file);
+const aboutFile = (file) => file === "index.html" ? "about.html" : "about-" + file;
+const pageLinks = (current, getFile, getUrl) => {
+  const alternateLinks = locales.map(([code, , home]) =>
+    '<link rel="alternate" hreflang="' + code + '" href="' + getUrl(getFile(home)) + '">');
+  alternateLinks.push('<link rel="alternate" hreflang="x-default" href="' + getUrl(getFile(locales[0][2])) + '">');
+
+  const languageLinks = locales.map(([code, name, home]) => {
+    const target = getFile(home);
+    const active = target === current ? ' aria-current="page"' : "";
+    return '<a lang="' + code + '" hreflang="' + code + '" href="' + target + '"' + active + '>' + escape(name) + '</a>';
+  });
+
+  return { alternateLinks: alternateLinks.join("\n  "), languageLinks: languageLinks.join("") };
+};
 const president = (id) => "https://www.president.uz/oz/lists/view/" + id;
 const university = (id) => "https://www.tiiame.uz/news?id=" + id;
 const law = (id) => "https://lex.uz/uz/docs/-" + id;
@@ -100,8 +117,8 @@ for (const [index, [lang, , file]] of locales.entries()) {
   };
   const newsCategories = ["education", "city", "energy", "transport", "culture", "water"];
   const fragments = {
-    alternateLinks: locales.map(([code, , target]) => '<link rel="alternate" hreflang="' + code + '" href="' + site + (target === "index.html" ? "" : target) + '">').join("\n  ") + '\n  <link rel="alternate" hreflang="x-default" href="' + site + '">',
-    languageLinks: locales.map(([code, name, target]) => '<a lang="' + code + '" hreflang="' + code + '" href="' + target + '"' + (target === file ? ' aria-current="page"' : "") + '>' + escape(name) + '</a>').join(""),
+    ...pageLinks(file, (home) => home, homeUrl),
+    aboutFile: aboutFile(file),
     newsControls: controls([["all", "all"], ...newsCategories.map((key) => [key, key])], "searchNews"),
     reformControls: controls([["all", "all"], ...Object.entries(stateLabel)], "searchReforms"),
     newsCards: news.map(([id, day, category, url, image]) =>
@@ -132,12 +149,21 @@ for (const [index, [lang, , file]] of locales.entries()) {
     reformCards: reforms.map(([id, day, state, url]) =>
       '<article class="reform" data-item="' + state + '"><div class="meta">' + time(day) + '<span class="pill ' + state + '">' + t(stateLabel[state]) + '</span></div><h3>' + t("t" + id) + '</h3><p>' + t("s" + id) + '</p><a href="' + escape(url) + '">' + t("source") + '</a></article>').join("\n          "),
   };
-  const html = template
+  const render = (source, parts) => source
     .replace(/\{\{\{(\w+)\}\}\}/g, (_, key) => {
-      if (!Object.hasOwn(fragments, key)) throw new Error("Unknown template fragment: " + key);
-      return fragments[key];
+      if (!Object.hasOwn(parts, key)) throw new Error("Unknown template fragment: " + key);
+      return parts[key].replace(/\r?\n/g, source.includes("\r\n") ? "\r\n" : "\n");
     })
     .replace(/\{\{(\w+)\}\}/g, (_, key) => key === "lang" ? lang : t(key));
-  writeFileSync(new URL("../" + file, import.meta.url), html);
-  console.log(file + " (" + lang + ")");
+  const about = aboutFile(file);
+  const aboutFragments = {
+    ...pageLinks(about, aboutFile, (target) => site + target),
+    canonical: site + about,
+    homeFile: file,
+    aboutFile: about,
+  };
+  for (const [target, html] of [[file, render(template, fragments)], [about, render(aboutTemplate, aboutFragments)]]) {
+    writeFileSync(new URL("../" + target, import.meta.url), html);
+    console.log(target + " (" + lang + ")");
+  }
 }

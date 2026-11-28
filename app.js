@@ -42,12 +42,12 @@ for (const link of document.querySelectorAll('a[href^="#"]')) {
   });
 }
 
-const initialTarget = location.hash && document.querySelector(location.hash);
+const initialTarget = location.hash ? document.querySelector(location.hash) : null;
 const initialPanel = initialTarget?.closest("[data-main-panel]");
 activateMainPanel(initialPanel?.id || "tarix", false, false);
 if (initialPanel) requestAnimationFrame(() => initialTarget.scrollIntoView({ block: "start" }));
 window.addEventListener("popstate", () => {
-  const target = location.hash && document.querySelector(location.hash);
+  const target = location.hash ? document.querySelector(location.hash) : null;
   const panel = target?.closest("[data-main-panel]") || (target?.matches("[data-main-panel]") ? target : null);
   activateMainPanel(panel?.id || "tarix", false, false);
   if (panel && target) target.scrollIntoView({ block: "start" });
